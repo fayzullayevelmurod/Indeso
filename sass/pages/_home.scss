@@ -45,3 +45,507 @@
     }
   }
 }
+
+// our-services
+.our-services {
+  .title-box {
+    border-bottom: 1px solid #dcdbdb;
+    padding-bottom: 30px;
+    margin-bottom: 62px;
+  }
+  .swiper-btns {
+    justify-content: end;
+    width: 100%;
+  }
+  .swiper-wrapper {
+    align-items: stretch;
+    margin-top: 30px;
+  }
+  .swiper-slide {
+    height: 346px !important;
+    position: relative;
+    padding-bottom: 234px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  &__card {
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13.9px 0px #9d9c9c40;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      .our-services__card-back {
+        top: 0;
+      }
+    }
+    &-img {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+    .card-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 115px;
+      padding: 0 30px;
+    }
+    &-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.6px;
+      text-align: center;
+    }
+    &-back {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      z-index: 2;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 13.9px 0px #9d9c9c40;
+      overflow: hidden;
+      height: 100%;
+      transform-origin: top;
+      transition: all 0.3s ease;
+      // height: 460px;
+      height: fit-content;
+
+      &-title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.13px;
+        color: #c73731;
+      }
+      .card-header {
+        padding: 30px 30px 25px 20px;
+        border-bottom: 1px solid #c73731;
+      }
+      .card-body {
+        padding: 25px 12px 25px 30px;
+      }
+      .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 40px 28px 30px;
+      }
+      .card-number {
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 37.5px;
+        color: #8e8c8c;
+      }
+    }
+  }
+}
+// our-services
+
+// exploration-countries
+.exploration-countries {
+  &__swiper {
+    margin: 60px 0 47px 0;
+    .swiper-slide {
+      height: unset !important;
+    }
+  }
+  &__card {
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-img {
+      width: 100%;
+      height: 225px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.13px;
+      text-align: center;
+      padding: 25px 32px;
+      color: #c73731;
+      border-bottom: 1px solid #c73731;
+      text-transform: uppercase;
+    }
+    .desc {
+      padding: 25px 12px 33px 30px;
+    }
+    .card-footer {
+      padding: 0 22px 25px 22px;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+  .world-locations {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    &__map {
+      width: 567px;
+      height: 327px;
+
+      &-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .accordions {
+      max-width: 470px;
+      width: 100%;
+    }
+  }
+}
+// exploration-countries
+
+// market-research
+.market-research {
+  padding: 120px 0 154px 0;
+
+  &__cards {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .desc-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__card {
+    &-info {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+    }
+    &.left {
+      max-width: 572px;
+    }
+    &.right {
+      max-width: 480px;
+      height: 275px;
+      .market-research__card-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
+    gap: 78px;
+    text-align: center;
+    margin: 30px 0 120px 0;
+  }
+  &__stat-item {
+    background: url(../../images/globs.png) no-repeat;
+    background-size: 189px 189px;
+    background-position: top center;
+    padding-top: 57px;
+  }
+  &__stat {
+    &-number {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56.25px;
+      color: #c73731;
+    }
+    &-title {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 37.5px;
+      padding-bottom: 30px;
+    }
+    &-description {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.09px;
+    }
+  }
+  .expert-profile {
+    display: flex;
+    justify-content: space-between;
+    &__photo {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 400px;
+      height: 511px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__description {
+      max-width: 705px;
+    }
+    .list {
+      margin-left: 40px;
+    }
+  }
+}
+//market-research
+
+// our-values
+.our-values {
+  &__cards {
+    display: flex;
+    gap: 31px;
+    margin-top: 60px;
+  }
+  &__card {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 30px 20px;
+    border-radius: 10px;
+    min-width: 269px;
+    max-width: 269px;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 25px;
+    }
+    &-number {
+      padding: 5px 15px;
+      border-radius: 10px;
+      background: #e24e47;
+
+      span {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 300;
+        line-height: 23.44px;
+        text-align: center;
+      }
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23.44px;
+      color: #e24e47;
+    }
+    .desc {
+      line-height: 22px;
+    }
+  }
+}
+// our-values
+
+// market-analysis
+.market-analysis {
+  padding: 120px 0;
+  &__container {
+    box-shadow: 0px 0px 11.2px 0px #dddddd40;
+    background-color: #fff;
+    display: flex;
+    align-items: stretch;
+    max-width: 1547px;
+  }
+  &__content {
+    background: #c73731;
+    padding: 90px 65px 89px 10px;
+    max-width: 954px;
+    width: 100%;
+    &-info {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 33.6px;
+      color: #fff;
+      max-width: 426px;
+      margin-left: auto;
+    }
+  }
+  &__slider {
+    width: calc(100% - 954px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 406px;
+
+    &-title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 33.6px;
+      margin-bottom: 15px;
+    }
+  }
+  .swiper-btns {
+    margin: 0 auto;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+// market-analysis
+
+// global-market
+.global-market {
+  &__box {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__img {
+    max-width: 363px;
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+
+    &-item {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+      display: flex;
+      align-items: start;
+      gap: 22px;
+
+      img {
+        padding-top: 7px;
+      }
+    }
+  }
+}
+// global-market
+
+// market-challenges
+.market-challenges {
+  padding: 120px 0 100px 0;
+  &__swiper {
+    position: relative;
+    padding: 60px;
+  }
+  .swiper-scrollbar {
+    top: 0;
+  }
+  .title {
+    margin-bottom: 60px;
+  }
+  .business-analytics {
+    display: flex;
+    align-items: stretch;
+
+    &__image {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & > div {
+      width: 50%;
+    }
+    &__text {
+      background: #c73731;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__desc {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+      color: #fbfafa;
+      max-width: 390px;
+    }
+  }
+}
+// market-challenges
+
+// market-entry-benefits
+.market-entry-benefits {
+  &__boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 52px;
+  }
+
+  .accordions {
+    max-width: 569px;
+  }
+  &__logo {
+    height: 620px;
+    max-width: 360px;
+    width: 100%;
+    opacity: 0.2;
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+// market-entry-benefits
+
+// consultation-invite
+.consultation-invite {
+  padding: 120px 0;
+  &__boxes {
+    max-width: 1541px;
+    margin-top: 60px;
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    justify-content: space-between;
+    .register-form {
+      background-color: #c73731;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 875px;
+      width: 100%;
+      padding: 100px;
+      color: #fff;
+      border-radius: 0 20px 20px 0;
+      &__info {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 33.6px;
+        margin-bottom: 55px;
+      }
+      &__content {
+        max-width: 400px;
+        margin-left: auto;
+        text-align: center;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 566px;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+    }
+  }
+}
+// consultation-invite

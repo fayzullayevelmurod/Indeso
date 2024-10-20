@@ -1,0 +1,53 @@
+.swiper-btns {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+
+  .swiper-btn {
+    path {
+      stroke: #c73731;
+    }
+  }
+  .swiper-button-disabled {
+    cursor: auto;
+    path {
+      stroke: #dcdbdb;
+    }
+  }
+  &.black-btns {
+    path {
+      stroke: #191919;
+    }
+    .swiper-button-disabled {
+      path {
+        stroke: #b0b0b0 !important;
+      }
+    }
+  }
+  &.black-btns.swiper-button-disabled {
+    background: red !important;
+  }
+}
+
+.swiper-numbers {
+  .swiper-pagination {
+    position: unset;
+    span {
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 37.5px;
+      color: #191919;
+    }
+    .swiper-pagination-total {
+      color: #dcdbdb;
+    }
+  }
+}
+
+.swiper-scrollbar {
+  height: 2px;
+  background: #dcdbdb;
+}
+.swiper-scrollbar-drag {
+  background: #c73731;
+}

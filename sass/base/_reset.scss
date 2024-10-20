@@ -39,6 +39,8 @@ select:focus {
 button {
   border: none;
   background: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 input:focus {
@@ -47,12 +49,6 @@ input:focus {
 a,
 span {
   display: inline-block;
-}
-a:active,
-a:focus {
-  outline: 0;
-  border: none;
-  -moz-outline-style: none;
 }
 
 body {
@@ -70,4 +66,37 @@ body {
 .container {
   max-width: 1173px;
   margin: 0 auto;
+}
+
+.list {
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &-item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -32px;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background: #c73731;
+    }
+  }
+
+  &.no-style {
+    .list-item {
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
