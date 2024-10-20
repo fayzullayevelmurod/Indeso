@@ -87,4 +87,45 @@ document.addEventListener('DOMContentLoaded', function () {
       draggable: true,
     },
   });
+
+  var swiper = new Swiper('.client-results__swiper', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    speed: 700,
+    on: {
+      slideChange: function () {
+        updateOpacity();
+      },
+      init: function () {
+        updateOpacity();
+      },
+      reachEnd: function () {
+        resetOpacity();
+      }
+    }
+  });
+
+  function updateOpacity() {
+    // Barcha slaydlarni olish
+    var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
+
+    // Barcha slaydlarning opacity ni boshlang'ich holatga qaytarish
+    slides.forEach(function (slide, index) {
+      if (index >= 4) {
+        slide.style.opacity = '0.5'; // 4-chidan keyingi slaydlarni .5 qilish
+      } else {
+        slide.style.opacity = '1';   // 4-tagacha bo'lgan slaydlarni to'liq ko'rinishga qaytarish
+      }
+    });
+  }
+
+  function resetOpacity() {
+    // Barcha slaydlarni olish
+    var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
+
+    // Oxirgi slaydga yetganda barcha slaydlar uchun opacity 1 qilish
+    slides.forEach(function (slide) {
+      slide.style.opacity = '1';
+    });
+  }
 });
