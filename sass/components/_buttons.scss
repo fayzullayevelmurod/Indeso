@@ -17,7 +17,11 @@
   }
 }
 
-.white-btn{
+.white-btn {
   border-color: #fff;
   color: #fff;
+
+  &:hover {
+    background: #a8241e;
+  }
 }

@@ -153,6 +153,9 @@ body {
   border-color: #fff;
   color: #fff;
 }
+.white-btn:hover {
+  background: #a8241e;
+}
 
 .accordions {
   display: flex;
