@@ -128,4 +128,53 @@ document.addEventListener('DOMContentLoaded', function () {
       slide.style.opacity = '1';
     });
   }
+
+  // articles-swiper
+  var articlesSwiper = new Swiper('.articles-swiper', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    speed: 700,
+    scrollbar: {
+      el: '.articles-swiper__scrollbar',
+      hide: false,
+      draggable: true,
+    },
+    navigation: {
+      nextEl: '.articles-swiper__next-btn',
+      prevEl: '.articles-swiper__prev-btn',
+    },
+  });
+
+  // modal-swiper
+  var modalSwiper = new Swiper('.modal-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    speed: 700,
+    navigation: {
+      nextEl: '.modal-swiper__next-btn',
+      prevEl: '.modal-swiper__prev-btn',
+    },
+  });
+
+  // modal
+  const modal = document.querySelector('.modal');
+  const modalBtn = document.querySelectorAll('.open-modal');
+  const closeModalBtn = document.querySelector('.modal-close');
+
+  modalBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('show');
+      document.body.classList.add('no-scroll');
+    });
+  })
+  closeModalBtn.addEventListener('click', () => {
+    modal.classList.remove('show');
+    document.body.classList.remove('no-scroll');
+  });
+  modal.addEventListener('click', () => {
+    if (event.target === modal) {
+      modal.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+    }
+  });
 });
