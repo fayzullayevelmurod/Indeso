@@ -119,8 +119,8 @@ body.no-scroll {
   color: #8e8c8c;
   transition: all 0.2s linear;
 }
-.breadcrumb-link:hover {
-  color: #191919;
+.breadcrumb-link:hover, .breadcrumb-link.active {
+  color: #dc6969;
 }
 
 .title {
@@ -576,7 +576,7 @@ body.no-scroll {
   width: 100%;
   height: 225px;
   object-fit: cover;
-  border-radius: inherit;
+  border-radius: 10px 10px 0 0;
 }
 .our-services__card .card-content {
   display: flex;
@@ -1399,6 +1399,204 @@ body.no-scroll {
   font-weight: 500;
   line-height: 22.4px;
   color: #9c9c9c;
+}
+
+.united-states__page .intro-content__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 67.2px;
+  text-align: left;
+}
+.united-states__page .intro-content__title span {
+  color: #4581c7;
+}
+.united-states__page .intro .company-info__list-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+.united-states__page .intro .company-info__list-item {
+  gap: 22px;
+  align-items: center;
+}
+.united-states__page .intro .company-info__list-item img {
+  padding-top: 0;
+}
+.united-states__page .intro .company-info__list {
+  gap: 30px;
+  margin: 0;
+}
+.united-states__page .intro {
+  margin-bottom: 200px;
+}
+.united-states__page .intro-content {
+  max-width: 768px;
+  width: 100%;
+  padding-top: 76px;
+}
+.united-states__page .intro-img__box {
+  position: absolute;
+  right: -73px;
+  top: 0;
+  width: 480px;
+  height: 434px;
+}
+.united-states__page .intro-img__box img {
+  width: 100%;
+  height: 100%;
+}
+.united-states__page .intro .bottom-content {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  margin-top: 60px;
+}
+.united-states__page .intro .btn {
+  width: 399px;
+  background: #c73731;
+  color: #dcdbdb;
+  border-color: transparent;
+}
+.united-states__page .market-research {
+  padding: 0;
+}
+.united-states__page .market-research .expert-profile {
+  gap: 128px;
+}
+.united-states__page .market-analysis .title {
+  margin-bottom: 60px;
+}
+.united-states__page .expert-profile__photo {
+  min-width: 343px;
+  height: 410px;
+  position: relative;
+  overflow: visible;
+}
+.united-states__page .expert-profile__photo .quote-box {
+  max-width: 344px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -133px;
+  right: -104px;
+  backdrop-filter: blur(8.1000003815px);
+  box-shadow: 0px 0px 9.8px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 20px 26px 22px 25px;
+  background: rgba(255, 255, 255, 0.9294117647);
+}
+.united-states__page .expert-profile__photo .quote-box__icon {
+  width: 26px;
+  height: 24px;
+}
+.united-states__page .expert-profile__photo .quote-box__desc {
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  color: #3d3d3d;
+}
+.united-states__page .expert-profile__photo .author {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  display: block;
+  text-align: right;
+}
+.united-states__page .market-analysis__container {
+  max-width: 100%;
+}
+.united-states__page .market-analysis__content {
+  width: 100%;
+  padding: 0;
+}
+.united-states__page .market-analysis__content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.united-states__page .market-analysis__slider {
+  width: 100%;
+  background: #c73731;
+  color: #fff;
+}
+.united-states__page .market-analysis__slider .desc {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: center;
+}
+.united-states__page .market-analysis__slider .swiper-btn path {
+  stroke: #dcdbdb !important;
+}
+.united-states__page .swiper-numbers .swiper-pagination span {
+  color: #fff;
+}
+.united-states__page .swiper-numbers .swiper-pagination .swiper-pagination-total {
+  color: rgba(251, 250, 250, 0.5019607843);
+}
+.united-states__page .consultation-invite {
+  padding-bottom: 0;
+}
+.united-states__page .consultation-invite__boxes {
+  align-items: center;
+}
+.united-states__page .faq-section .accordion-header__title {
+  color: #191919;
+}
+.united-states__page .faq-section .accordion-header.active .accordion-header__title {
+  color: #c73731;
+}
+
+.business-registration-info {
+  padding-bottom: 120px;
+}
+.business-registration-info__cards {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.business-registration-info .listes {
+  max-width: 720px;
+  width: 100%;
+}
+.business-registration-info .left-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.business-registration-info .left-box span {
+  font-size: 20px;
+  color: #191919;
+  font-weight: 500;
+  line-height: 30px;
+  width: 335px;
+}
+.business-registration-info__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.business-registration-info .box {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+  padding: 30px 0 10px 0;
+  border-bottom: 1px solid #b0b0b0;
+}
+.business-registration-info .right-box {
+  max-width: 300px;
+}
+.business-registration-info .right-box .box {
+  border: none;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+}
+.business-registration-info .right-box .desc {
+  padding-left: 52px;
 }
 
 .swiper-btns {

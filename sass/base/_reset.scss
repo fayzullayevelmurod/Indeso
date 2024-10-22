@@ -122,8 +122,9 @@ body {
     line-height: 21px;
     color: #8e8c8c;
     transition: all 0.2s linear;
-    &:hover {
-      color: #191919;
+    &:hover,
+    &.active {
+      color: #dc6969;
     }
   }
 }

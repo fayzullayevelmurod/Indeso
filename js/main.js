@@ -163,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   modalBtn.forEach(btn => {
     btn.addEventListener('click', () => {
+      console.log('worked');
       modal.classList.add('show');
       document.body.classList.add('no-scroll');
     });
