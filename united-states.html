@@ -578,7 +578,7 @@
       <!-- global-market-benefits -->
       <section class="global-market">
         <div class="container">
-          <h2 class="title">Преимущества выхода на международный рынок</h2>
+          <h2 class="title">Для чего нужна аналитика и бизнес-план при выходе на рынок США</h2>
           <div class="global-market__box">
             <ul class="global-market__list">
               <li class="global-market__list-item">
@@ -594,7 +594,12 @@
                 <span>Возможность найти новых инвесторов и выгодных бизнес-партнеров</span>
               </li>
             </ul>
-            <img class="global-market__img" src="images/big-globs.png" alt="globs img">
+            <div class="global-market__img">
+              <img src="images/big-globs.png" alt="globs img">
+              <p class="global-market__img-desc">
+                Исследование рынка и целевой аудитории необходимо, чтобы:
+              </p>
+            </div>
             <ul class="global-market__list">
               <li class="global-market__list-item">
                 <img src="images/icons/bold-next-up-arrow.svg" alt="">
@@ -788,6 +793,35 @@
       <section class="reviews">
         <div class="container">
           <h2 class="title">Отзывы</h2>
+          <!-- <div class="reviews-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="logo-card">
+                  <img src="images/logo/ey.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo-card">
+                  <img src="images/logo/theatre.png" alt="" width="62" height="62">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo-card">
+                  <img src="images/logo/orign.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo-card">
+                  <img src="images/logo/v.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="logo-card">
+                  <img src="images/logo/wine.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
       </section>
       <!-- reviews -->
@@ -804,7 +838,7 @@
               <img class="our-clients__logo" src="images/logo/onduline.png" alt="ey logo">
             </a>
             <a class="our-clients__logo-box" href="#!">
-              <img class="our-clients__logo" src="images/logo/hsb.png" alt="ey logo">
+              <img class="our-clients__logo" src="images/logo/hsb.svg" alt="ey logo">
             </a>
             <a class="our-clients__logo-box" href="#!">
               <img class="our-clients__logo" src="images/logo/rbs.png" alt="ey logo">
@@ -815,8 +849,8 @@
             <a class="our-clients__logo-box" href="#!">
               <img class="our-clients__logo" src="images/logo/lux.png" alt="ey logo">
             </a>
-            <a class="our-clients__logo-box" href="#!">
-              <img class="our-clients__logo" src="images/logo/nail-studio.png" alt="ey logo">
+            <a class="our-clients__logo-box nail-studio" href="#!">
+              <img class="our-clients__logo" src="images/logo/nail-studio.svg" alt="ey logo">
             </a>
             <a class="our-clients__logo-box" href="#!">
               <img class="our-clients__logo" src="images/logo/siberian.png" alt="ey logo">
@@ -882,10 +916,22 @@
           </div>
           <div class="contact-us__form">
             <h3 class="contact-us__form-title">Или оставьте заявку — мы свяжемся с вами в течение 24 часов</h3>
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Telegram или WhatsApp">
-            <input type="email" placeholder="Электронная почта">
-            <input type="email" placeholder="Ваш запрос">
+            <div class="input-box">
+              <label class="input-box__label">Имя</label>
+              <input class="input-box__input" type="text">
+            </div>
+            <div class="input-box">
+              <label class="input-box__label">Telegram или WhatsApp</label>
+              <input class="input-box__input number-input" type="tel">
+            </div>
+            <div class="input-box">
+              <label class="input-box__label">Электронная почта</label>
+              <input class="input-box__input" type="email">
+            </div>
+            <div class="input-box">
+              <label class="input-box__label">Ваш запрос</label>
+              <input class="input-box__input" type="email">
+            </div>
             <button class="btn">Связаться</button>
           </div>
         </div>
@@ -907,11 +953,14 @@
               </div>
               <div class="accordion-content">
                 <p class="accordion-content__desc">
-                  На основе исследования получится понять:
-                  перспективы роста, потенциальную выручку, прогноз продаж;
-                  уровень конкуренции, сильные и слабые стороны других компаний на рынке;
-                  предпочтения, установки, потребности и боли целевой аудитории;
-                  тенденции конкретной отрасли экономики и т.д.
+                  На основе исследования получится понять:</p>
+                <ul class="accordion-ul">
+                  <li>перспективы роста, потенциальную выручку, прогноз продаж;</li>
+                  <li>уровень конкуренции, сильные и слабые стороны других компаний на рынке;</li>
+                  <li>предпочтения, установки, потребности и боли целевой аудитории;</li>
+                  <li>тенденции конкретной отрасли экономики и т.д.</li>
+                </ul>
+                <p>
                   Эти данные помогут разработать эффективный бизнес-план и стратегию позиционирования, которые приведут
                   компанию к развитию с минимальными инвестициями.
                 </p>
@@ -927,8 +976,11 @@
               </div>
               <div class="accordion-content">
                 <p class="accordion-content__desc">
-                  Мы исследуем страны Европы, Азии, Ближнего Востока, Северной и Южной Америки. Чтобы узнать полный
-                  перечень, оставляйте заявку на нашем сайте.
+                  Прежде чем запускать бизнес, важно понять, насколько востребована продукция, сколько за нее готовы
+                  платить, как ее лучше продвигать и т.д. Также стоит рассмотреть альтернативные рынки, возможно, на них
+                  будут более выгодные условия старта при меньших затратах.
+                  То есть исследование поможет вам сэкономить тысячи долларов и избежать многих серьезных ошибок при
+                  запуске проекта.
                 </p>
               </div>
             </div>
@@ -942,8 +994,8 @@
               </div>
               <div class="accordion-content">
                 <p class="accordion-content__desc">
-                  Мы исследуем страны Европы, Азии, Ближнего Востока, Северной и Южной Америки. Чтобы узнать полный
-                  перечень, оставляйте заявку на нашем сайте.
+                  В среднем подготовка исследования занимает 3-4 недели. Однако в зависимости от сложности работы срок
+                  может меняться. Все детали обговариваются индивидуально с клиентом.
                 </p>
               </div>
             </div>
@@ -957,8 +1009,8 @@
               </div>
               <div class="accordion-content">
                 <p class="accordion-content__desc">
-                  Мы исследуем страны Европы, Азии, Ближнего Востока, Северной и Южной Америки. Чтобы узнать полный
-                  перечень, оставляйте заявку на нашем сайте.
+                  Мы общаемся с нашими клиентами на русском и английском языке. Исследования, консультации и
+                  бизнес-планы по запросу могут быть составлены на английском, французском или русском.
                 </p>
               </div>
             </div>
@@ -972,8 +1024,11 @@
               </div>
               <div class="accordion-content">
                 <p class="accordion-content__desc">
-                  Мы исследуем страны Европы, Азии, Ближнего Востока, Северной и Южной Америки. Чтобы узнать полный
-                  перечень, оставляйте заявку на нашем сайте.
+                  Мы имеем большой опыт работы в следующих направлениях: косметика, здоровье, витамины и пищевые
+                  добавки, продукты питания и напитки, детские продукты и товары, образование, ювелирная продукция,
+                  одежда и обувь, уход за домом, уход за животными. При работе с каждой из сфер учитываем рыночные,
+                  культурные особенности Америки и собираем актуальные данные, чтобы на их основе вы могли принять
+                  правильные решения и не потеряли деньги.
                 </p>
               </div>
             </div>
@@ -987,8 +1042,9 @@
               </div>
               <div class="accordion-content">
                 <p class="accordion-content__desc">
-                  Мы исследуем страны Европы, Азии, Ближнего Востока, Северной и Южной Америки. Чтобы узнать полный
-                  перечень, оставляйте заявку на нашем сайте.
+                  После определения четких задач исследования мы подбираем подходящую методологию:  сбор новых данных
+                  путем опросов и анкетирования, интервью, фокус-групп, наблюдений, социальное слушание или анализ уже
+                  существующих данных из отчетов, исследований, статей, интернет-ресурсов и внутренних данных компании.
                 </p>
               </div>
             </div>
@@ -1001,10 +1057,34 @@
                 </button>
               </div>
               <div class="accordion-content">
-                <p class="accordion-content__desc">
-                  Мы исследуем страны Европы, Азии, Ближнего Востока, Северной и Южной Америки. Чтобы узнать полный
-                  перечень, оставляйте заявку на нашем сайте.
-                </p>
+                <div class="desc-box">
+                  <p class="accordion-content__desc">
+                    Этап 1. Определение целей исследования и формулирование ключевых вопросов, на которые нужно получить
+                    ответы.
+                  </p>
+                  <p class="accordion-content__desc">
+                    Этап 2. Планирование исследования. Выбор подходящей методологии и определение выборки 
+                  </p>
+                  <p class="accordion-content__desc">
+                    Этап 3. Сбор данных путем опросов, интервью, фокус-групп, наблюдений и экспериментов или анализ уже
+                    существующих данных из отчетов, исследований, статей, интернет-ресурсов и внутренних данных
+                    компании.
+                  </p>
+                  <p class="accordion-content__desc">
+                    Этап 4. Анализ данных
+                  </p>
+                  <p class="accordion-content__desc">
+                    Этап 5. Интерпретация результатов. Выводы и рекомендации
+                  </p>
+                  <p class="accordion-content__desc">
+                    Этап 6. Отчетность и презентация результатов
+                  </p>
+                  <p class="accordion-content__desc">
+                    Проведение комплексного исследования позволяет компаниям лучше понять рынок, поведение потребителей
+                    и их нужды, что помогает в разработке эффективных маркетинговых стратегий и принятии обоснованных
+                    бизнес-решений.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="accordion">
@@ -1017,8 +1097,7 @@
               </div>
               <div class="accordion-content">
                 <p class="accordion-content__desc">
-                  Мы исследуем страны Европы, Азии, Ближнего Востока, Северной и Южной Америки. Чтобы узнать полный
-                  перечень, оставляйте заявку на нашем сайте.
+                  Свяжитесь с нами, и мы предоставим Вам примеры наших работ.
                 </p>
               </div>
             </div>
@@ -1211,65 +1290,17 @@
                     <ul class="accordion-list">
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Сингапур</span>
+                        <span>Катар</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Южная Корея</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Гонконг</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Япония</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Малайзия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Индонезия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Филиппины</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Таиланд</span>
+                        <span>Турция</span>
                       </li>
                     </ul>
                     <ul class="accordion-list">
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Вьетнам</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Индия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Казахстан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Кыргызстан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Узбекистан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Таджикистан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Туркменистан</span>
+                        <span>Саудовская Аравия</span>
                       </li>
                     </ul>
                   </div>
@@ -1288,65 +1319,41 @@
                     <ul class="accordion-list">
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Сингапур</span>
+                        <span>Франция</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Южная Корея</span>
+                        <span>Германия</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Гонконг</span>
+                        <span>Болгария</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Япония</span>
+                        <span>Португалия</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Малайзия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Индонезия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Филиппины</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Таиланд</span>
+                        <span>Бельгия</span>
                       </li>
                     </ul>
                     <ul class="accordion-list">
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Вьетнам</span>
+                        <span>Люксембург</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Индия</span>
+                        <span>Испания</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Казахстан</span>
+                        <span>Польша</span>
                       </li>
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Кыргызстан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Узбекистан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Таджикистан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Туркменистан</span>
+                        <span>Нидерланды</span>
                       </li>
                     </ul>
                   </div>
@@ -1365,65 +1372,13 @@
                     <ul class="accordion-list">
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Сингапур</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Южная Корея</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Гонконг</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Япония</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Малайзия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Индонезия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Филиппины</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Таиланд</span>
+                        <span>Канада</span>
                       </li>
                     </ul>
                     <ul class="accordion-list">
                       <li class="accordion-list__item">
                         <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Вьетнам</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Индия</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Казахстан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Кыргызстан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Узбекистан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Таджикистан</span>
-                      </li>
-                      <li class="accordion-list__item">
-                        <img src="images/icons/bold-next-up-arrow.svg" alt="next-upp-arrow" width="11" height="11">
-                        <span>Туркменистан</span>
+                        <span>Панама</span>
                       </li>
                     </ul>
                   </div>
@@ -1993,6 +1948,8 @@
 
   <!-- swiper js -->
   <script src="./libs/swiper/swiper.min.js"></script>
+  <!-- imask -->
+  <script src="https://unpkg.com/imask"></script>
   <!-- custom js -->
   <script src="./js/main.js"></script>
 </body>

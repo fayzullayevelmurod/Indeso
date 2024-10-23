@@ -57,6 +57,21 @@
       align-items: start;
       justify-content: space-between;
     }
+    .accordion-ul {
+      list-style: disc;
+      padding-left: 28px;
+      li {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: #191919;
+      }
+    }
+    .desc-box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
   &-list {
     display: flex;

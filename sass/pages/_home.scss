@@ -4,6 +4,10 @@
   .container {
     position: relative;
   }
+  .red-btn {
+    max-width: 423px;
+    width: 100%;
+  }
   &-map {
     position: absolute;
     top: 100px;
@@ -49,9 +53,21 @@
 // our-services
 .our-services {
   .title-box {
-    border-bottom: 1px solid #dcdbdb;
     padding-bottom: 30px;
     margin-bottom: 62px;
+    position: relative;
+    gap: 20px;
+    .sub-title {
+      color: #3d3d3d;
+    }
+  }
+  .swiper-scrollbar {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .our-services__swiper {
+    position: relative;
   }
   .swiper-btns {
     justify-content: end;
@@ -103,7 +119,7 @@
     }
     &-back {
       position: absolute;
-      top: -100%;
+      top: -105%;
       left: 0;
       z-index: 2;
       background: #fff;
@@ -149,6 +165,7 @@
 // exploration-countries
 .exploration-countries {
   &__swiper {
+    position: relative;
     margin: 60px 0 47px 0;
     .swiper-slide {
       height: unset !important;
@@ -161,9 +178,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0px 0px 13.9px 0px #9d9c9c40;
     &-img {
       width: 100%;
       height: 225px;
+      object-fit: cover;
     }
     &-title {
       font-size: 24px;
@@ -197,6 +216,7 @@
       &-img {
         width: 100%;
         height: 100%;
+        object-fit: contain;
       }
     }
     .accordions {
@@ -216,6 +236,7 @@
     align-items: start;
     justify-content: space-between;
     margin-top: 60px;
+    gap: 15px;
   }
   .desc-box {
     display: flex;
@@ -237,6 +258,7 @@
       .market-research__card-img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -276,10 +298,12 @@
   .expert-profile {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     &__photo {
       border-radius: 10px;
       overflow: hidden;
-      width: 400px;
+      min-width: 400px;
+      max-width: 400px;
       height: 511px;
       img {
         width: 100%;
@@ -302,6 +326,10 @@
     display: flex;
     gap: 31px;
     margin-top: 60px;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   &__card {
     background-color: #fff;
@@ -407,6 +435,24 @@
   &__img {
     max-width: 363px;
     width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &-desc {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+      max-width: 261px;
+      width: 100%;
+      color: #3d3d3d;
+    }
   }
   &__list {
     display: flex;
@@ -639,8 +685,14 @@
 .client-results {
   padding: 120px 0;
   &__swiper {
+    position: relative;
     margin-top: 60px;
-
+    .swiper-scrollbar {
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: none;
+    }
     .swiper-wrapper {
       align-items: stretch;
     }
@@ -702,9 +754,15 @@
     align-items: start;
     justify-content: space-between;
     margin-top: 60px;
+    overflow-x: auto;
+    margin-right: -50px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   &__card {
-    width: 333px;
+    min-width: 333px;
+    max-width: 333px;
     &-top {
       text-align: center;
       padding-bottom: 30px;
@@ -743,18 +801,61 @@
 // reviews
 .reviews {
   padding: 120px 0;
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+
+  .logo-item {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+
+  .logo-item.active {
+    opacity: 1;
+    transform: scale(1.2); /* Active logo uchun katta ko'rinish */
+  }
+
+  .logo-item.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* O'rtadagi logo ustun bo'lishi uchun */
+  }
+
+  .content-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
 }
 // reviews
 
 // our-clients
 .our-clients {
-  margin-bottom: 120px;
+  margin: 120px 0;
   &__boxes {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 43px;
+  }
+  .nail-studio {
+    transition: all 0.2s linear;
+    &:hover {
+      background: #000;
+    }
   }
   &__logo-box {
     width: 174px;
@@ -850,6 +951,27 @@
     gap: 30px;
     max-width: 470px;
     margin-left: auto;
+    .input-box {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        color: #8e8c8c;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        z-index: -1;
+        transition: all 0.2s linear;
+        &.active {
+          bottom: 39px;
+          font-size: 10px;
+          line-height: 11.72px;
+        }
+      }
+    }
     &-title {
       font-size: 24px;
       font-weight: 500;
@@ -858,10 +980,11 @@
       color: #8e8c8c;
     }
     input {
-      font-size: 14px;
+      width: 100%;
+      font-size: 16px;
       font-weight: 400;
-      line-height: 16.41px;
-      color: #8e8c8c;
+      line-height: 18.75px;
+      color: #3d3d3d;
       padding-bottom: 10px;
       border: none;
       border-bottom: 1px solid #b0b0b0;
@@ -917,6 +1040,19 @@
   &-swiper {
     margin-top: 60px;
     padding-top: 50px;
+  }
+  .heart-btn {
+    path {
+      fill: transparent;
+      stroke: #b0b0b0;
+      transition: all 0.2s linear;
+    }
+    &.active {
+      path {
+        fill: #c73731;
+        stroke: #c73731;
+      }
+    }
   }
   .swiper-wrapper {
     align-items: stretch;
@@ -988,3 +1124,7 @@
   }
 }
 //articles
+
+.media-block {
+  display: none;
+}

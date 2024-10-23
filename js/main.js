@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
   "use strict";
+  // header
+  const openHeaderMenu = document.querySelector('.open-menu__btn');
+  const closeMenuBtn = document.querySelector('.close-menu');
+  const headerMenu = document.querySelector('.header-right__box');
+
+  openHeaderMenu.addEventListener('click', () => {
+    headerMenu.classList.add('show');
+    document.body.classList.add('no-scroll');
+  })
+  closeMenuBtn.addEventListener('click', () => {
+    headerMenu.classList.remove('show');
+    document.body.classList.remove('no-scroll');
+  })
 
   var swiper = new Swiper('.our-services__swiper', {
     slidesPerView: 3.5,
@@ -9,6 +22,29 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.our-services__swiper-next-btn',
       prevEl: '.our-services__swiper-prev-btn',
     },
+    scrollbar: {
+      el: '.our-services__slider-scroll-bar',
+      hide: false,
+      draggable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.1,
+        spaceBetween: 30,
+      },
+      720: {
+        slidesPerView: 2.1,
+        spaceBetween: 30,
+      },
+      850: {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+      },
+    }
   });
 
   //exploration-countries__swiper
@@ -20,6 +56,24 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.exploration-countries__swiper-next-btn',
       prevEl: '.exploration-countries__swiper-prev-btn',
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      720: {
+        slidesPerView: 1.8,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 130,
+      },
+    }
   });
 
 
@@ -102,6 +156,34 @@ document.addEventListener('DOMContentLoaded', function () {
       reachEnd: function () {
         resetOpacity();
       }
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        scrollbar: {
+          el: '.client-results__swiper-scrollbar',
+          hide: false,
+          draggable: true,
+        },
+      },
+      720: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        scrollbar: {
+          el: '.client-results__swiper-scrollbar',
+          hide: false,
+          draggable: true,
+        },
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
     }
   });
 
@@ -237,3 +319,49 @@ try {
 } catch (error) {
 
 }
+
+// heart btn
+const articlesCardFooter = document.querySelectorAll('.articles-card__footer');
+
+articlesCardFooter.forEach(footer => {
+  const heartBtn = footer.querySelector('.heart-btn');
+  heartBtn.addEventListener('click', () => {
+    heartBtn.classList.toggle('active');
+  })
+})
+
+
+// input box
+const inputBox = document.querySelectorAll('.input-box');
+inputBox.forEach(item => {
+  const input = item.querySelector('.input-box__input');
+  const label = item.querySelector('.input-box__label');
+
+  // Focus event: inputga focus tushganda active class qo'shish
+  input.addEventListener('focus', () => {
+    label.classList.add('active');
+  });
+
+  // Blur event: inputdan focus olinganda active classni olib tashlash
+  input.addEventListener('blur', () => {
+    if (input.value.trim() === '') { // Agar qiymat kiritilmagan bo'lsa
+      label.classList.remove('active');
+    }
+  });
+
+  // Change event: qiymat kiritilganda active class doimiy qoladi
+  input.addEventListener('change', () => {
+    if (input.value.trim() !== '') {
+      label.classList.add('active');
+    }
+  });
+});
+
+// input mask
+const numberInputs = document.querySelectorAll('.number-input');
+numberInputs.forEach(input => {
+  IMask(input, {
+    mask: '+{7}(000)000-00-00'
+  });
+});
+
