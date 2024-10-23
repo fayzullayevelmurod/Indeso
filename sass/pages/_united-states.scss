@@ -105,6 +105,10 @@
   }
   .market-analysis__container {
     max-width: 100%;
+    width: 100%;
+    .swiper-slide {
+      display: flex;
+    }
   }
   .market-analysis__content {
     width: 100%;
@@ -153,6 +157,78 @@
         .accordion-header__title {
           color: #c73731;
         }
+      }
+    }
+  }
+  .business-analytics__pagination {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    z-index: 10;
+    width: fit-content;
+    left: unset;
+    height: fit-content;
+    span {
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 37.5px;
+      color: #f5f5f5;
+    }
+    .swiper-pagination-total {
+      color: #fbfafa80;
+    }
+  }
+  .business-analytics {
+    min-height: 391px;
+  }
+  .business-analytics__swiper {
+    z-index: 1;
+    .business-analytics__text {
+      flex-direction: column;
+      gap: 60px;
+      text-align: center;
+      padding: 72px 40px 40px 40px;
+
+      &.last {
+        text-align: left;
+        justify-content: start;
+        padding-top: 58px;
+        .desc-box {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .business-analytics__desc {
+          font-size: 20px;
+          line-height: 24.2px;
+          text-align: left;
+          max-width: 100%;
+        }
+        .btn {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+    }
+    .business-analytics__desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29.05px;
+      text-align: center;
+    }
+    .swiper-btns {
+      gap: 60px;
+    }
+    .swiper-btn {
+      path {
+        stroke: #f5f5f5;
+      }
+    }
+    .swiper-button-disabled {
+      path {
+        stroke: #dcdbdb !important;
       }
     }
   }

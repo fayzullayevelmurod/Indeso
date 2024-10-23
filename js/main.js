@@ -179,3 +179,61 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+//
+try {
+  // // business-analytics__swiper
+  // var swiper = new Swiper('.business-analytics__swiper', {
+  //   slidesPerView: 1,
+  //   spaceBetween: 30,
+  //   speed: 700,
+  //   // effect: fade,
+  //   navigation: {
+  //     nextEl: '.business-analytics__swiper-next',
+  //     prevEl: '.business-analytics__swiper-prev',
+  //   },
+  //   pagination: {
+  //     el: '.business-analytics__pagination',  // Pagination elementi
+  //     type: 'fraction', // Pagination turini raqamli fraction qilish
+  //     renderFraction: function (currentClass, totalClass) {
+  //       return '<span class="' + currentClass + '"></span>' +
+  //         '<span> / </span>' +
+  //         '<span class="' + totalClass + '"></span>';
+  //     }
+  //   },
+  // });
+  var swiper = new Swiper('.business-analytics__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    // speed: 700,
+    navigation: {
+      nextEl: '.business-analytics__swiper-next',
+      prevEl: '.business-analytics__swiper-prev',
+    },
+    pagination: {
+      el: '.business-analytics__pagination',
+      type: 'fraction',
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+          '<span> / </span>' +
+          '<span class="' + totalClass + '"></span>';
+      }
+    },
+    on: {
+      reachEnd: function () {
+        document.querySelector('.business-analytics__pagination').style.display = 'none';
+      },
+      slideChange: function () {
+        if (!this.isEnd) {
+          document.querySelector('.business-analytics__pagination').style.display = 'block';
+        }
+      }
+    }
+  });
+} catch (error) {
+
+}
