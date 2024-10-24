@@ -1,0 +1,155 @@
+.country-intro {
+  background: url(../../images/country-bg.png) no-repeat;
+  background-size: cover;
+  padding: 244px 0 247px 0;
+  margin-bottom: 120px;
+  &__title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 67.2px;
+    color: #000;
+    margin-bottom: 80px;
+  }
+  .red-btn {
+    max-width: 399px;
+    &:hover {
+      background: #f5f5f5;
+      color: #c73731;
+      border-color: transparent;
+      box-shadow: 0px 0px 10px 0px #4e060699 inset;
+    }
+  }
+  &__desc {
+    display: none;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 39.2px;
+    margin: 60px 0;
+  }
+}
+
+.country-page {
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .lists {
+    .list-left {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      width: 250px;
+    }
+    .lists-box {
+      display: flex;
+      align-items: center;
+      gap: 90px;
+      border-bottom: 1px solid #b0b0b0;
+      padding: 38px 0 18px 0;
+    }
+    .list-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    .list-info {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .accordion-header {
+    justify-content: start;
+    gap: 60px;
+  }
+  .accordions {
+    gap: 20px;
+    max-width: 1170px;
+  }
+  .accordion {
+    border: none;
+  }
+  .breadcrumb {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .country-intro {
+    padding: 265px 0 342px 0;
+    position: relative;
+    background: linear-gradient(
+        90deg,
+        #f5f5f5 16.5%,
+        rgba(245, 245, 245, 0) 106.47%
+      ),
+      url(../../images/country-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .country-intro__title {
+    margin-bottom: 0;
+  }
+  .country-intro {
+    &__desc {
+      display: block;
+    }
+  }
+  .country-page .breadcrumb {
+    padding: 100px 50px 20px 50px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .country-intro {
+    padding: 140px 0 108px 0;
+    .red-btn {
+      max-width: 100%;
+      font-size: 14px;
+      height: 56px;
+    }
+  }
+  .country-intro__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44.8px;
+  }
+  .country-intro__desc {
+    font-size: 22px;
+    line-height: 30.8px;
+  }
+  .our-services .btn {
+    width: 100%;
+  }
+  .country-page .lists .list-title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .country-page .lists .list-info {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .country-page .lists .list-left {
+    gap: 10px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .country-page .lists .lists-box {
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .accordion-content {
+    padding-top: 0;
+  }
+  .country-page .accordion-header {
+    gap: 10px;
+  }
+  .country-page .breadcrumb {
+    padding: 80px 50px 10px 50px;
+  }
+}
