@@ -1452,10 +1452,22 @@
           </div>
           <div class="contact-us__form">
             <h3 class="contact-us__form-title">Или оставьте заявку — мы свяжемся с вами в течение 24 часов</h3>
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Telegram или WhatsApp">
-            <input type="email" placeholder="Электронная почта">
-            <input type="email" placeholder="Ваш запрос">
+            <div class="input-box">
+              <label class="input-box__label">Имя</label>
+              <input class="input-box__input" type="text">
+            </div>
+            <div class="input-box">
+              <label class="input-box__label">Telegram или WhatsApp</label>
+              <input class="input-box__input number-input" type="tel">
+            </div>
+            <div class="input-box">
+              <label class="input-box__label">Электронная почта</label>
+              <input class="input-box__input" type="email">
+            </div>
+            <div class="input-box">
+              <label class="input-box__label">Ваш запрос</label>
+              <input class="input-box__input" type="email">
+            </div>
             <button class="btn">Связаться</button>
           </div>
         </div>
@@ -1876,7 +1888,7 @@
   </div>
 
   <!-- modals -->
-  <div class="modal show">
+  <div class="modal">
     <div class="modal-content">
       <button class="modal-close">
         <img src="images/icons/modal-close.svg" alt="">
@@ -2115,6 +2127,8 @@
 
   <!-- swiper js -->
   <script src="./libs/swiper/swiper.min.js"></script>
+  <!-- imask -->
+  <script src="https://unpkg.com/imask"></script>
   <!-- custom js -->
   <script src="./js/main.js"></script>
 </body>
