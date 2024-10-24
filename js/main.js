@@ -78,36 +78,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   // accordion
-  const accordionsContainer = document.querySelectorAll('.accordions'); // Bir nechta accordion bo'limlari bo'lishi mumkin
+  const accordionsContainer = document.querySelectorAll('.accordions');
 
-  accordionsContainer.forEach((container) => {
-    const accordions = container.querySelectorAll('.accordion');
+  if (accordionsContainer) {
+    accordionsContainer.forEach((container) => {
+      const accordions = container.querySelectorAll('.accordion');
 
-    const firstAccordionContent = accordions[0].querySelector('.accordion-content');
-    const firstAccordionHeader = accordions[0].querySelector('.accordion-header');
-    firstAccordionContent.classList.add('show');
-    firstAccordionHeader.classList.add('active');
+      const firstAccordionContent = accordions[0].querySelector('.accordion-content');
+      const firstAccordionHeader = accordions[0].querySelector('.accordion-header');
+      firstAccordionContent.classList.add('show');
+      firstAccordionHeader.classList.add('active');
 
-    accordions.forEach((accordion) => {
-      const accordionHeader = accordion.querySelector('.accordion-header');
-      const accordionContent = accordion.querySelector('.accordion-content');
+      accordions.forEach((accordion) => {
+        const accordionHeader = accordion.querySelector('.accordion-header');
+        const accordionContent = accordion.querySelector('.accordion-content');
 
-      accordionHeader.addEventListener('click', () => {
-        accordions.forEach((otherAccordion) => {
-          const otherHeader = otherAccordion.querySelector('.accordion-header');
-          const otherContent = otherAccordion.querySelector('.accordion-content');
+        accordionHeader.addEventListener('click', () => {
+          accordions.forEach((otherAccordion) => {
+            const otherHeader = otherAccordion.querySelector('.accordion-header');
+            const otherContent = otherAccordion.querySelector('.accordion-content');
 
-          if (otherAccordion !== accordion) {
-            otherContent.classList.remove('show');
-            otherHeader.classList.remove('active');
-          }
+            if (otherAccordion !== accordion) {
+              otherContent.classList.remove('show');
+              otherHeader.classList.remove('active');
+            }
+          });
+
+          accordionContent.classList.add('show');
+          accordionHeader.classList.add('active');
         });
-
-        accordionContent.classList.add('show');
-        accordionHeader.classList.add('active');
       });
     });
-  });
+  }
 
   var swiper = new Swiper('.market-analysis__swiper', {
     slidesPerView: 1,
@@ -253,128 +255,146 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // modal
   const modal = document.querySelector('.modal');
-  const modalBtn = document.querySelectorAll('.open-modal');
-  const closeModalBtn = document.querySelector('.modal-close');
+  if (modal) {
+    const modalBtn = document.querySelectorAll('.open-modal');
+    const closeModalBtn = document.querySelector('.modal-close');
 
-  modalBtn.forEach(btn => {
-    btn.addEventListener('click', () => {
-      console.log('worked');
-      modal.classList.add('show');
-      document.body.classList.add('no-scroll');
-    });
-  })
-  closeModalBtn.addEventListener('click', () => {
-    modal.classList.remove('show');
-    document.body.classList.remove('no-scroll');
-  });
-  modal.addEventListener('click', () => {
-    if (event.target === modal) {
+    modalBtn.forEach(btn => {
+      btn.addEventListener('click', () => {
+        console.log('worked');
+        modal.classList.add('show');
+        document.body.classList.add('no-scroll');
+      });
+    })
+    closeModalBtn.addEventListener('click', () => {
       modal.classList.remove('show');
       document.body.classList.remove('no-scroll');
-    }
-  });
-});
-
-//
-try {
-  // // business-analytics__swiper
-  // var swiper = new Swiper('.business-analytics__swiper', {
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   speed: 700,
-  //   // effect: fade,
-  //   navigation: {
-  //     nextEl: '.business-analytics__swiper-next',
-  //     prevEl: '.business-analytics__swiper-prev',
-  //   },
-  //   pagination: {
-  //     el: '.business-analytics__pagination',  // Pagination elementi
-  //     type: 'fraction', // Pagination turini raqamli fraction qilish
-  //     renderFraction: function (currentClass, totalClass) {
-  //       return '<span class="' + currentClass + '"></span>' +
-  //         '<span> / </span>' +
-  //         '<span class="' + totalClass + '"></span>';
-  //     }
-  //   },
-  // });
-  var swiper = new Swiper('.business-analytics__swiper', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true,
-    },
-    // speed: 700,
-    navigation: {
-      nextEl: '.business-analytics__swiper-next',
-      prevEl: '.business-analytics__swiper-prev',
-    },
-    pagination: {
-      el: '.business-analytics__pagination',
-      type: 'fraction',
-      renderFraction: function (currentClass, totalClass) {
-        return '<span class="' + currentClass + '"></span>' +
-          '<span> / </span>' +
-          '<span class="' + totalClass + '"></span>';
+    });
+    modal.addEventListener('click', () => {
+      if (event.target === modal) {
+        modal.classList.remove('show');
+        document.body.classList.remove('no-scroll');
       }
-    },
-    on: {
-      reachEnd: function () {
-        document.querySelector('.business-analytics__pagination').style.display = 'none';
+    });
+  }
+
+  //
+  try {
+    var swiper = new Swiper('.business-analytics__swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
       },
-      slideChange: function () {
-        if (!this.isEnd) {
-          document.querySelector('.business-analytics__pagination').style.display = 'block';
+      // speed: 700,
+      navigation: {
+        nextEl: '.business-analytics__swiper-next',
+        prevEl: '.business-analytics__swiper-prev',
+      },
+      pagination: {
+        el: '.business-analytics__pagination',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' +
+            '<span> / </span>' +
+            '<span class="' + totalClass + '"></span>';
+        }
+      },
+      on: {
+        reachEnd: function () {
+          document.querySelector('.business-analytics__pagination').style.display = 'none';
+        },
+        slideChange: function () {
+          if (!this.isEnd) {
+            document.querySelector('.business-analytics__pagination').style.display = 'block';
+          }
         }
       }
+    });
+  } catch (error) {
+
+  }
+
+  // heart btn
+  const articlesCardFooter = document.querySelectorAll('.articles-card__footer');
+
+  if (articlesCardFooter) {
+    articlesCardFooter.forEach(footer => {
+      const heartBtn = footer.querySelector('.heart-btn');
+      heartBtn.addEventListener('click', () => {
+        heartBtn.classList.toggle('active');
+      })
+    })
+  }
+
+
+  // input box
+  try {
+    const inputBox = document.querySelectorAll('.input-box');
+    if (inputBox) {
+      inputBox.forEach(item => {
+        const input = item.querySelector('.input-box__input');
+        const label = item.querySelector('.input-box__label');
+
+        // Focus event: inputga focus tushganda active class qo'shish
+        input.addEventListener('focus', () => {
+          label.classList.add('active');
+        });
+
+        // Blur event: inputdan focus olinganda active classni olib tashlash
+        input.addEventListener('blur', () => {
+          if (input.value.trim() === '') { // Agar qiymat kiritilmagan bo'lsa
+            label.classList.remove('active');
+          }
+        });
+
+        // Change event: qiymat kiritilganda active class doimiy qoladi
+        input.addEventListener('change', () => {
+          if (input.value.trim() !== '') {
+            label.classList.add('active');
+          }
+        });
+      });
     }
+  } catch (error) {
+
+  }
+
+  // input mask
+  const numberInputs = document.querySelectorAll('.number-input');
+  if (numberInputs) {
+    numberInputs.forEach(input => {
+      IMask(input, {
+        mask: '+{7}(000)000-00-00'
+      });
+    });
+  }
+
+});
+
+
+try {
+  document.querySelectorAll('.more-comment__btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      // Tugma ostidagi barcha child-comment elementlarini olamiz
+      let sibling = this.nextElementSibling;
+
+      // Sibling elementlarni child-comment ekanligini tekshirib, toggle qilamiz
+      while (sibling && sibling.classList.contains('child-comment')) {
+        sibling.classList.toggle('hide');
+        sibling = sibling.nextElementSibling; // Keyingi aka-uka elementga o'tamiz
+      }
+
+      // Tugma ichidagi span elementini topamiz va matnini o'zgartiramiz
+      const span = this.querySelector('span');
+      if (span.textContent.trim() === "Свернуть ветку") {
+        span.textContent = "Развернуть ветку";
+      } else {
+        span.textContent = "Свернуть ветку";
+      }
+    });
   });
 } catch (error) {
 
 }
-
-// heart btn
-const articlesCardFooter = document.querySelectorAll('.articles-card__footer');
-
-articlesCardFooter.forEach(footer => {
-  const heartBtn = footer.querySelector('.heart-btn');
-  heartBtn.addEventListener('click', () => {
-    heartBtn.classList.toggle('active');
-  })
-})
-
-
-// input box
-const inputBox = document.querySelectorAll('.input-box');
-inputBox.forEach(item => {
-  const input = item.querySelector('.input-box__input');
-  const label = item.querySelector('.input-box__label');
-
-  // Focus event: inputga focus tushganda active class qo'shish
-  input.addEventListener('focus', () => {
-    label.classList.add('active');
-  });
-
-  // Blur event: inputdan focus olinganda active classni olib tashlash
-  input.addEventListener('blur', () => {
-    if (input.value.trim() === '') { // Agar qiymat kiritilmagan bo'lsa
-      label.classList.remove('active');
-    }
-  });
-
-  // Change event: qiymat kiritilganda active class doimiy qoladi
-  input.addEventListener('change', () => {
-    if (input.value.trim() !== '') {
-      label.classList.add('active');
-    }
-  });
-});
-
-// input mask
-const numberInputs = document.querySelectorAll('.number-input');
-numberInputs.forEach(input => {
-  IMask(input, {
-    mask: '+{7}(000)000-00-00'
-  });
-});
-

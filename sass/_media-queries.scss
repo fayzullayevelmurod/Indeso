@@ -473,8 +473,13 @@
     // justify-content: space-between;
     gap: 55px;
   }
-  .footer {
-    padding: 50px 0;
+  .footer .container {
+    padding-top: 50px;
+    padding-right: 50px;
+    .top-btn {
+      right: 35px;
+      top: -104px;
+    }
   }
 }
 
@@ -894,6 +899,9 @@
         line-height: 19.2px;
       }
     }
+  }
+  .footer .container .top-btn {
+    display: none;
   }
 }
 

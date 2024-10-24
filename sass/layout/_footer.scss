@@ -1,6 +1,17 @@
 .footer {
   background-color: #fff;
-  padding: 88px 0 22px 0;
+  .container {
+    position: relative;
+    padding-top: 88px;
+    padding-bottom: 22px;
+  }
+  .top-btn {
+    position: absolute;
+    top: -11px;
+    width: 44px;
+    height: 44px;
+    right: 0;
+  }
   &-top {
     padding-bottom: 50px;
     border-bottom: 1px solid #dcdbdb;
