@@ -49,6 +49,12 @@
     min-width: 250px;
     max-width: 250px;
   }
+  .footer-top {
+    gap: 50px;
+  }
+  .footer-left__box {
+    gap: 50px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -222,15 +228,9 @@
     font-size: 24px;
     line-height: 28px;
   }
-  .our-services .swiper-slide {
-    // padding-bottom: ;
-  }
   .title {
     font-size: 36px;
     line-height: 50.4px;
-  }
-  .our-services .swiper-slide {
-    padding-bottom: 125px;
   }
   .exploration-countries {
     .title-box {
@@ -432,8 +432,7 @@
   .market-research-beneficiaries__cards {
     gap: 80px;
   }
-  .our-clients,
-  .faq-section {
+  .our-clients {
     margin: 100px 0;
   }
   .contact-us {
@@ -450,6 +449,32 @@
       max-width: 100%;
     }
   }
+  .articles {
+    padding-bottom: 100px;
+    .swiper-btns {
+      display: none;
+    }
+    .articles-swiper {
+      margin-right: -50px;
+      margin-top: 40px;
+      padding-top: 26px;
+    }
+    .swiper-slide {
+      height: initial !important;
+    }
+  }
+  .footer-top {
+    flex-direction: column;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+  .footer-left__box {
+    // justify-content: space-between;
+    gap: 55px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -461,6 +486,7 @@
   .title {
     font-size: 28px;
     line-height: 39.2px;
+    min-width: 328px;
   }
   .intro-content__title {
     font-size: 32px;
@@ -762,9 +788,11 @@
       display: none;
     }
   }
-  .our-clients,
-  .faq-section {
+  .our-clients {
     margin: 80px 0;
+  }
+  .faq-section {
+    padding: 80px 0;
   }
   .contact-us .contact-us__cards {
     flex-direction: column;
@@ -814,6 +842,54 @@
   }
   .faq-section .accordion-header {
     padding-left: 0;
+  }
+  .articles-card__title {
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .articles-card__content {
+    gap: 10px;
+    min-height: 54%;
+  }
+  .articles {
+    padding-bottom: 80px;
+  }
+  .articles-swiper__scrollbar {
+    width: calc(100% - 50px) !important;
+  }
+  .breadcrumb-link {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .breadcrumb {
+    padding-bottom: 12px;
+  }
+  .footer-left__box {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer-top {
+    gap: 50px;
+  }
+  .footer-right__box {
+    align-items: start;
+    justify-content: space-between;
+  }
+  .footer {
+    padding-bottom: 34px;
+  }
+  .footer-bottom {
+    gap: 27px;
+    flex-direction: column;
+  }
+  .footer-right__box {
+    ul:last-child {
+      max-width: 136px;
+      .footer-link {
+        font-size: 12px;
+        line-height: 19.2px;
+      }
+    }
   }
 }
 

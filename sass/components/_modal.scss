@@ -106,3 +106,12 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .modal .swiper {
+    margin: 104px 96px 81px 96px;
+  }
+  .modal-content {
+    max-width: 451px;
+  }
+}

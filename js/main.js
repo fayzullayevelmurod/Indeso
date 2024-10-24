@@ -225,6 +225,24 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: '.articles-swiper__next-btn',
       prevEl: '.articles-swiper__prev-btn',
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
+      720: {
+        slidesPerView: 2.1,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    }
   });
 
   // modal-swiper
