@@ -131,6 +131,7 @@
         padding: 10px;
         height: 100%;
         width: 100%;
+        padding: 10px 20px;
       }
     }
     .contact-btn {
@@ -486,7 +487,10 @@
   .title {
     font-size: 28px;
     line-height: 39.2px;
-    min-width: 328px;
+  }
+  .united-states__page .business-analytics__swiper .business-analytics__text {
+    padding-left: 13px;
+    padding-right: 13px;
   }
   .intro-content__title {
     font-size: 32px;

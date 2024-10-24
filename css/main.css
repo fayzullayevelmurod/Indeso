@@ -37,6 +37,13 @@ select:focus {
   box-shadow: none !important;
 }
 
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
 button {
   border: none;
   background: none;
@@ -1692,6 +1699,13 @@ body.no-scroll {
 .united-states__page .intro-content__title span {
   color: #4581c7;
 }
+.united-states__page .intro-info {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 39.2px;
+  color: #191919;
+  margin-top: 20px;
+}
 .united-states__page .intro .company-info__list-text {
   font-size: 16px;
   font-weight: 400;
@@ -1718,6 +1732,7 @@ body.no-scroll {
 }
 .united-states__page .intro-img__box {
   position: absolute;
+  z-index: -1;
   right: -73px;
   top: 0;
   width: 480px;
@@ -1955,6 +1970,174 @@ body.no-scroll {
   padding-left: 52px;
 }
 
+@media screen and (max-width: 1024px) {
+  .united-states__page .intro {
+    padding: 122px 0 362px 0;
+    margin: 0;
+  }
+  .united-states__page .intro-content {
+    padding-top: 0;
+    max-width: 575px;
+  }
+  .united-states__page .intro .bottom-content {
+    flex-direction: column;
+  }
+  .united-states__page .intro .bottom-content .btn {
+    order: 1;
+  }
+  .united-states__page .intro .company-info__list-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .united-states__page .intro-content__title br {
+    display: none;
+  }
+  .united-states__page .intro-info {
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 33.6px;
+  }
+  .united-states__page .intro-img__box {
+    bottom: 104px;
+    right: 0;
+    top: unset;
+    opacity: 0.3;
+  }
+  .united-states__page .intro {
+    position: relative;
+  }
+  .united-states__page .intro .container {
+    position: unset;
+  }
+  .business-registration-info .right-box {
+    display: none;
+  }
+  .business-registration-info .listes {
+    max-width: 100%;
+  }
+  .united-states__page .business-registration-info .left-box span {
+    font-size: 18px;
+    line-height: 27px;
+    width: 240px;
+  }
+  .united-states__page .business-registration-info {
+    padding-bottom: 100px;
+  }
+  .united-states__page .business-analytics__pagination {
+    top: 48%;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .united-states__page .global-market__img {
+    position: relative;
+    width: 272px;
+    height: 272px;
+    top: unset;
+    left: unset;
+    margin: 0 auto;
+    opacity: 1;
+    transform: translate(0);
+  }
+  .united-states__page .global-market__box {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .united-states__page .business-analytics__pagination {
+    top: 44%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .united-states__page .intro-content__title {
+    font-size: 32px;
+    line-height: 44.8px;
+    text-align: center;
+  }
+  .united-states__page .business-analytics__swiper .business-analytics__desc {
+    font-size: 18px;
+    line-height: 21.78px;
+  }
+  .united-states__page .business-analytics__pagination {
+    top: 209px;
+  }
+  .united-states__page .intro-info {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .united-states__page .intro-content {
+    max-width: 100%;
+  }
+  .united-states__page .intro .bottom-content {
+    margin-top: 40px;
+  }
+  .united-states__page .intro .company-info__list-text {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+  .united-states__page .intro {
+    padding: 84px 0 253px 0;
+  }
+  .united-states__page .intro .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+  .united-states__page .intro .bottom-content {
+    gap: 40px;
+  }
+  .united-states__page .intro-img__box {
+    opacity: 0.2;
+  }
+  .united-states__page .expert-profile__photo .quote-box {
+    max-width: 244px;
+    left: 29px;
+    right: unset;
+    bottom: -275px;
+    padding: 25px 28px 22px 28px;
+  }
+  .united-states__page .expert-profile__photo .quote-box__desc {
+    font-size: 14px;
+  }
+  .united-states__page .market-research .expert-profile__photo {
+    margin-bottom: 238px;
+  }
+  .united-states__page .expert-profile__photo .quote-box__icon {
+    position: absolute;
+    top: 35px;
+    left: 28px;
+    z-index: -1;
+  }
+  .united-states__page .expert-profile__photo .quote-box__icon path {
+    fill: #dcdbdb;
+  }
+  .united-states__page .business-analytics__swiper .business-analytics__text.last .btn .media-none {
+    display: none;
+  }
+  .united-states__page .business-analytics__swiper .business-analytics__text.last .btn .media-block {
+    display: block;
+  }
+  .united-states__page .business-analytics__swiper .business-analytics__text.last .business-analytics__desc {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+  .united-states__page .business-registration-info .box {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .united-states__page .business-registration-info .box img {
+    width: 18px;
+    height: 18px;
+  }
+  .united-states__page .business-registration-info .left-box {
+    gap: 16px;
+  }
+  .united-states__page .business-registration-info .left-box span {
+    width: fit-content;
+  }
+}
 .swiper-btns {
   display: flex;
   align-items: center;
@@ -1994,6 +2177,7 @@ body.no-scroll {
 
 .swiper-scrollbar {
   height: 2px;
+  left: 0;
   background: #dcdbdb;
 }
 
@@ -2129,6 +2313,7 @@ body.no-scroll {
     padding: 10px;
     height: 100%;
     width: 100%;
+    padding: 10px 20px;
   }
   .header .contact-btn {
     display: none;
@@ -2464,7 +2649,10 @@ body.no-scroll {
   .title {
     font-size: 28px;
     line-height: 39.2px;
-    min-width: 328px;
+  }
+  .united-states__page .business-analytics__swiper .business-analytics__text {
+    padding-left: 13px;
+    padding-right: 13px;
   }
   .intro-content__title {
     font-size: 32px;

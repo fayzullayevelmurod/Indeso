@@ -146,6 +146,11 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesPerView: 4,
     spaceBetween: 30,
     speed: 700,
+    scrollbar: {
+      el: '.client-results__swiper-scrollbar',
+      hide: false,
+      draggable: true,
+    },
     on: {
       slideChange: function () {
         updateOpacity();
@@ -161,20 +166,10 @@ document.addEventListener('DOMContentLoaded', function () {
       0: {
         slidesPerView: 1,
         spaceBetween: 10,
-        scrollbar: {
-          el: '.client-results__swiper-scrollbar',
-          hide: false,
-          draggable: true,
-        },
       },
       720: {
         slidesPerView: 2,
         spaceBetween: 20,
-        scrollbar: {
-          el: '.client-results__swiper-scrollbar',
-          hide: false,
-          draggable: true,
-        },
       },
       1024: {
         slidesPerView: 4,
