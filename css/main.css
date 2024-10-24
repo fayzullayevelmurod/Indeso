@@ -2138,6 +2138,92 @@ body.no-scroll {
     width: fit-content;
   }
 }
+.politica {
+  padding-bottom: 165px;
+}
+.politica-breadcrumb {
+  margin: 30px 0;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.politica-breadcrumb .line {
+  width: 20px;
+  height: 1px;
+  background: #191919;
+}
+.politica-breadcrumb__link {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #5a5a5a;
+}
+.politica-breadcrumb__link.active {
+  color: #4581c7;
+}
+.politica-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 918px;
+}
+.politica-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.politica-box .desc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.politica-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 43.71px;
+}
+.politica-desc {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+}
+.politica .list-item::before {
+  background: #4581c7;
+}
+.politica .number-list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.politica .number-list .list-item::before {
+  display: none;
+}
+.politica .number-list .list-item .number {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #4581c7;
+}
+
+@media screen and (max-width: 768px) {
+  .politica-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .politica-breadcrumb__link {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .politica .list-item,
+  .politica-desc {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
 .swiper-btns {
   display: flex;
   align-items: center;
