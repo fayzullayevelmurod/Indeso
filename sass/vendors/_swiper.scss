@@ -52,3 +52,12 @@
 .swiper-scrollbar-drag {
   background: #c73731;
 }
+
+.swiper-pagination-total {
+  color: #dcdbdb !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 2px;
+}

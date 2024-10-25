@@ -111,7 +111,52 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  var swiper = new Swiper('.market-analysis__swiper', {
+  // let marketSwiper = new Swiper('.market-analysis__swiper', {
+  //   slidesPerView: 1,
+  //   spaceBetween: 30,
+  //   navigation: {
+  //     nextEl: '.market-analysis__swiper-next',
+  //     prevEl: '.market-analysis__swiper-prev',
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination', // Pagination elementi
+  //     type: 'fraction', // Pagination turini raqamli fraction qilish
+  //     renderFraction: function (currentClass, totalClass, swiper) {
+  //       // Agar `swiper` va `swiper.activeIndex` mavjud bo'lsa ishlashini tekshiradi
+  //       const current = swiper && swiper.activeIndex !== undefined ? ('0' + (swiper.activeIndex + 1)).slice(-2) : '01';
+  //       const total = swiper && swiper.slides.length !== undefined ? ('0' + swiper.slides.length).slice(-2) : '01';
+  //       return `<span class="${currentClass}">${current}</span>
+  //               <span> / </span>
+  //               <span class="${totalClass}">${total}</span>`;
+  //     }
+  //   }
+  // });
+  // let marketSwiper = new Swiper('.market-analysis__swiper', {
+  //   slidesPerView: 1,
+  //   spaceBetween: 30,
+  //   navigation: {
+  //     nextEl: '.market-analysis__swiper-next',
+  //     prevEl: '.market-analysis__swiper-prev',
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'fraction',
+  //     renderFraction: function (currentClass, totalClass) {
+  //       return `<span class="${currentClass}">0${this.realIndex + 1}</span>
+  //               <span> / </span>
+  //               <span class="${totalClass}">0${this.slides.length}</span>`;
+  //     }
+  //   },
+  //   on: {
+  //     slideChange: function () {
+  //       const paginationEl = document.querySelector('.swiper-pagination');
+  //       const current = `0${this.realIndex + 1}`.slice(-2);
+  //       const total = `0${this.slides.length}`.slice(-2);
+  //       paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> / <span class="swiper-pagination-total">${total}</span>`;
+  //     }
+  //   }
+  // });
+  let marketSwiper = new Swiper('.market-analysis__swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
@@ -119,14 +164,28 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.market-analysis__swiper-prev',
     },
     pagination: {
-      el: '.swiper-pagination',  // Pagination elementi
-      type: 'fraction', // Pagination turini raqamli fraction qilish
+      el: '.swiper-pagination',
+      type: 'fraction',
       renderFraction: function (currentClass, totalClass) {
-        return '<span class="' + currentClass + '"></span>' +
-          '<span> / </span>' +
-          '<span class="' + totalClass + '"></span>';
+        return `<span class="${currentClass}">01</span>
+                <span> / </span>
+                <span class="${totalClass}">0${this.slides.length}</span>`;
       }
     },
+    on: {
+      init: function () { // Sahifa yuklanganda bir martalik chiqarish
+        const paginationEl = document.querySelector('.swiper-pagination');
+        const current = `0${this.realIndex + 1}`.slice(-2);
+        const total = `0${this.slides.length}`.slice(-2);
+        paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
+      },
+      slideChange: function () { // Slide change bo‘lganda ham chiqarish
+        const paginationEl = document.querySelector('.swiper-pagination');
+        const current = `0${this.realIndex + 1}`.slice(-2);
+        const total = `0${this.slides.length}`.slice(-2);
+        paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
+      }
+    }
   });
 
   // market-challenges

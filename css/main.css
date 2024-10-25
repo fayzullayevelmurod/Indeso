@@ -1039,6 +1039,9 @@ body.no-scroll {
 .market-analysis .title-sm {
   margin-bottom: 58px;
 }
+.market-analysis .swiper-numbers {
+  padding-left: 38px;
+}
 .market-analysis__container {
   box-shadow: 0px 0px 11.2px 0px rgba(221, 221, 221, 0.2509803922);
   background-color: #fff;
@@ -1069,14 +1072,18 @@ body.no-scroll {
 .market-analysis__swiper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 406px;
+  gap: 28px;
+  width: 412px;
+  padding: 34px 0 18px 26px;
+  height: 100%;
 }
 .market-analysis__swiper-title {
   font-size: 24px;
   font-weight: 400;
   line-height: 33.6px;
-  margin-bottom: 15px;
+}
+.market-analysis__swiper .desc {
+  margin-top: 21px;
 }
 .market-analysis .swiper-btns {
   margin: 0 auto;
@@ -1086,7 +1093,7 @@ body.no-scroll {
 }
 
 .global-market__box {
-  margin-top: 60px;
+  margin-top: 26px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1096,6 +1103,8 @@ body.no-scroll {
   max-width: 363px;
   width: 100%;
   position: relative;
+  margin-left: 50px;
+  margin-top: 35px;
 }
 .global-market__img img {
   width: 100%;
@@ -1117,7 +1126,7 @@ body.no-scroll {
 .global-market__list {
   display: flex;
   flex-direction: column;
-  gap: 58px;
+  gap: 41px;
 }
 .global-market__list-item {
   font-size: 18px;
@@ -1125,14 +1134,16 @@ body.no-scroll {
   line-height: 25.2px;
   display: flex;
   align-items: start;
-  gap: 22px;
+  gap: 28px;
 }
 .global-market__list-item img {
   padding-top: 7px;
+  width: 15px;
+  height: 27px;
 }
 
 .market-challenges {
-  padding: 120px 0 100px 0;
+  padding: 120px 0 120px 0;
 }
 .market-challenges__swiper {
   position: relative;
@@ -1174,10 +1185,23 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 52px;
+  margin-top: 41px;
+}
+.market-entry-benefits .accordion-list__item {
+  gap: 13px;
+  align-items: start;
+  min-height: 36px;
+}
+.market-entry-benefits .accordion-list__item img {
+  margin-top: 7px;
 }
 .market-entry-benefits .accordions {
   max-width: 569px;
+  padding-left: 5px;
+  width: 100%;
+}
+.market-entry-benefits .accordions .accordion-content {
+  max-width: 496px;
 }
 .market-entry-benefits__logo {
   height: 620px;
@@ -1208,7 +1232,7 @@ body.no-scroll {
   justify-content: center;
   max-width: 875px;
   width: 100%;
-  padding: 100px;
+  padding: 85px 100px 89px 100px;
   color: #fff;
   border-radius: 0 20px 20px 0;
 }
@@ -1225,6 +1249,12 @@ body.no-scroll {
 }
 .consultation-invite__boxes .register-form .btn {
   width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .consultation-invite__list {
   display: flex;
@@ -1246,10 +1276,24 @@ body.no-scroll {
 }
 .cooperation-process__box {
   display: flex;
+  gap: 31px;
   justify-content: space-between;
   align-items: stretch;
   position: relative;
   min-height: 170px;
+  max-width: 94%;
+}
+.cooperation-process__box:nth-child(2) {
+  min-height: 133px;
+}
+.cooperation-process__box:nth-child(3) {
+  min-height: 197px;
+}
+.cooperation-process__box:nth-child(4) {
+  min-height: 184px;
+}
+.cooperation-process__box:nth-child(5) {
+  min-height: 178px;
 }
 .cooperation-process__box:last-child {
   min-height: fit-content;
@@ -1262,7 +1306,7 @@ body.no-scroll {
   font-weight: 500;
   max-width: 350px;
   min-width: 350px;
-  line-height: 28.13px;
+  line-height: 36.13px;
   cursor: pointer;
   transition: all 0.2s linear;
 }
@@ -1290,6 +1334,8 @@ body.no-scroll {
   z-index: 1;
   background-position: center;
   width: 38px;
+  margin-right: 45px;
+  margin-top: -5px;
 }
 .cooperation-process .circle {
   border: 1px solid #c73731;
@@ -1317,7 +1363,7 @@ body.no-scroll {
 }
 
 .client-results {
-  padding: 120px 0;
+  padding: 137px 0 120px 0;
 }
 .client-results__swiper {
   position: relative;
@@ -1339,7 +1385,7 @@ body.no-scroll {
 }
 .client-results__card {
   height: 100%;
-  padding: 31px 17px 44px 17px;
+  padding: 31px 17px 40px 17px;
   background: #fff;
   border-radius: 10px;
   transition: all 0.2s linear;
@@ -1360,7 +1406,7 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0 20px 0;
+  padding: 24px 0 13px 0;
 }
 .client-results__card-title {
   font-size: 24px;
@@ -1376,7 +1422,7 @@ body.no-scroll {
 .client-results__card-desc {
   font-size: 18px;
   font-weight: 400;
-  line-height: 25.2px;
+  line-height: 21.09px;
 }
 
 .market-research-beneficiaries__cards {
@@ -1799,11 +1845,11 @@ body.no-scroll {
   padding-top: 60px;
 }
 .market-challenges .chalange-card {
-  margin-bottom: 60px;
+  margin-bottom: 42px;
 }
 .market-challenges .chalange-card .swiper-line {
   position: absolute;
-  top: 120px;
+  top: 133px;
   left: 0;
   z-index: -1;
   overflow: hidden;
@@ -1819,7 +1865,7 @@ body.no-scroll {
 .market-challenges .chalange-card li {
   position: absolute;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   max-width: 355px;
 }
 .market-challenges .chalange-card li:nth-child(1) {
@@ -1827,12 +1873,12 @@ body.no-scroll {
   top: 226px;
 }
 .market-challenges .chalange-card li:nth-child(2) {
-  left: 352px;
+  left: 342px;
   top: 0;
 }
 .market-challenges .chalange-card li:nth-child(3) {
   left: 571px;
-  top: 226px;
+  top: 238px;
 }
 .market-challenges .chalange-card li:nth-child(4) {
   left: 802px;
@@ -1840,7 +1886,7 @@ body.no-scroll {
 }
 .market-challenges .chalange-card li:nth-child(5) {
   left: 1031px;
-  top: 226px;
+  top: 237px;
 }
 .market-challenges .chalange-card li:nth-child(6) {
   left: 1262px;
@@ -3286,6 +3332,15 @@ body.white-bg {
 
 .swiper-scrollbar-drag {
   background: #c73731;
+}
+
+.swiper-pagination-total {
+  color: #dcdbdb !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 2px;
 }
 
 @media screen and (max-width: 1440px) {
