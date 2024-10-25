@@ -3450,7 +3450,7 @@ body.white-bg {
 
 @media screen and (max-width: 1440px) {
   .market-analysis__content {
-    max-width: 655px;
+    max-width: 705px;
   }
   .market-analysis__container,
   .consultation-invite__boxes {
@@ -3460,16 +3460,80 @@ body.white-bg {
     width: 100%;
   }
   .consultation-invite__boxes .register-form {
-    max-width: 553px;
+    max-width: 635px;
   }
   .consultation-invite__list {
     justify-content: center;
   }
   .contact-us__card {
-    max-width: 555px;
+    max-width: 635px;
   }
   .contact-us__cards {
     padding-right: 75px;
+  }
+  .market-analysis__slider {
+    max-width: calc(100% - 700px);
+  }
+  .global-market__list {
+    max-width: 373px;
+    gap: 0;
+    margin-top: 39px;
+  }
+  .global-market__list:first-child .global-market__list-item:nth-child(2) {
+    margin: 58px 0 41px 0;
+  }
+  .global-market__list:last-child .global-market__list-item:nth-child(2) {
+    margin: 33px 0 41px 0;
+  }
+  .global-market__box {
+    align-items: start;
+  }
+  .global-market__img {
+    margin-left: 0;
+  }
+  .global-market__list-item img {
+    padding: 0;
+    width: 16px;
+    height: 27px;
+    margin-top: 4px;
+  }
+  .market-challenges .business-analytics .business-analytics__image {
+    width: 51%;
+  }
+  .market-challenges .business-analytics {
+    height: 379px;
+  }
+  .market-challenges .business-analytics__desc {
+    margin-left: 17px;
+  }
+  .market-challenges {
+    padding-bottom: 100px;
+  }
+  .cooperation-process__box:nth-child(2) {
+    min-height: 129px;
+  }
+  .client-results__swiper {
+    margin-top: 55px;
+  }
+  .market-research-beneficiaries__card {
+    min-width: 340px;
+  }
+  .market-research-beneficiaries .market-research-beneficiaries__card-list-item img {
+    width: 17px;
+    height: 19px;
+    margin-top: 5px;
+  }
+  .market-research-beneficiaries__card-list {
+    width: 101%;
+  }
+  .contact-us {
+    max-width: 1377px;
+  }
+  .contact-us__form-title {
+    margin-left: 16px;
+  }
+  .footer-left__box .flex-box {
+    gap: 76px;
   }
 }
 @media screen and (max-width: 1280px) {
