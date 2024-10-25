@@ -6,6 +6,7 @@ body {
 .article-two__page {
   .right-box {
     max-width: 270px;
+    min-width: 270px;
   }
   .articles-sec .container {
     gap: 30px;
@@ -43,7 +44,7 @@ body {
     row-gap: 60px;
   }
   .articles-card {
-    height: fit-content;
+    height: unset;
     background: #f1f0f5;
     &__title {
       font-size: 20px;
@@ -52,7 +53,7 @@ body {
       color: #575378;
     }
     &__content {
-      min-height: fit-content;
+      min-height: 57%;
       padding-bottom: 44px;
     }
   }
