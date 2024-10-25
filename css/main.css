@@ -108,6 +108,8 @@ body.no-scroll {
 
 .breadcrumb {
   padding-bottom: 30px;
+  padding-top: 2px;
+  padding-left: 4px;
 }
 .breadcrumb-list {
   display: flex;
@@ -115,7 +117,7 @@ body.no-scroll {
   gap: 2px;
 }
 .breadcrumb-list img {
-  margin-right: 7px;
+  margin-right: 6px;
 }
 .breadcrumb-link {
   font-family: "Manrope";
@@ -677,6 +679,9 @@ body.no-scroll {
 .intro .red-btn {
   max-width: 423px;
   width: 100%;
+}
+.intro .red-btn:hover {
+  background: #A8241E;
 }
 .intro-map {
   position: absolute;
@@ -1363,7 +1368,7 @@ body.no-scroll {
 }
 
 .client-results {
-  padding: 137px 0 120px 0;
+  padding: 137px 0 103px 0;
 }
 .client-results__swiper {
   position: relative;
@@ -1425,11 +1430,16 @@ body.no-scroll {
   line-height: 21.09px;
 }
 
+.market-research-beneficiaries .market-research-beneficiaries__card-list-item img {
+  width: 17px;
+  height: 24px;
+}
 .market-research-beneficiaries__cards {
   display: flex;
   align-items: start;
   justify-content: space-between;
   margin-top: 60px;
+  width: 100%;
   overflow-x: auto;
   margin-right: -50px;
 }
@@ -1437,15 +1447,24 @@ body.no-scroll {
   display: none;
 }
 .market-research-beneficiaries__card {
-  min-width: 333px;
+  min-width: 344px;
   max-width: 333px;
 }
 .market-research-beneficiaries__card-top {
   text-align: center;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #b0b0b0;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   min-height: 300px;
+  position: relative;
+}
+.market-research-beneficiaries__card-top::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78%;
+  height: 1px;
+  background: #b0b0b0;
 }
 .market-research-beneficiaries__card-img {
   width: 220px;
@@ -1457,11 +1476,13 @@ body.no-scroll {
   font-weight: 600;
   line-height: 28px;
   margin-top: 30px;
+  max-width: 303px;
+  margin: 23px auto 0 auto;
 }
 .market-research-beneficiaries__card-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 13px;
 }
 .market-research-beneficiaries__card-list-item {
   display: flex;
@@ -1478,9 +1499,18 @@ body.no-scroll {
 .reviews .container {
   overflow: hidden;
 }
+.reviews .title-box {
+  align-items: start;
+}
+.reviews .swiper-btns {
+  gap: 33px;
+  padding-top: 10px;
+  align-items: start;
+}
 .reviews-swiper__top {
   width: 271px;
   overflow: visible;
+  margin-top: 36px;
 }
 .reviews-swiper__top .swiper-wrapper {
   height: 133px;
@@ -1531,7 +1561,7 @@ body.no-scroll {
   text-align: center;
   max-width: 830px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 35px;
   position: relative;
   z-index: 1;
 }
@@ -1541,10 +1571,10 @@ body.no-scroll {
 }
 .reviews-swiper__bottom .quote-img {
   position: absolute;
-  top: 93px;
-  left: -76px;
-  width: 213px;
-  height: 198px;
+  top: 68px;
+  left: -99px;
+  width: 264px;
+  height: 197px;
   z-index: -1;
 }
 .reviews-swiper__bottom .swiper-title h3 {
@@ -1588,10 +1618,54 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 7px 0 0 14px;
 }
 .our-clients__logo-box:first-child img {
   width: 79px;
   height: 79px;
+}
+.our-clients__logo-box:nth-child(2) img {
+  width: 158px;
+  height: 63.95px;
+}
+.our-clients__logo-box:nth-child(3) img {
+  width: 184.77px;
+  height: 50px;
+}
+.our-clients__logo-box:nth-child(4) img {
+  width: 162px;
+  height: 107.77px;
+}
+.our-clients__logo-box:nth-child(5) {
+  margin-left: 5px;
+}
+.our-clients__logo-box:nth-child(5) img {
+  width: 133.92px;
+  height: 136px;
+}
+.our-clients__logo-box:nth-child(6) {
+  margin-left: 16px;
+  width: 171px;
+  height: 130px;
+}
+.our-clients__logo-box:nth-child(6) img {
+  width: 174px;
+  height: 86px;
+}
+.our-clients__logo-box:nth-child(8) {
+  margin-left: 14px;
+  margin-top: 18px;
+}
+.our-clients__logo-box:nth-child(9) {
+  margin-top: 15px;
+}
+.our-clients__logo-box:nth-child(10) {
+  margin-top: 16px;
+  margin-left: 24px;
+}
+.our-clients__logo-box:nth-child(10) img {
+  width: 163.98px;
+  height: 56px;
 }
 .our-clients__logo-box img {
   object-fit: contain;
@@ -1607,23 +1681,23 @@ body.no-scroll {
 }
 
 .contact-us {
-  max-width: 1613px;
+  max-width: 1544px;
 }
 .contact-us__cards {
   display: flex;
-  align-items: center;
-  margin-top: 60px;
+  margin-top: 66px;
 }
 .contact-us .social-media {
   display: flex;
-  gap: 23px;
+  gap: 24px;
+  margin-top: 34px;
 }
 .contact-us .social-media__img {
   width: 40px;
   height: 40px;
 }
 .contact-us__card {
-  max-width: 945px;
+  max-width: 876px;
   width: 100%;
   background-color: #c73731;
   min-height: 430px;
@@ -1665,8 +1739,10 @@ body.no-scroll {
 .contact-us__form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   max-width: 470px;
+  width: 100%;
+  padding-top: 35px;
   margin-left: auto;
 }
 .contact-us__form .input-box {
@@ -1696,6 +1772,7 @@ body.no-scroll {
   line-height: 33.6px;
   text-align: center;
   color: #8e8c8c;
+  max-width: 440px;
 }
 .contact-us__form input {
   width: 100%;
@@ -1715,6 +1792,9 @@ body.no-scroll {
 .contact-us__form .btn {
   border-color: #c73731;
   color: #c73731;
+  height: 55px;
+  border-width: 2px;
+  margin-top: 7px;
 }
 .contact-us__form .btn:hover {
   color: #fff;
@@ -1724,7 +1804,29 @@ body.no-scroll {
   padding: 108px 0 120px 0;
 }
 .faq-section .accordions {
-  margin-top: 60px;
+  margin-top: 53px;
+}
+.faq-section .accordion-header.active .accordion-header__title {
+  color: #c73731;
+}
+.faq-section .accordion-content {
+  padding-bottom: 27px;
+}
+.faq-section .accordion-header__title {
+  color: #191919;
+}
+.faq-section .accordions .accordion:first-child {
+  padding-top: 31px;
+}
+.faq-section .accordions .accordion:first-child .accordion-header {
+  padding-bottom: 60px;
+}
+.faq-section .accordion {
+  padding-bottom: 0;
+  padding-top: 30px;
+}
+.faq-section .accordion-header {
+  padding-bottom: 15px;
 }
 .faq-section .accordion {
   gap: 0;
@@ -1740,10 +1842,13 @@ body.no-scroll {
   max-width: 892px;
 }
 .faq-section .accordion-header {
-  padding-left: 30px;
+  padding-left: 25px;
+  padding-right: 10px;
+  height: 51px;
 }
 .faq-section .accordion-header.active {
-  padding-bottom: 30px;
+  padding-right: 25px;
+  padding-bottom: 44px;
   border-bottom: 1px solid #dcdbdb;
 }
 
@@ -1751,8 +1856,8 @@ body.no-scroll {
   padding-bottom: 140px;
 }
 .articles-swiper {
-  margin-top: 60px;
-  padding-top: 50px;
+  margin-top: 55px;
+  padding-top: 54px;
 }
 .articles .heart-btn path {
   fill: transparent;
@@ -1783,8 +1888,8 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 16px;
-  min-height: 56%;
+  padding: 16px 16px;
+  min-height: 54%;
 }
 .articles-card__content > div {
   display: flex;

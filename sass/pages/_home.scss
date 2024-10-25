@@ -7,6 +7,10 @@
   .red-btn {
     max-width: 423px;
     width: 100%;
+    
+    &:hover {
+      background: #A8241E;
+    }
   }
   &-map {
     position: absolute;
@@ -755,7 +759,7 @@
 
 // client-results
 .client-results {
-  padding: 137px 0 120px 0;
+  padding: 137px 0 103px 0;
   &__swiper {
     position: relative;
     margin-top: 60px;
@@ -821,11 +825,18 @@
 
 // market-research-beneficiaries
 .market-research-beneficiaries {
+  .market-research-beneficiaries__card-list-item {
+    img {
+      width: 17px;
+      height: 24px;
+    }
+  }
   &__cards {
     display: flex;
     align-items: start;
     justify-content: space-between;
     margin-top: 60px;
+    width: 100%;
     overflow-x: auto;
     margin-right: -50px;
     &::-webkit-scrollbar {
@@ -833,14 +844,24 @@
     }
   }
   &__card {
-    min-width: 333px;
+    min-width: 344px;
     max-width: 333px;
     &-top {
       text-align: center;
-      padding-bottom: 30px;
-      border-bottom: 1px solid #b0b0b0;
-      margin-bottom: 15px;
+      margin-bottom: 8px;
       min-height: 300px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 78%;
+        height: 1px;
+        background: #b0b0b0;
+      }
     }
     &-img {
       width: 220px;
@@ -852,11 +873,13 @@
       font-weight: 600;
       line-height: 28px;
       margin-top: 30px;
+      max-width: 303px;
+      margin: 23px auto 0 auto;
     }
     &-list {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 13px;
       &-item {
         display: flex;
         align-items: center;
@@ -876,9 +899,18 @@
   .container {
     overflow: hidden;
   }
+  .title-box {
+    align-items: start;
+  }
+  .swiper-btns {
+    gap: 33px;
+    padding-top: 10px;
+    align-items: start;
+  }
   &-swiper__top {
     width: 271px;
     overflow: visible;
+    margin-top: 36px;
 
     .swiper-wrapper {
       height: 133px;
@@ -933,7 +965,7 @@
     text-align: center;
     max-width: 830px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 35px;
     position: relative;
     .swiper-slide {
       &:not(.swiper-slide-active) {
@@ -944,10 +976,10 @@
     z-index: 1;
     .quote-img {
       position: absolute;
-      top: 93px;
-      left: -76px;
-      width: 213px;
-      height: 198px;
+      top: 68px;
+      left: -99px;
+      width: 264px;
+      height: 197px;
       z-index: -1;
     }
     .swiper-title {
@@ -998,10 +1030,60 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 7px 0 0 14px;
     &:first-child {
       img {
         width: 79px;
         height: 79px;
+      }
+    }
+    &:nth-child(2) {
+      img {
+        width: 158px;
+        height: 63.95px;
+      }
+    }
+    &:nth-child(3) {
+      img {
+        width: 184.77px;
+        height: 50px;
+      }
+    }
+    &:nth-child(4) {
+      img {
+        width: 162px;
+        height: 107.77px;
+      }
+    }
+    &:nth-child(5) {
+      margin-left: 5px;
+      img {
+        width: 133.92px;
+        height: 136px;
+      }
+    }
+    &:nth-child(6) {
+      margin-left: 16px;
+      width: 171px;
+      height: 130px;
+      img {
+        width: 174px;
+        height: 86px;
+      }
+    }
+    &:nth-child(8) {
+      margin-left: 14px;
+      margin-top: 18px;
+    }
+    &:nth-child(9) {
+      margin-top: 15px;
+    }
+    &:nth-child(10) {
+      margin-top: 16px;
+      margin-left: 24px;
+      img {
+        width: 163.98px;
+        height: 56px;
       }
     }
     img {
@@ -1024,15 +1106,16 @@
 
 // contact us
 .contact-us {
-  max-width: 1613px;
+  max-width: 1544px;
   &__cards {
     display: flex;
-    align-items: center;
-    margin-top: 60px;
+    // align-items: center;
+    margin-top: 66px;
   }
   .social-media {
     display: flex;
-    gap: 23px;
+    gap: 24px;
+    margin-top: 34px;
 
     &__img {
       width: 40px;
@@ -1040,7 +1123,7 @@
     }
   }
   &__card {
-    max-width: 945px;
+    max-width: 876px;
     width: 100%;
     background-color: #c73731;
     min-height: 430px;
@@ -1083,8 +1166,10 @@
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
     max-width: 470px;
+    width: 100%;
+    padding-top: 35px;
     margin-left: auto;
     .input-box {
       width: 100%;
@@ -1113,6 +1198,7 @@
       line-height: 33.6px;
       text-align: center;
       color: #8e8c8c;
+      max-width: 440px;
     }
     input {
       width: 100%;
@@ -1132,6 +1218,9 @@
     .btn {
       border-color: #c73731;
       color: #c73731;
+      height: 55px;
+      border-width: 2px;
+      margin-top: 7px;
       &:hover {
         color: #fff;
       }
@@ -1144,7 +1233,35 @@
 .faq-section {
   padding: 108px 0 120px 0;
   .accordions {
-    margin-top: 60px;
+    margin-top: 53px;
+  }
+  .accordion-header.active {
+    .accordion-header__title {
+      color: #c73731;
+    }
+  }
+  .accordion-content {
+    padding-bottom: 27px;
+  }
+  .accordion-header__title {
+    color: #191919;
+  }
+  .accordions {
+    .accordion {
+      &:first-child {
+        padding-top: 31px;
+        .accordion-header {
+          padding-bottom: 60px;
+        }
+      }
+    }
+  }
+  .accordion {
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+  .accordion-header {
+    padding-bottom: 15px;
   }
   .accordion {
     gap: 0;
@@ -1159,9 +1276,12 @@
       }
     }
     &-header {
-      padding-left: 30px;
+      padding-left: 25px;
+      padding-right: 10px;
+      height: 51px;
       &.active {
-        padding-bottom: 30px;
+        padding-right: 25px;
+        padding-bottom: 44px;
         border-bottom: 1px solid #dcdbdb;
       }
     }
@@ -1173,8 +1293,8 @@
 .articles {
   padding-bottom: 140px;
   &-swiper {
-    margin-top: 60px;
-    padding-top: 50px;
+    margin-top: 55px;
+    padding-top: 54px;
   }
   .heart-btn {
     path {
@@ -1208,8 +1328,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 20px 16px;
-      min-height: 56%;
+      padding: 16px 16px;
+      min-height: 54%;
       & > div {
         display: flex;
         flex-direction: column;

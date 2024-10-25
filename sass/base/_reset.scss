@@ -111,12 +111,14 @@ body {
 
 .breadcrumb {
   padding-bottom: 30px;
+  padding-top: 2px;
+  padding-left: 4px;
   &-list {
     display: flex;
     align-items: center;
     gap: 2px;
     img {
-      margin-right: 7px;
+      margin-right: 6px;
     }
   }
   &-link {
