@@ -294,8 +294,62 @@
       padding-left: 52px;
     }
   }
+  .title {
+    margin-bottom: 30px;
+  }
 }
 // business-registration-info
+
+// most-comfortable
+.most-comfortable {
+  padding-bottom: 120px;
+  .title {
+    margin-bottom: 60px;
+  }
+  .accordion-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 56px;
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .flex-box {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+  }
+  .accordion-header__title {
+    color: #191919;
+  }
+  .accordion-content__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &.media-desc {
+      display: none;
+    }
+  }
+  .accordion-header__title-sm {
+    color: #c73731;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .accordion-content {
+    .media-block__title{
+      display: none;
+    }
+    .boxes {
+      display: grid;
+      gap: 56px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .united-states__page .intro {

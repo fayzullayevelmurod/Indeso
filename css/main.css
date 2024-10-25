@@ -1979,6 +1979,56 @@ body.no-scroll {
 .business-registration-info .right-box .desc {
   padding-left: 52px;
 }
+.business-registration-info .title {
+  margin-bottom: 30px;
+}
+
+.most-comfortable {
+  padding-bottom: 120px;
+}
+.most-comfortable .title {
+  margin-bottom: 60px;
+}
+.most-comfortable .accordion-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 56px;
+}
+.most-comfortable .accordion-header .box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.most-comfortable .accordion-header .box .flex-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.most-comfortable .accordion-header__title {
+  color: #191919;
+}
+.most-comfortable .accordion-content__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.most-comfortable .accordion-content__desc.media-desc {
+  display: none;
+}
+.most-comfortable .accordion-header__title-sm {
+  color: #c73731;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.most-comfortable .accordion-content .media-block__title {
+  display: none;
+}
+.most-comfortable .accordion-content .boxes {
+  display: grid;
+  gap: 56px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 @media screen and (max-width: 1024px) {
   .united-states__page .intro {
@@ -3631,6 +3681,29 @@ body.white-bg {
   .comments-sec .container .right-box {
     display: none;
   }
+  .most-comfortable .accordion-header {
+    grid-template-columns: 1fr;
+  }
+  .most-comfortable .accordion-header .media-none__box {
+    display: none;
+  }
+  .most-comfortable .accordion-header .media-none__desc {
+    display: none;
+  }
+  .most-comfortable .accordion-content__desc.media-desc {
+    display: block;
+  }
+  .most-comfortable .accordion-content .media-block__title {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .most-comfortable .accordion-content .boxes {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .most-comfortable {
+    padding-bottom: 80px;
+  }
 }
 @media screen and (max-width: 720px) {
   .articles-sec,
@@ -4228,6 +4301,19 @@ body.white-bg {
   }
   .comments-sec .child-comment {
     padding-left: 20px;
+  }
+  .accordion-content {
+    padding-top: 30px;
+  }
+  .most-comfortable .accordion-content__desc {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .most-comfortable .title {
+    margin-bottom: 50px;
+  }
+  .most-comfortable {
+    padding-bottom: 80px;
   }
 }
 @media screen and (max-width: 480px) {

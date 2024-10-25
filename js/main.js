@@ -430,3 +430,15 @@ try {
 } catch (error) {
 
 }
+
+// JavaScript yordamida accordionni boshqarish
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', function () {
+    const item = this.parentElement;
+
+    // Faqat mobilda accordionni yoqish
+    if (window.innerWidth <= 768) {
+      item.classList.toggle('active');
+    }
+  });
+});
