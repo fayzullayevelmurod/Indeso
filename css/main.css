@@ -220,7 +220,7 @@ body.no-scroll {
 }
 
 .accordion {
-  padding: 20px 0px;
+  padding: 19px 0px 20px 0;
   border-bottom: 1px solid #dcdbdb;
 }
 .accordion-header {
@@ -299,8 +299,8 @@ body.no-scroll {
   line-height: 25.6px;
 }
 .accordion-list__item img {
-  width: 11px;
-  height: 11px;
+  width: 14px;
+  height: 14px;
 }
 
 .modal {
@@ -540,10 +540,11 @@ body.no-scroll {
 }
 .header .contact-btn {
   font-size: 14px;
-  line-height: 16.41px;
   border: 2px solid #191919;
-  padding: 10px 50px;
   border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #191919;
   transition: all 0.3s ease;
   width: 167px;
@@ -667,7 +668,7 @@ body.no-scroll {
 }
 
 .intro {
-  margin: 101px auto 294px auto;
+  margin: 108px auto 294px auto;
   z-index: 1;
 }
 .intro .container {
@@ -716,15 +717,24 @@ body.no-scroll {
   font-size: 24px;
   line-height: 33.6px;
 }
+.intro .red-btn {
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .our-services .title-box {
   padding-bottom: 30px;
-  margin-bottom: 62px;
+  margin-bottom: 59px;
   position: relative;
   gap: 20px;
+  border-bottom: 1px solid #dcdbdb;
 }
 .our-services .title-box .sub-title {
   color: #3d3d3d;
+  padding: 17px 0 0 73px;
+}
+.our-services .title-box .btn {
+  margin-top: 17px;
 }
 .our-services .swiper-scrollbar {
   left: 0;
@@ -740,12 +750,12 @@ body.no-scroll {
 }
 .our-services .swiper-wrapper {
   align-items: stretch;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 .our-services .swiper-slide {
   min-height: 346px !important;
   position: relative;
-  padding-bottom: 234px;
+  padding-bottom: 217px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -780,6 +790,7 @@ body.no-scroll {
   line-height: 21.6px;
   text-align: center;
   color: #4e4e4e;
+  margin-top: -12px;
 }
 .our-services__card-back {
   position: absolute;
@@ -823,7 +834,7 @@ body.no-scroll {
 
 .exploration-countries__swiper {
   position: relative;
-  margin: 60px 0 47px 0;
+  margin: 60px 0 5px 0;
 }
 .exploration-countries__swiper .swiper-slide {
   height: unset !important;
@@ -847,7 +858,7 @@ body.no-scroll {
   font-weight: 500;
   line-height: 28.13px;
   text-align: center;
-  padding: 25px 32px;
+  padding: 22px 32px;
   color: #c73731;
   border-bottom: 1px solid #c73731;
   text-transform: uppercase;
@@ -856,7 +867,7 @@ body.no-scroll {
   padding: 25px 12px 33px 30px;
 }
 .exploration-countries__card .card-footer {
-  padding: 0 22px 25px 22px;
+  padding: 2px 25px 25px 25px;
 }
 .exploration-countries__card .btn {
   width: 100%;
@@ -868,8 +879,9 @@ body.no-scroll {
   align-items: center;
 }
 .exploration-countries .world-locations__map {
-  width: 567px;
-  height: 327px;
+  width: 579px;
+  height: 328px;
+  margin-top: 33px;
 }
 .exploration-countries .world-locations__map-img {
   width: 100%;
@@ -877,8 +889,14 @@ body.no-scroll {
   object-fit: contain;
 }
 .exploration-countries .world-locations .accordions {
-  max-width: 470px;
+  max-width: 467px;
   width: 100%;
+}
+.exploration-countries .accordion-list {
+  gap: 10px;
+}
+.exploration-countries .accordion-content__list .accordion-list:last-child {
+  margin-right: 20px;
 }
 
 .market-research {
@@ -936,7 +954,7 @@ body.no-scroll {
   font-size: 32px;
   font-weight: 400;
   line-height: 37.5px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 .market-research__stat-description {
   font-size: 18px;
@@ -950,6 +968,7 @@ body.no-scroll {
 }
 .market-research .expert-profile__photo {
   border-radius: 10px;
+  margin-top: 6px;
   overflow: hidden;
   min-width: 400px;
   max-width: 400px;
@@ -960,10 +979,13 @@ body.no-scroll {
   height: 100%;
 }
 .market-research .expert-profile__description {
-  max-width: 705px;
+  max-width: 698px;
 }
 .market-research .expert-profile .list {
   margin-left: 40px;
+}
+.market-research .list-item {
+  max-width: 543px;
 }
 
 .our-values__cards {
@@ -1014,6 +1036,9 @@ body.no-scroll {
 .market-analysis {
   padding: 120px 0;
 }
+.market-analysis .title-sm {
+  margin-bottom: 58px;
+}
 .market-analysis__container {
   box-shadow: 0px 0px 11.2px 0px rgba(221, 221, 221, 0.2509803922);
   background-color: #fff;
@@ -1024,7 +1049,7 @@ body.no-scroll {
 .market-analysis__content {
   background: #c73731;
   padding: 90px 65px 89px 10px;
-  max-width: 954px;
+  max-width: 942px;
   width: 100%;
 }
 .market-analysis__content-info {
@@ -1036,7 +1061,7 @@ body.no-scroll {
   margin-left: auto;
 }
 .market-analysis__slider {
-  width: calc(100% - 954px);
+  width: calc(100% - 942px);
   display: flex;
   align-items: center;
   justify-content: center;

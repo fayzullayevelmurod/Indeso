@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   var swiper = new Swiper('.our-services__swiper', {
-    slidesPerView: 3.5,
+    slidesPerView: 3.6,
     spaceBetween: 30,
     speed: 700,
     navigation: {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 30,
       },
       1024: {
-        slidesPerView: 3.5,
+        slidesPerView: 3.6,
         spaceBetween: 30,
       },
     }

@@ -36,10 +36,11 @@
   }
   .contact-btn {
     font-size: 14px;
-    line-height: 16.41px;
     border: 2px solid #191919;
-    padding: 10px 50px;
     border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #191919;
     transition: all 0.3s ease;
     width: 167px;

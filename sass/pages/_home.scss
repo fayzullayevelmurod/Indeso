@@ -1,5 +1,5 @@
 .intro {
-  margin: 101px auto 294px auto;
+  margin: 108px auto 294px auto;
   z-index: 1;
   .container {
     position: relative;
@@ -48,17 +48,26 @@
       line-height: 33.6px;
     }
   }
+  .red-btn {
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
 
 // our-services
 .our-services {
   .title-box {
     padding-bottom: 30px;
-    margin-bottom: 62px;
+    margin-bottom: 59px;
     position: relative;
     gap: 20px;
+    border-bottom: 1px solid #dcdbdb;
     .sub-title {
       color: #3d3d3d;
+      padding: 17px 0 0 73px;
+    }
+    .btn {
+      margin-top: 17px;
     }
   }
   .swiper-scrollbar {
@@ -75,12 +84,12 @@
   }
   .swiper-wrapper {
     align-items: stretch;
-    margin-top: 30px;
+    margin-top: 26px;
   }
   .swiper-slide {
     min-height: 346px !important;
     position: relative;
-    padding-bottom: 234px;
+    padding-bottom: 217px;
     overflow: hidden;
     border-radius: 10px;
   }
@@ -116,6 +125,7 @@
       line-height: 21.6px;
       text-align: center;
       color: #4e4e4e;
+      margin-top: -12px;
     }
     &-back {
       position: absolute;
@@ -166,7 +176,7 @@
 .exploration-countries {
   &__swiper {
     position: relative;
-    margin: 60px 0 47px 0;
+    margin: 60px 0 5px 0;
     .swiper-slide {
       height: unset !important;
     }
@@ -189,7 +199,7 @@
       font-weight: 500;
       line-height: 28.13px;
       text-align: center;
-      padding: 25px 32px;
+      padding: 22px 32px;
       color: #c73731;
       border-bottom: 1px solid #c73731;
       text-transform: uppercase;
@@ -198,7 +208,7 @@
       padding: 25px 12px 33px 30px;
     }
     .card-footer {
-      padding: 0 22px 25px 22px;
+      padding: 2px 25px 25px 25px;
     }
     .btn {
       width: 100%;
@@ -210,8 +220,9 @@
     justify-content: space-between;
     align-items: center;
     &__map {
-      width: 567px;
-      height: 327px;
+      width: 579px;
+      height: 328px;
+      margin-top: 33px;
 
       &-img {
         width: 100%;
@@ -220,8 +231,16 @@
       }
     }
     .accordions {
-      max-width: 470px;
+      max-width: 467px;
       width: 100%;
+    }
+  }
+  .accordion-list {
+    gap: 10px;
+  }
+  .accordion-content__list {
+    .accordion-list:last-child {
+      margin-right: 20px;
     }
   }
 }
@@ -287,7 +306,7 @@
       font-size: 32px;
       font-weight: 400;
       line-height: 37.5px;
-      padding-bottom: 30px;
+      padding-bottom: 26px;
     }
     &-description {
       font-size: 18px;
@@ -301,6 +320,7 @@
     gap: 20px;
     &__photo {
       border-radius: 10px;
+      margin-top: 6px;
       overflow: hidden;
       min-width: 400px;
       max-width: 400px;
@@ -311,11 +331,14 @@
       }
     }
     &__description {
-      max-width: 705px;
+      max-width: 698px;
     }
     .list {
       margin-left: 40px;
     }
+  }
+  .list-item {
+    max-width: 543px;
   }
 }
 //market-research
@@ -374,6 +397,9 @@
 // market-analysis
 .market-analysis {
   padding: 120px 0;
+  .title-sm {
+    margin-bottom: 58px;
+  }
   &__container {
     box-shadow: 0px 0px 11.2px 0px #dddddd40;
     background-color: #fff;
@@ -384,7 +410,7 @@
   &__content {
     background: #c73731;
     padding: 90px 65px 89px 10px;
-    max-width: 954px;
+    max-width: 942px;
     width: 100%;
     &-info {
       font-size: 24px;
@@ -396,7 +422,7 @@
     }
   }
   &__slider {
-    width: calc(100% - 954px);
+    width: calc(100% - 942px);
     display: flex;
     align-items: center;
     justify-content: center;
