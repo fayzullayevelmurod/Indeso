@@ -55,6 +55,9 @@
   .footer-left__box {
     gap: 50px;
   }
+  .article-four__page .left-box {
+    max-width: 610px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -481,9 +484,63 @@
       top: -104px;
     }
   }
+  .articles-sec .container {
+    flex-direction: column;
+    gap: 0;
+    .right-box {
+      display: none;
+    }
+  }
+  .article-four__page .left-box {
+    max-width: 100%;
+  }
+  .article-nav {
+    margin: 30px 0;
+  }
+  .article-four__page .content-cards__two .card-info {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+  .article-four__page .content-cards__two .card-title {
+    font-size: 24px;
+    line-height: 33.6px;
+    margin-top: 10px;
+  }
+  .article-four__page .content-cards__two .card-img {
+    height: 242px;
+  }
+  .article-four__page .content-cards__two .card-desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .article-four__page .articles-four {
+    margin-bottom: 50px;
+  }
+  .articles-sec,
+  .comments-sec {
+    padding-bottom: 100px;
+  }
+  .article-nav {
+    display: none;
+  }
+  .article-nav__dropdown {
+    display: block;
+    margin: 30px 0;
+  }
+  .article-four__page .content-cards__two-card {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 720px) {
+  .articles-sec,
+  .comments-sec {
+    padding-bottom: 80px;
+  }
+
+  .footer-list.phone-list {
+    padding-left: 0;
+  }
   .container {
     padding-left: 50px;
     padding-right: 50px;
@@ -902,6 +959,48 @@
   }
   .footer .container .top-btn {
     display: none;
+  }
+  .article-nav__dropdown {
+    margin: 20px 0;
+  }
+  .article-four__page .content-cards__two-card {
+    padding: 15px;
+  }
+  .article-four__page .content-cards__two .card-info {
+    font-size: 12px;
+    line-height: 14.06px;
+  }
+  .article-four__page .content-cards__two .card-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .article-four__page .content-cards__two .card-img {
+    margin: 15px 0;
+    height: 160px;
+  }
+  .article-four__page .content-cards__two .card-desc {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .article-four__page .swiper-btns {
+    display: none;
+  }
+  .article-four__page .articles-four {
+    margin-bottom: 40px;
+  }
+  .article-four__page .show-more__btn {
+    width: 270px;
+  }
+  .article-four__page .content-cards__two .card-footer {
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: start;
+    gap: 20px;
+    .articles-card__footer {
+      order: -1;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 }
 
