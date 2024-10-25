@@ -2,7 +2,7 @@
   background-color: #fff;
   .container {
     position: relative;
-    padding-top: 88px;
+    padding-top: 89px;
     padding-bottom: 22px;
   }
   .top-btn {
@@ -18,29 +18,38 @@
     display: flex;
     align-items: start;
     // justify-content: space-between;
-    gap: 102px;
-  }
-  &-logo {
-    margin-right: 15px;
+    // gap: 102px;
+    gap: 80px;
   }
   &-left__box {
     display: flex;
     align-items: start;
-    gap: 75px;
+    gap: 91px;
     width: 100%;
+    .footer-box {
+    }
+    .flex-box {
+      display: flex;
+      gap: 70px;
+    }
   }
   &-right__box {
     display: flex;
     align-items: center;
     gap: 16px;
     width: 100%;
-
+    margin-top: -4px;
     .footer-list {
-      gap: 20px;
+      gap: 23px;
       &:last-child {
         margin-left: auto;
+        max-width: 250px;
+        padding-top: 11px;
+        gap: 20px;
       }
     }
+  }
+  &-list__item {
   }
   &-box {
     &__title {
@@ -53,7 +62,7 @@
   &-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 
     &.phone-list {
       padding-left: 9px;
@@ -63,12 +72,12 @@
   .line {
     height: 1px;
     background: #dcdbdb;
-    width: 100%;
+    width: 160px;
   }
   &-link {
     font-size: 14px;
     font-weight: 400;
-    line-height: 16.41px;
+    line-height: 18.41px;
     color: #191919;
     transition: color 0.2s linear;
     &:hover,
@@ -92,7 +101,7 @@
   }
   .social-media {
     display: flex;
-    gap: 24px;
+    gap: 30px;
 
     &__img {
       width: 31px;
