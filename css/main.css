@@ -2431,6 +2431,7 @@ body.no-scroll {
   display: flex;
   gap: 15px;
   padding-top: 30px;
+  flex-wrap: wrap;
 }
 .articles-sec__hashtag span,
 .comments-sec__hashtag span {
@@ -3108,8 +3109,7 @@ body.white-bg {
   .footer-left__box {
     gap: 50px;
   }
-  .article-four__page .left-box,
-  .article-two__page .left-box {
+  .article-four__page .left-box {
     max-width: 610px;
   }
 }
@@ -3570,6 +3570,66 @@ body.white-bg {
   }
   .articles-cards.wrap {
     gap: 30px;
+  }
+  .articles-cards {
+    flex-direction: column;
+  }
+  .articles-cards .card {
+    max-width: 100% !important;
+    gap: 30px;
+    padding: 20px;
+  }
+  .articles-cards .card-title {
+    font-size: 20px;
+  }
+  .articles-sec__hashtag,
+  .comments-sec__hashtag {
+    column-gap: 15px;
+    row-gap: 10px;
+  }
+  .article-one .breadcrumb-list {
+    display: none;
+  }
+  .articles-sec__title,
+  .comments-sec__title {
+    font-size: 36px;
+    line-height: 50.4px;
+    margin: 10px 0;
+  }
+  .articles-sec__info,
+  .comments-sec__info {
+    font-size: 14px;
+    line-height: 16.41px;
+  }
+  .articles-sec .article-box__desc,
+  .comments-sec .article-box__desc,
+  .articles-sec .list-item,
+  .comments-sec .list-item {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+  .articles-sec .article-box__img,
+  .comments-sec .article-box__img {
+    height: 284px;
+  }
+  .articles-sec .article-box__img-two,
+  .comments-sec .article-box__img-two {
+    height: 423px;
+  }
+  .article-one .exploration-countries .world-locations .accordions {
+    max-width: 100%;
+  }
+  .articles-sec .quote-box__desc,
+  .comments-sec .quote-box__desc {
+    font-size: 18px;
+    line-height: 30.6px;
+    text-indent: 20px;
+  }
+  .comments-sec .container {
+    flex-direction: column;
+  }
+  .comments-sec .container .right-box {
+    display: none;
   }
 }
 @media screen and (max-width: 720px) {
@@ -4041,6 +4101,133 @@ body.white-bg {
   .content-cards.mt-60 {
     margin: 0;
     padding: 15px;
+  }
+  .articles-cards .card-footer {
+    flex-direction: column;
+    align-items: start;
+  }
+  .articles-cards .card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .articles-cards .card-info {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .articles-cards .card.small,
+  .articles-cards .card.larg {
+    padding: 15px;
+  }
+  .articles-sec__hashtag,
+  .comments-sec__hashtag {
+    padding-top: 0;
+  }
+  .articles-sec__hashtag span,
+  .comments-sec__hashtag span {
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .articles-sec__title,
+  .comments-sec__title {
+    font-size: 28px;
+    line-height: 39.2px;
+  }
+  .articles-sec__info,
+  .comments-sec__info {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .articles-sec .article-box__desc,
+  .comments-sec .article-box__desc,
+  .articles-sec .list-item,
+  .comments-sec .list-item {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .articles-sec .article-boxes,
+  .comments-sec .article-boxes {
+    margin-top: 55px;
+    gap: 40px;
+  }
+  .articles-sec .article-box__img,
+  .comments-sec .article-box__img {
+    height: 135px;
+  }
+  .articles-sec .article-box__title,
+  .comments-sec .article-box__title {
+    font-size: 22px;
+    line-height: 30.8px;
+    font-weight: 400;
+  }
+  .articles-sec .article-box,
+  .comments-sec .article-box {
+    gap: 15px;
+  }
+  .articles-sec .number-title,
+  .comments-sec .number-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .articles-sec .article-box__img-two,
+  .comments-sec .article-box__img-two {
+    height: 191px;
+  }
+  .articles-sec .quote-box__desc,
+  .comments-sec .quote-box__desc {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .articles-sec .article-footer h5,
+  .comments-sec .article-footer h5 {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+  .articles-sec .article-footer .social-media,
+  .comments-sec .article-footer .social-media {
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .article-footer__box:last-child {
+    text-align: right;
+  }
+  .comments-sec .comments-form .input-box {
+    flex-direction: column;
+    gap: 9px;
+  }
+  .comments-sec .comments-form input,
+  .comments-sec .comments-form textarea {
+    padding: 9px 11px 12px 11px;
+    height: 35px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .comments-sec .comments-form textarea {
+    padding: 13px 11px;
+    height: 115px;
+  }
+  .comments-sec .comments-form .blue-btn {
+    width: 187px;
+    padding: 0;
+    height: 40px;
+  }
+  .comments-sec .comments-form .btns {
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .comments-sec .comment-box .user-name {
+    font-size: 16px;
+    line-height: 27.2px;
+  }
+  .comments-sec .comment-box .avatar {
+    min-height: 50px;
+    min-width: 50px;
+  }
+  .comments-sec .comment-box .user-comment {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .comments-sec .child-comment {
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 480px) {
