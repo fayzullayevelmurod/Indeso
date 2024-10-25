@@ -340,7 +340,7 @@
     line-height: 30px;
   }
   .accordion-content {
-    .media-block__title{
+    .media-block__title {
       display: none;
     }
     .boxes {
@@ -536,5 +536,33 @@
   }
   .united-states__page .business-registration-info .left-box span {
     width: fit-content;
+  }
+}
+
+.united-states__page .business-analytics {
+  overflow: hidden;
+}
+
+.info-bottom__content {
+  text-align: center;
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    color: #3d3d3d;
+    padding-top: 57px;
+  }
+  span {
+    margin: 60px 0 30px 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+    color: #191919;
+    display: block;
+  }
+  a {
+    width: 369px;
+    border-color: #C73731;
   }
 }

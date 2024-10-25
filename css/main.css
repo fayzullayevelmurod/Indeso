@@ -1395,39 +1395,97 @@ body.no-scroll {
 }
 
 .reviews {
-  padding: 120px 0;
+  padding-top: 120px;
 }
-.reviews .logos-container {
+.reviews .container {
+  overflow: hidden;
+}
+.reviews-swiper__top {
+  width: 271px;
+  overflow: visible;
+}
+.reviews-swiper__top .swiper-wrapper {
+  height: 133px;
+  align-items: center;
+}
+.reviews-swiper__top .logo-box {
+  background: #fff;
+  border-radius: 50%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
+  border: 1px solid #f5f5f5;
+  width: 91px;
+  height: 91px;
+  transition: all 0.2s linear;
+  padding: 15px;
+}
+.reviews-swiper__top .logo-box img {
+  width: 100%;
+}
+.reviews-swiper__top .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
   position: relative;
 }
-.reviews .logo-item {
-  width: 100px;
-  height: 100px;
-  opacity: 0.5;
-  transition: all 0.3s ease;
-}
-.reviews .logo-item.active {
-  opacity: 1;
-  transform: scale(1.2); /* Active logo uchun katta ko'rinish */
-}
-.reviews .logo-item.center {
+.reviews-swiper__top .swiper-slide::before {
+  content: "";
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10; /* O'rtadagi logo ustun bo'lishi uchun */
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #b0b0b0;
+  z-index: -1;
 }
-.reviews .content-container {
-  margin-top: 20px;
+.reviews-swiper__top .swiper-slide-active::before {
+  background: #c73731;
+}
+.reviews-swiper__top .swiper-slide-active .logo-box {
+  width: 133px;
+  height: 133px;
+}
+.reviews-swiper__bottom {
   text-align: center;
+  max-width: 830px;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  z-index: 1;
 }
-.reviews button {
-  background-color: #ccc;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.reviews-swiper__bottom .swiper-slide:not(.swiper-slide-active) {
+  overflow: hidden;
+  height: 0;
+}
+.reviews-swiper__bottom .quote-img {
+  position: absolute;
+  top: 93px;
+  left: -76px;
+  width: 213px;
+  height: 198px;
+  z-index: -1;
+}
+.reviews-swiper__bottom .swiper-title h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #c73731;
+}
+.reviews-swiper__bottom .swiper-title p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin: 10px 0 45px 0;
+}
+.reviews-swiper__bottom .swiper-desc .desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
 }
 
 .our-clients {
@@ -1698,6 +1756,72 @@ body.no-scroll {
 
 .media-block {
   display: none;
+}
+
+.market-challenges .swiper-slide {
+  width: 1915px;
+  overflow-x: auto;
+}
+.market-challenges .market-challenges__swiper-two {
+  position: relative;
+  padding-top: 60px;
+}
+.market-challenges .chalange-card {
+  margin-bottom: 60px;
+}
+.market-challenges .chalange-card .swiper-line {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.market-challenges .chalange-card ul {
+  display: flex;
+  align-items: start;
+  gap: 105px;
+  min-height: 345px;
+  position: relative;
+  z-index: 1;
+}
+.market-challenges .chalange-card li {
+  position: absolute;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 355px;
+}
+.market-challenges .chalange-card li:nth-child(1) {
+  left: 0;
+  top: 226px;
+}
+.market-challenges .chalange-card li:nth-child(2) {
+  left: 352px;
+  top: 0;
+}
+.market-challenges .chalange-card li:nth-child(3) {
+  left: 571px;
+  top: 226px;
+}
+.market-challenges .chalange-card li:nth-child(4) {
+  left: 802px;
+  top: 0;
+}
+.market-challenges .chalange-card li:nth-child(5) {
+  left: 1031px;
+  top: 226px;
+}
+.market-challenges .chalange-card li:nth-child(6) {
+  left: 1262px;
+  top: 0;
+}
+.market-challenges .chalange-card li:nth-child(7) {
+  left: 1560px;
+  top: 226px;
+}
+
+.most-comfortable .red-btn {
+  margin: 60px auto 0 auto;
+  width: 399px;
 }
 
 .united-states__page .intro-content__title {
@@ -2198,6 +2322,33 @@ body.no-scroll {
     width: fit-content;
   }
 }
+.united-states__page .business-analytics {
+  overflow: hidden;
+}
+
+.info-bottom__content {
+  text-align: center;
+}
+.info-bottom__content p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: #3d3d3d;
+  padding-top: 57px;
+}
+.info-bottom__content span {
+  margin: 60px 0 30px 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
+  color: #191919;
+  display: block;
+}
+.info-bottom__content a {
+  width: 369px;
+  border-color: #C73731;
+}
+
 .politica {
   padding-bottom: 165px;
 }
@@ -3704,6 +3855,12 @@ body.white-bg {
   .most-comfortable {
     padding-bottom: 80px;
   }
+  .reviews .swiper-btns {
+    display: none;
+  }
+  .info-bottom__content p {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 720px) {
   .articles-sec,
@@ -4314,6 +4471,70 @@ body.white-bg {
   }
   .most-comfortable {
     padding-bottom: 80px;
+  }
+  .market-challenges .chalange-card li {
+    font-size: 12px;
+    line-height: 16.8px;
+    max-width: 250px;
+  }
+  .market-challenges .title {
+    margin-bottom: 40px;
+  }
+  .market-challenges .market-challenges__swiper-two {
+    padding-top: 0;
+  }
+  .market-challenges .market-challenges__swiper-two .swiper-scrollbar {
+    display: none;
+  }
+  .reviews-swiper__top .swiper-slide-active .logo-box,
+  .reviews-swiper__top .swiper-slide .logo-box {
+    width: 90px;
+    height: 90px;
+  }
+  .reviews-swiper__bottom .swiper-desc .desc {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .reviews {
+    padding-top: 80px;
+  }
+  .reviews-swiper__bottom .quote-img {
+    width: 105px;
+    height: 98px;
+    left: -20px;
+    top: 86px;
+  }
+  .reviews-swiper__bottom {
+    padding-top: 0;
+  }
+  .reviews-swiper__top .swiper-slide-active::before {
+    background: #b0b0b0;
+  }
+  .reviews-swiper__bottom .swiper-title p {
+    margin: 10px 0 40px 0;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .info-bottom__content p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  .info-bottom__content span {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin: 20px 0 40px 0;
+  }
+  .info-bottom__content a {
+    width: 270px;
+  }
+  .market-challenges .chalange-card {
+    margin-bottom: 40px;
+  }
+  .market-challenges .chalange-card ul {
+    min-height: 308px;
+  }
+  .most-comfortable .red-btn {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {

@@ -442,3 +442,41 @@ document.querySelectorAll('.accordion-header').forEach(header => {
     }
   });
 });
+
+
+
+
+var swiper = new Swiper('.market-challenges__swiper-two', {
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+  scrollbar: {
+    el: '.market-challenges__swiper-scroll-bar',
+    hide: false,
+    draggable: true,
+  },
+  freeMode: true,
+});
+
+
+/// reviews-swiper
+var reviewsSwiper = new Swiper('.reviews-swiper__top', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.reviews-swiper__next',
+    prevEl: '.reviews-swiper__prev',
+  },
+  initialSlide: 2,
+});
+var reviewsSwiperBottom = new Swiper('.reviews-swiper__bottom .swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  initialSlide: 2,
+  thumbs: {
+    swiper: reviewsSwiper,
+  },
+});
+
+reviewsSwiper.on('slideChange', function (e) {
+  reviewsSwiperBottom.slideTo(reviewsSwiper.realIndex)
+});

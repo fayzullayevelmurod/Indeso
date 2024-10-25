@@ -627,6 +627,14 @@
   .most-comfortable {
     padding-bottom: 80px;
   }
+  .reviews {
+    .swiper-btns {
+      display: none;
+    }
+  }
+  .info-bottom__content p {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -1246,6 +1254,72 @@
   }
   .most-comfortable {
     padding-bottom: 80px;
+  }
+  .market-challenges .chalange-card li {
+    font-size: 12px;
+    line-height: 16.8px;
+    max-width: 250px;
+  }
+  .market-challenges .title {
+    margin-bottom: 40px;
+  }
+  .market-challenges .market-challenges__swiper-two {
+    padding-top: 0;
+    .swiper-scrollbar {
+      display: none;
+    }
+  }
+  .reviews-swiper__top .swiper-slide-active .logo-box,
+  .reviews-swiper__top .swiper-slide .logo-box {
+    width: 90px;
+    height: 90px;
+  }
+  .reviews-swiper__bottom .swiper-desc .desc {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .reviews {
+    padding-top: 80px;
+  }
+  .reviews-swiper__bottom .quote-img {
+    width: 105px;
+    height: 98px;
+    left: -20px;
+    top: 86px;
+  }
+  .reviews-swiper__bottom {
+    padding-top: 0;
+  }
+  .reviews-swiper__top .swiper-slide-active::before {
+    background: #b0b0b0;
+  }
+  .reviews-swiper__bottom .swiper-title p {
+    margin: 10px 0 40px 0;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .info-bottom__content p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  .info-bottom__content span {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin: 20px 0 40px 0;
+  }
+  .info-bottom__content {
+    a {
+      width: 270px;
+    }
+  }
+  .market-challenges .chalange-card {
+    margin-bottom: 40px;
+  }
+  .market-challenges .chalange-card ul {
+    min-height: 308px;
+  }
+  .most-comfortable .red-btn {
+  display: none;
   }
 }
 
