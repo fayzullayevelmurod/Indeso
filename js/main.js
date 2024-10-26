@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 30,
       },
       720: {
-        slidesPerView: 2.1,
+        slidesPerView: 2,
         spaceBetween: 30,
       },
       850: {
@@ -67,7 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 40,
+      },
+      1110: {
+        slidesPerView: 3,
+        spaceBetween: 130,
       },
       1280: {
         slidesPerView: 3,
@@ -233,6 +237,10 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
       },
       1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1110: {
         slidesPerView: 4,
         spaceBetween: 30,
       },
@@ -292,6 +300,10 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       1024: {
         slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1110: {
+        slidesPerView: 4,
         spaceBetween: 40,
       },
       1280: {

@@ -1,13 +1,16 @@
 .intro {
   margin: 108px auto 294px auto;
   z-index: 1;
+  .table-map{
+    display: none;
+  }
   .container {
     position: relative;
   }
   .red-btn {
     max-width: 423px;
     width: 100%;
-    
+
     &:hover {
       background: #A8241E;
     }
