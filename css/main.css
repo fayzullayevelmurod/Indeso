@@ -2471,12 +2471,29 @@ body.no-scroll {
 .politica-box {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 34px;
 }
 .politica-box .desc-box {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.politica-box .desc-box.box-end {
+  gap: 30px;
+}
+.politica-box-two {
+  gap: 30px;
+}
+.politica-box-end {
+  padding-left: 0;
+}
+.politica-box-end .list {
+  gap: 30px;
+}
+.politica-box-end .list-item::before {
+  left: -40px;
+  width: 15px;
+  height: 15px;
 }
 .politica-title {
   font-family: "Manrope", sans-serif;
@@ -2490,12 +2507,34 @@ body.no-scroll {
   font-weight: 400;
   line-height: 30.6px;
 }
+.politica .list-item {
+  font-family: "Manrope", sans-serif;
+  line-height: 30.6px;
+}
 .politica .list-item::before {
   background: #4581c7;
 }
+.politica .list {
+  padding-left: 40px;
+}
+.politica .list-item::before {
+  left: -25px;
+}
+.politica .list.box-left {
+  padding-left: 35px;
+}
+.politica .box-end .list-item::before {
+  left: -34px;
+}
+.politica .number-list {
+  gap: 32px;
+  padding-left: 31px;
+}
 .politica .number-list .list-item {
   display: flex;
-  align-items: center;
+  align-items: start;
+  font-size: 18px;
+  line-height: 30.6px;
   gap: 10px;
 }
 .politica .number-list .list-item::before {
