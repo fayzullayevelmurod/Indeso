@@ -3,7 +3,8 @@ body {
     background: #fff;
   }
 }
-.article-two__page {
+.article-two__page,
+.article-four__page {
   .articles-sec {
     padding-bottom: 125px;
   }
@@ -345,4 +346,33 @@ body {
   .content-cards {
     gap: 22px;
   }
+}
+
+.article-four__page {
+  header {
+    padding-top: 28px;
+  }
+  .article-nav {
+    margin: 46px 11px 60px 0;
+  }
+  .right-box {
+    margin-top: 0;
+  }
+  .content-cards__two .card-img {
+    margin: 40px 0 28px 0;
+  }
+  .articles-four {
+    margin-top: 20px;
+  }
+  .show-more__btn {
+  }
+}
+.article-four__page .left-box .show-more__btn {
+  margin-top: 0;
+  width: 300px;
+  height: 60px;
+}
+
+.article-four__page .article-nav {
+  margin: 32px 11px 60px 0;
 }
