@@ -4654,6 +4654,16 @@ body.white-bg {
   .our-services .swiper-wrapper .swiper-slide:first-child .our-services__card-back {
     top: 0;
   }
+  .market-research-beneficiaries .container {
+    padding-right: 0;
+  }
+  .faq-section .accordion-content {
+    padding-left: 0;
+    padding-top: 17px;
+  }
+  .faq-section .accordions .accordion:first-child .accordion-header {
+    padding-bottom: 46px;
+  }
   .footer-left__box .flex-box .footer-box:last-child .footer-box__title {
     margin-bottom: 17px;
   }
@@ -4691,7 +4701,7 @@ body.white-bg {
     text-align: center;
   }
   .intro {
-    margin-top: 108px;
+    margin-top: 115px;
   }
   .intro .company-info__list-text {
     font-size: 14px;
@@ -4699,7 +4709,12 @@ body.white-bg {
   }
   .intro .company-info__list {
     gap: 16px;
-    margin: 85px 0;
+    margin: 85px 0 65px 0;
+  }
+  .intro .red-btn {
+    height: 56px;
+    font-size: 14px;
+    line-height: 16.41px;
   }
   .header-right__box {
     padding: 107px 0 157px 0;
@@ -4718,6 +4733,11 @@ body.white-bg {
     align-items: start;
     gap: 30px;
     padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .our-services__card-back .card-body .desc {
+    font-size: 14px;
+    line-height: 21px;
   }
   .our-services__card-back .card-header {
     padding: 20px;
@@ -4730,7 +4750,7 @@ body.white-bg {
     padding: 20px 15px 15px 15px;
   }
   .our-services__card-back .card-footer {
-    padding: 20px;
+    padding: 0 15px 10px 20px;
   }
   .our-services__card-back .card-footer .desc {
     font-size: 14px;
@@ -4756,14 +4776,34 @@ body.white-bg {
   .exploration-countries__card-title {
     font-size: 20px;
     line-height: 23.44px;
-    padding: 15px 0;
+    padding: 12px 0;
   }
   .exploration-countries__card .desc {
     font-size: 14px;
     line-height: 22.4px;
+    padding: 17px 17px 23px 31px;
   }
   .exploration-countries__card .card-footer {
-    padding-bottom: 38px;
+    padding: 2px 7px 38px 10px;
+  }
+  .exploration-countries .world-locations__map {
+    min-width: 606px;
+    margin-top: 7px;
+    margin-left: 54px;
+    width: 100%;
+    height: 346px;
+  }
+  .exploration-countries .world-locations .accordions {
+    margin-top: 27px;
+  }
+  .exploration-countries .world-locations .accordions .accordion-content {
+    padding-top: 35px;
+  }
+  .exploration-countries .accordion-content__list .accordion-list:last-child {
+    margin-right: 0;
+  }
+  .exploration-countries .accordion {
+    padding: 19px 0;
   }
   .accordion-list__item {
     font-size: 14px;
@@ -4776,6 +4816,25 @@ body.white-bg {
   .accordion-header__btn {
     width: 16px;
     height: 16px;
+  }
+  .market-research .container {
+    padding-left: 52px !important;
+  }
+  .market-research .title-sm {
+    width: 245px;
+  }
+  .market-research .title-sm br {
+    display: none;
+  }
+  .market-research__cards {
+    margin-top: 42px;
+  }
+  .market-research .container {
+    padding-right: 50px !important;
+  }
+  .market-research__card.left,
+  .market-research .desc-box {
+    gap: 12px;
   }
   .market-research__card.right {
     height: 188px;
@@ -5339,10 +5398,61 @@ body.white-bg {
   .most-comfortable .red-btn {
     display: none;
   }
+  .container,
+  .header .container,
+  .intro .container {
+    padding-left: 54px !important;
+    padding-right: 54px !important;
+  }
+  .header-logo {
+    width: 47.23px;
+    height: 27px;
+  }
+  .header {
+    padding-top: 13px;
+  }
+  .header .open-menu__btn {
+    width: 26px;
+    height: 22px;
+  }
+  .intro-map {
+    top: 34px;
+  }
+  .intro {
+    margin-bottom: 307px;
+  }
+  .our-services .title-box .btn {
+    width: 100%;
+  }
+  .our-services .swiper-wrapper {
+    padding-top: 30px;
+  }
+  .our-services .swiper-scrollbar {
+    top: -181px;
+    bottom: unset;
+    height: 3px;
+  }
+  .our-services .swiper-slide {
+    padding-bottom: 47px;
+  }
+  .exploration-countries__swiper {
+    margin: 39px 0 20px 0;
+  }
+  .exploration-countries__card-img {
+    height: 200px;
+  }
+  .market-research__stat-item {
+    padding-top: 55px;
+    padding-left: 10px;
+  }
+  .market-research__stats {
+    grid-template-columns: 233px 233px;
+  }
 }
 @media screen and (max-width: 480px) {
   .intro-map {
-    right: -300px;
+    width: 747.57px;
+    right: -333px;
   }
 }
 
