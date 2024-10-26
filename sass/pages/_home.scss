@@ -1,7 +1,7 @@
 .intro {
   margin: 108px auto 294px auto;
   z-index: 1;
-  .table-map{
+  .table-map {
     display: none;
   }
   .container {
@@ -12,7 +12,7 @@
     width: 100%;
 
     &:hover {
-      background: #A8241E;
+      background: #a8241e;
     }
   }
   &-map {
@@ -1453,4 +1453,8 @@
 .most-comfortable .red-btn {
   margin: 60px auto 0 auto;
   width: 399px;
+}
+
+.our-services .swiper-scrollbar {
+  display: none;
 }
