@@ -1,4 +1,5 @@
-.article-one {
+.article-one,
+.article-two__page {
   .header .nav-list {
     gap: 83px;
     padding-right: 48px;
@@ -28,6 +29,8 @@
   .articles-card__desc {
     margin-bottom: 14px;
   }
+}
+.article-one {
   footer {
     .footer-top {
       padding-bottom: 67px;
