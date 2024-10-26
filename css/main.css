@@ -79,6 +79,13 @@ body.no-scroll {
   margin: 0 auto;
 }
 
+.site-map .list-item {
+  line-height: 30.6px;
+}
+.site-map .list-item::before {
+  left: -24px;
+}
+
 .list {
   padding-left: 32px;
   display: flex;
@@ -559,6 +566,10 @@ body.no-scroll {
 .header .open-menu__btn,
 .header .close-menu {
   display: none;
+}
+
+.site-map_header .header-right__box {
+  gap: 125px;
 }
 
 .footer {
@@ -2502,7 +2513,7 @@ body.no-scroll {
   padding-bottom: 383px;
 }
 .site-map .list {
-  padding-left: 45px;
+  padding-left: 40px;
 }
 .site-map .list-link {
   color: #4581c7;
@@ -2510,6 +2521,9 @@ body.no-scroll {
   font-size: 18px;
   font-weight: 400;
   line-height: 30.6px;
+}
+.site-map-box {
+  gap: 15px;
 }
 
 @media screen and (max-width: 768px) {
