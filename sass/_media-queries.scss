@@ -802,6 +802,32 @@
       max-width: 100%;
     }
   }
+  .client-results {
+    padding: 143px 0 82px 0;
+  }
+  .market-research-beneficiaries .title {
+    br {
+      display: none;
+    }
+  }
+  .reviews {
+    padding-top: 101px;
+  }
+
+  .our-clients {
+    margin: 151px 0;
+  }
+  .our-clients__boxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .client-results__swiper {
+    margin-top: 49px;
+    padding-top: 53px;
+  }
+  .client-results__swiper .swiper-scrollbar {
+    display: block;
+  }
   .cooperation-process__box:nth-child(2) {
     height: 188px;
   }
