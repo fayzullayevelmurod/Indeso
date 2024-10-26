@@ -1472,6 +1472,9 @@
       line-height: 21px;
     }
   }
+  .article-two__page .left-box .show-more__btn {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 720px) {
