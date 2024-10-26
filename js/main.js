@@ -551,3 +551,45 @@ var reviewsSwiperBottom = new Swiper('.reviews-swiper__bottom .swiper', {
 reviewsSwiper.on('slideChange', function (e) {
   reviewsSwiperBottom.slideTo(reviewsSwiper.realIndex)
 });
+
+try {
+  // Elementlarni olish
+  const dropdown = document.querySelector('.article-nav__dropdown');
+  const selectedBox = dropdown.querySelector('.selected-box');
+  const selectedText = dropdown.querySelector('.selected-text');
+  const options = dropdown.querySelector('.options');
+  const optionItems = options.querySelectorAll('.option');
+
+  // Ochish va yopish uchun funksiyalar
+  const toggleDropdown = () => {
+    options.classList.toggle('show');
+  };
+
+  const closeDropdown = () => {
+    options.classList.remove('show');
+  };
+
+  // Dropdownni bosilganda ochish/yopish
+  selectedBox.addEventListener('click', (event) => {
+    event.stopPropagation(); // To prevent closing immediately
+    toggleDropdown();
+  });
+
+  // Option bosilganda tanlash va textcontentni o'zgartirish
+  optionItems.forEach(option => {
+    option.addEventListener('click', (event) => {
+      event.stopPropagation();
+      selectedText.textContent = option.textContent;
+      closeDropdown();
+    });
+  });
+
+  // Optionsdan tashqari boshqa joyni bosganda yopish
+  document.addEventListener('click', (event) => {
+    if (!dropdown.contains(event.target)) {
+      closeDropdown();
+    }
+  });
+} catch (error) {
+
+}

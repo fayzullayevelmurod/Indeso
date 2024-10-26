@@ -1,10 +1,60 @@
+.article-one {
+  .header .nav-list {
+    gap: 83px;
+    padding-right: 48px;
+  }
+  .breadcrumb-link {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+  .breadcrumb-list {
+    gap: 6px;
+  }
+  .list {
+    padding-left: 37px;
+    gap: 20px;
+    .list-item {
+      width: 94%;
+    }
+  }
+  .list-item::before {
+    width: 15px;
+    height: 15px;
+    left: -37px;
+  }
+  .articles-swiper {
+    margin-top: 60px;
+  }
+  .articles-card__desc {
+    margin-bottom: 14px;
+  }
+  footer {
+    .footer-top {
+      padding-bottom: 67px;
+    }
+  }
+  .footer-right__box {
+    margin-top: 6px;
+  }
+  .footer-right__box {
+    align-items: start;
+  }
+  .footer-right__box .footer-list:last-child {
+    padding-top: 0;
+    gap: 18px;
+    .footer-link {
+      line-height: 22.4px;
+    }
+  }
+}
+
 .article-nav {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: space-between;
   background: #ffffff;
-  margin: 30px 0 60px 0;
+  margin: 33px 11px 60px 0;
   &__link {
     font-size: 18px;
     font-weight: 500;
@@ -14,11 +64,14 @@
       color: #c73731;
     }
   }
+  &__img {
+    margin-top: -6px;
+  }
 }
 
 .articles-sec,
 .comments-sec {
-  padding-bottom: 120px;
+  padding-bottom: 114px;
   .container {
     display: flex;
     gap: 99px;
@@ -74,7 +127,7 @@
   .article-box {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     &__img {
       width: 100%;
       height: 388px;
@@ -96,10 +149,26 @@
       font-weight: 300;
       line-height: 34px;
       color: #050505;
+      &.normal {
+        font-weight: normal;
+      }
     }
   }
+  .article-box__title-xl {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50.4px;
+    margin-top: 18px;
+    margin-bottom: 9px;
+  }
+  .font-Montserrat {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+  }
+  .desc-title {
+    margin-bottom: 10px;
+  }
   .quote-box {
-    margin: 45px 0;
+    margin: 38px 0;
     display: flex;
     align-items: start;
     &__desc {
@@ -108,6 +177,12 @@
       font-weight: 400;
       line-height: 40.8px;
       color: #050505;
+      text-indent: 36px;
+      padding-top: 4px;
+    }
+    img {
+      width: 35px;
+      height: 32px;
     }
   }
   .list-item {
@@ -131,6 +206,7 @@
       gap: 30px;
       align-items: center;
       margin-top: 20px;
+      margin-left: 3px;
     }
   }
   .right-box {
@@ -138,7 +214,7 @@
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 25px;
     &__content {
     }
     &__title {
@@ -157,15 +233,42 @@
         font-weight: 500;
         line-height: 22.4px;
         color: #000;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
       }
     }
   }
 }
-
+.articles-sec .right-box .comment-box__title,
+.comments-sec .right-box .comment-box__title {
+  width: 90%;
+}
+.articles-sec .article-footer {
+  padding-right: 117px;
+}
+.articles-sec .number-title {
+  margin-bottom: -6px;
+}
+.articles-sec .article-box__desc {
+  width: 90%;
+  &.top-desc,
+  &.normal {
+    width: 100%;
+  }
+}
+.articles-sec .article-box__img-two {
+  width: 699px;
+}
 // .comments-sec
 .comments-sec {
-  padding: 120px 0;
+  padding: 124px 0 88px 0;
+  .left-box {
+    width: 730px;
+  }
+  .comments-form__title-sm {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+  }
   .comments-form {
     &__title {
       font-size: 32px;
@@ -177,16 +280,20 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      max-width: 670px;
     }
     .input-box {
       display: flex;
-      gap: 100px;
+      justify-content: space-between;
+      gap: 10px;
+      input:first-child {
+        width: 270px;
+      }
+      input:last-child {
+        width: 300px;
+      }
     }
-    textarea {
-      padding: 22px 16px;
-      height: 185px;
-      resize: vertical;
-    }
+
     input,
     textarea {
       font-size: 16px;
@@ -194,15 +301,23 @@
       line-height: 22.4px;
       border: 1px solid #b1aeae;
       width: 100%;
+      height: 55px;
       outline: none;
       padding: 17px 15px;
       background: transparent;
       border-radius: 4px;
     }
+    textarea {
+      padding: 22px 16px;
+      height: 185px;
+      resize: vertical;
+      width: 100%;
+    }
     .btns {
       display: flex;
       gap: 46px;
       align-items: center;
+      margin-top: 12px;
     }
     .blue-btn {
       font-size: 16px;
@@ -218,6 +333,12 @@
       font-weight: 500;
       line-height: 22.4px;
       color: #707070;
+    }
+  }
+  .comments-form__bottom {
+    textarea {
+      padding: 11px 16px;
+      height: 117px;
     }
   }
   .more-comment__btn {
@@ -237,13 +358,14 @@
     flex-direction: column;
     gap: 40px;
     margin-bottom: 60px;
+    margin-top: 103px;
   }
   .child-comment {
-    padding-left: 30px;
+    padding-left: 29px;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 39px;
 
     &.hide {
       display: none;
@@ -262,11 +384,15 @@
   .comment-box {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 0;
+    &.bottom-comment {
+      margin-top: 20px;
+    }
     .user-box {
       display: flex;
       gap: 17px;
       align-items: center;
+      margin-bottom: 27px;
     }
     .avatar {
       width: 50px;
@@ -290,18 +416,20 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 34px;
+      width: 730px;
     }
     .comment-date {
       font-size: 16px;
       font-weight: 400;
       line-height: 18.75px;
       color: #b1aeae;
-      margin-top: 15px;
+      margin-top: 17px;
     }
     .bottom-box {
       display: flex;
       align-items: center;
       gap: 27px;
+      margin-top: 29px;
     }
     .ansver-btn {
       font-size: 16px;
