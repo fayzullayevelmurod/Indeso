@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         spaceBetween: 10,
       },
       720: {
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1.2,
+        slidesPerView: 1.7,
         spaceBetween: 20,
       },
       720: {
