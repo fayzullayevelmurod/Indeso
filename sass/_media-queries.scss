@@ -1419,8 +1419,14 @@
     width: 16px;
     height: 16px;
   }
+  .exploration-countries .container {
+    padding-right: 42px !important;
+  }
+  .exploration-countries .accordion {
+    padding: 19px 10px 19px 0px;
+  }
   .market-research .container {
-    padding-left: 52px !important;
+    padding-left: 56px !important;
   }
   .market-research .title-sm {
     width: 245px;
@@ -1457,6 +1463,9 @@
     gap: 30px;
     grid-template-columns: repeat(1, 1fr);
     margin: 40px 0 80px 0;
+
+    .market-research__stat-item {
+    }
   }
   .market-research__stat-title {
     font-size: 32px;
@@ -2055,8 +2064,168 @@
     padding-top: 55px;
     padding-left: 10px;
   }
-  .market-research__stats {
-    grid-template-columns: 233px 233px;
+  .market-research__stat-description {
+    max-width: 250px;
+  }
+  .market-research__stat-item {
+    padding-top: 60px;
+  }
+  .market-research .expert-profile__photo {
+    width: 268px;
+    height: 363px;
+    margin: 24px 0 209px 0;
+  }
+  .united-states__page .expert-profile__photo .quote-box {
+    // right: -65px;
+    // bottom: -220px;
+    // padding: 14px 19px 34px 28px;
+    // border-radius: 10px;
+    right: -65px;
+    bottom: 0;
+    top: 77%;
+    width: 239px;
+    padding: 14px 19px 34px 28px;
+    border-radius: 18px;
+    height: 262px;
+  }
+  .market-research .expert-profile .list {
+    width: 97%;
+    gap: 13px;
+    .list-item:nth-child(4) {
+      width: 285px;
+    }
+  }
+  .our-values__cards {
+    margin-top: 40px;
+  }
+  .our-values .container {
+    padding-right: 0 !important;
+  }
+  .market-analysis {
+    padding: 80px 0;
+  }
+  .market-analysis__container {
+    margin: 0 52px;
+  }
+  .market-analysis__content-info {
+    width: 100%;
+    margin: 0;
+  }
+  .market-analysis__swiper {
+    padding: 30px 20px 27px 20px;
+  }
+  .global-market__box {
+    margin-top: 40px;
+  }
+  .market-analysis .swiper-btns {
+    margin-left: 46px;
+    gap: 59px;
+    margin-top: -41px;
+  }
+  .united-states__page .expert-profile__photo .quote-box__desc {
+    line-height: 20px;
+  }
+  .united-states__page .expert-profile__photo .quote-box__icon {
+    width: 43px;
+    height: 40px;
+    top: 20px;
+    left: 25px;
+  }
+  .global-market__list {
+    gap: 0;
+    img {
+      margin-top: 24px;
+    }
+  }
+  .global-market__list:last-child .global-market__list-item:nth-child(1) {
+    width: 101%;
+  }
+  .global-market__list:last-child .global-market__list-item:nth-child(2) {
+    margin: 17px 0 17px 0;
+  }
+  .global-market__list:first-child .global-market__list-item:nth-child(2) {
+    margin: 18px 0 19px 0;
+  }
+  .global-market__img {
+    top: 25%;
+  }
+  .market-challenges .title {
+    width: 100%;
+  }
+  .market-challenges .chalange-card ul {
+    min-height: 259px;
+  }
+  .market-challenges .chalange-card li:nth-child(1),
+  .market-challenges .chalange-card li:nth-child(3),
+  .market-challenges .chalange-card li:nth-child(5),
+  .market-challenges .chalange-card li:nth-child(7) {
+    top: 144px;
+  }
+  .market-challenges .chalange-card li:nth-child(2) {
+    left: 276px;
+    top: 0;
+  }
+  .market-challenges .chalange-card .swiper-line {
+    top: 70px;
+  }
+  .market-challenges .chalange-card {
+    margin-bottom: 37px;
+  }
+  .market-challenges {
+    .container {
+      padding-left: 53px !important;
+      padding-right: 52px !important;
+    }
+  }
+  .market-entry-benefits .title {
+    width: 101%;
+  }
+  .market-challenges {
+    padding: 80px 0 76px 0;
+  }
+  .market-entry-benefits__boxes {
+    margin-top: 12px;
+  }
+  .market-entry-benefits {
+    .accordion-content {
+      padding-top: 40px;
+    }
+    .accordion-list {
+      gap: 14px;
+    }
+    .accordion-header__btn {
+      width: 23px;
+      height: 22px;
+    }
+  }
+  .consultation-invite {
+    padding: 83px 0 74px 0;
+  }
+  .consultation-invite__boxes {
+    padding: 0 55px;
+  }
+  .consultation-invite__boxes .register-form {
+    height: fit-content;
+  }
+  .consultation-invite__boxes .register-form__info {
+    margin-bottom: 0;
+  }
+  .consultation-invite__list {
+    padding-top: 9px;
+  }
+  .consultation-invite__list {
+    gap: 12px;
+  }
+  .consultation-media__btn {
+    width: 100%;
+    margin-top: 10px;
+    height: 52px;
+  }
+  .market-entry-benefits .accordions .accordion:first-child {
+    padding-bottom: 19px;
+  }
+  .accordion-header__title {
+    width: 79%;
   }
 }
 
