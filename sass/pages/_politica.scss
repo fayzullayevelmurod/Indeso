@@ -30,13 +30,34 @@
   &-box {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 34px;
     .desc-box {
       display: flex;
       flex-direction: column;
       gap: 15px;
+
+      &.box-end {
+        gap: 30px;
+      }
     }
   }
+  &-box-two {
+    gap: 30px;
+  }
+  &-box-end {
+    padding-left: 0;
+    .list {
+      gap: 30px;
+    }
+    .list-item {
+      &::before {
+        left: -40px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
   &-title {
     font-family: 'Manrope', sans-serif;
     font-size: 32px;
@@ -50,14 +71,41 @@
     line-height: 30.6px;
   }
   .list-item {
+    font-family: "Manrope",sans-serif;
+    line-height: 30.6px;
     &::before {
       background: #4581c7;
     }
   }
+
+  .list {
+    padding-left: 40px;
+    &-item {
+      &::before {
+        left: -25px;
+      }
+    }
+  }
+  .list.box-left {
+    padding-left: 35px;
+  }
+
+  .box-end {
+    .list-item {
+      &::before {
+        left: -34px;
+      }
+    }
+  }
+
   .number-list {
+    gap: 32px;
+    padding-left: 31px;
     .list-item {
       display: flex;
-      align-items: center;
+      align-items: start;
+      font-size: 18px;
+      line-height: 30.6px;
       gap: 10px;
       &::before {
         display: none;
@@ -75,7 +123,7 @@
 .site-map {
   padding-bottom: 383px;
   .list {
-    padding-left: 45px;
+    padding-left: 40px;
   }
   .list-link {
     color: #4581c7;
@@ -83,6 +131,10 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30.6px;
+  }
+
+  &-box {
+    gap: 15px;
   }
 }
 @media screen and (max-width: 768px) {

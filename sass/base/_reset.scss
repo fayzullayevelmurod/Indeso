@@ -76,6 +76,19 @@ body {
   margin: 0 auto;
 }
 
+.site-map {
+  .list {
+    &-item {
+      line-height: 30.6px;
+
+
+      &::before {
+        left: -24px;
+      }
+    }
+  }
+}
+
 .list {
   padding-left: 32px;
   display: flex;
