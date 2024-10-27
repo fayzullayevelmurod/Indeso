@@ -6850,6 +6850,9 @@ body.white-bg {
   .header-right__box {
     height: 100vh;
   }
+  .articles-card__content {
+    padding: 15px 0px 15px 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   .intro-map {
