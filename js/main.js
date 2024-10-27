@@ -168,6 +168,9 @@ document.addEventListener('DOMContentLoaded', function () {
       init: function () {
         updateOpacity();
       },
+      reachEnd: function () {
+        resetOpacity();
+      }
     },
     breakpoints: {
       0: {
@@ -201,20 +204,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Barcha slaydlarning opacity ni boshlang'ich holatga qaytarish
     slides.forEach(function (slide, index) {
-      slide.classList.remove('opacity-slider'); // Barcha slaydlarni opacity-slider klassidan tozalaymiz
+      if (index >= activeIndex - 1 && index < activeIndex + slidesPerView + 1) {
+        // Hozirgi ko'rinayotgan va unga yaqin slaydlar
+        // slide.style.opacity = '1';
+        slide.classList.remove('opacity-slider');
+      } else {
+        // Ko'rinmayotgan slaydlar
+        // slide.style.opacity = '0.5';
+        slide.classList.add('opacity-slider');
+      }
     });
-
-    // Oxirgi ko'rinayotgan slaydni aniqlash
-    var lastVisibleSlideIndex = activeIndex + slidesPerView;
-    var firstInvisibleSlideIndex = activeIndex - 1;
-
-    // Ko'rinmayotgan slaydlar uchun opacity-slider klassini qo'shamiz
-    if (slides[firstInvisibleSlideIndex]) {
-      slides[firstInvisibleSlideIndex].classList.add('opacity-slider');
-    }
-    if (slides[lastVisibleSlideIndex]) {
-      slides[lastVisibleSlideIndex].classList.add('opacity-slider');
-    }
   }
 
   function resetOpacity() {
@@ -223,82 +222,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Oxirgi slaydga yetganda barcha slaydlar uchun opacity 1 qilish
     slides.forEach(function (slide) {
-      slide.classList.remove('opacity-slider');
+      slide.style.opacity = '1';
     });
   }
-  // var swiper = new Swiper('.client-results__swiper', {
-  //   slidesPerView: 4,
-  //   spaceBetween: 30,
-  //   speed: 700,
-  //   scrollbar: {
-  //     el: '.client-results__swiper-scrollbar',
-  //     hide: false,
-  //     draggable: true,
-  //   },
-  //   on: {
-  //     slideChange: function () {
-  //       updateOpacity();
-  //     },
-  //     init: function () {
-  //       updateOpacity();
-  //     },
-  //     reachEnd: function () {
-  //       resetOpacity();
-  //     }
-  //   },
-  //   breakpoints: {
-  //     0: {
-  //       slidesPerView: 1.2,
-  //       spaceBetween: 10,
-  //     },
-  //     720: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 20,
-  //     },
-  //     1024: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 30,
-  //     },
-  //     1110: {
-  //       slidesPerView: 4,
-  //       spaceBetween: 30,
-  //     },
-  //     1280: {
-  //       slidesPerView: 4,
-  //       spaceBetween: 30,
-  //     },
-  //   }
-  // });
-
-  // function updateOpacity() {
-  //   // Barcha slaydlarni olish
-  //   var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
-  //   var activeIndex = swiper.activeIndex;
-  //   var slidesPerView = swiper.params.slidesPerView;
-
-  //   // Barcha slaydlarning opacity ni boshlang'ich holatga qaytarish
-  //   slides.forEach(function (slide, index) {
-  //     if (index >= activeIndex - 1 && index < activeIndex + slidesPerView + 1) {
-  //       // Hozirgi ko'rinayotgan va unga yaqin slaydlar
-  //       // slide.style.opacity = '1';
-  //       slide.classList.remove('opacity-slider');
-  //     } else {
-  //       // Ko'rinmayotgan slaydlar
-  //       // slide.style.opacity = '0.5';
-  //       slide.classList.add('opacity-slider');
-  //     }
-  //   });
-  // }
-
-  // function resetOpacity() {
-  //   // Barcha slaydlarni olish
-  //   var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
-
-  //   // Oxirgi slaydga yetganda barcha slaydlar uchun opacity 1 qilish
-  //   slides.forEach(function (slide) {
-  //     slide.style.opacity = '1';
-  //   });
-  // }
 
   // articles-swiper
   var articlesSwiper = new Swiper('.articles-swiper', {
