@@ -2145,6 +2145,10 @@ body.no-scroll {
 .united-states__page .market-research .expert-profile {
   gap: 128px;
 }
+.united-states__page .market-research .expert-profile .expert-profile__photo > img {
+  width: 100%;
+  height: 100%;
+}
 .united-states__page .market-analysis .title {
   margin-bottom: 60px;
 }
@@ -2597,7 +2601,7 @@ body.no-scroll {
 }
 .info-bottom__content a {
   width: 369px;
-  border-color: #C73731;
+  border-color: #c73731;
 }
 
 .politica {
@@ -6014,6 +6018,9 @@ body.white-bg {
   .our-services .swiper-wrapper {
     padding-top: 30px;
   }
+  .united-states__page .our-services .swiper-scrollbar {
+    top: 65px;
+  }
   .our-services .swiper-scrollbar {
     top: -181px;
     bottom: unset;
@@ -6493,6 +6500,9 @@ body.white-bg {
   }
   .article-four__page .articles-four .articles-swiper__two {
     margin-right: -55px;
+  }
+  .united-states__page .market-research .expert-profile__photo {
+    min-width: fit-content;
   }
 }
 @media screen and (max-width: 480px) {

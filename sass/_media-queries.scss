@@ -2288,6 +2288,11 @@
   .our-services .swiper-wrapper {
     padding-top: 30px;
   }
+  .united-states__page {
+    .our-services .swiper-scrollbar {
+      top: 65px;
+    }
+  }
   .our-services .swiper-scrollbar {
     top: -181px;
     bottom: unset;
@@ -2786,6 +2791,9 @@
   }
   .article-four__page .articles-four .articles-swiper__two {
     margin-right: -55px;
+  }
+  .united-states__page .market-research .expert-profile__photo {
+    min-width: fit-content;
   }
 }
 
