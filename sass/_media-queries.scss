@@ -1213,7 +1213,6 @@
     padding-right: 8px;
   }
   .articles .articles-swiper {
-    margin-right: -75px;
     margin-top: 42px;
     padding-top: 24px;
   }
@@ -1413,7 +1412,7 @@
   }
   .articles-sec .article-footer {
     padding-right: 0;
-    margin-top: -31px;
+    // margin-top: -31px;
   }
   .articles-sec,
   .comments-sec {
@@ -2821,7 +2820,7 @@
   }
   .article-one .header .container {
     padding-left: 55px !important;
-    padding-right: 55 !important;
+    padding-right: 55px !important;
   }
   .articles-sec .quote-box img {
     width: 25px;
@@ -2880,6 +2879,29 @@
     &.active {
       color: #c73731;
     }
+  }
+  .header .open-menu__btn {
+    width: 25px !important;
+    height: 15px !important;
+  }
+  .header-right__box .close-menu {
+    width: 20px;
+    height: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  .articles-swiper {
+    overflow: visible !important;
+  }
+  .articles-card {
+    height: fit-content;
+  }
+  .comments-sec .comments-boxes {
+    gap: 20px;
+  }
+  .comments-sec .more-comment__btn{
+    margin-top: 20px;
   }
 }
 
