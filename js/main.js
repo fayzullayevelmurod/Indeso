@@ -152,22 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-
-  // market-challenges
-  var swiper = new Swiper('.market-challenges__swiper', {
-    slidesPerView: 3,
-    spaceBetween: 105,
-    speed: 700,
-    // grid: {
-    //   rows: 1,
-    // },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: false,
-      draggable: true,
-    },
-  });
-
   var swiper = new Swiper('.client-results__swiper', {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -215,13 +199,17 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateOpacity() {
     // Barcha slaydlarni olish
     var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
+    var activeIndex = swiper.activeIndex;
+    var slidesPerView = swiper.params.slidesPerView;
 
     // Barcha slaydlarning opacity ni boshlang'ich holatga qaytarish
     slides.forEach(function (slide, index) {
-      if (index >= 4) {
-        slide.style.opacity = '0.5'; // 4-chidan keyingi slaydlarni .5 qilish
+      if (index >= activeIndex - 1 && index < activeIndex + slidesPerView + 1) {
+        // Hozirgi ko'rinayotgan va unga yaqin slaydlar
+        slide.style.opacity = '1';
       } else {
-        slide.style.opacity = '1';   // 4-tagacha bo'lgan slaydlarni to'liq ko'rinishga qaytarish
+        // Ko'rinmayotgan slaydlar
+        slide.style.opacity = '0.5';
       }
     });
   }
@@ -235,6 +223,89 @@ document.addEventListener('DOMContentLoaded', function () {
       slide.style.opacity = '1';
     });
   }
+  // // market-challenges
+  // var swiper = new Swiper('.market-challenges__swiper', {
+  //   slidesPerView: 3,
+  //   spaceBetween: 105,
+  //   speed: 700,
+  //   // grid: {
+  //   //   rows: 1,
+  //   // },
+  //   scrollbar: {
+  //     el: '.swiper-scrollbar',
+  //     hide: false,
+  //     draggable: true,
+  //   },
+  // });
+
+  // var swiper = new Swiper('.client-results__swiper', {
+  //   slidesPerView: 4,
+  //   spaceBetween: 30,
+  //   speed: 700,
+  //   scrollbar: {
+  //     el: '.client-results__swiper-scrollbar',
+  //     hide: false,
+  //     draggable: true,
+  //   },
+  //   on: {
+  //     slideChange: function () {
+  //       updateOpacity();
+  //     },
+  //     init: function () {
+  //       updateOpacity();
+  //     },
+  //     reachEnd: function () {
+  //       resetOpacity();
+  //     }
+  //   },
+  //   breakpoints: {
+  //     0: {
+  //       slidesPerView: 1.2,
+  //       spaceBetween: 10,
+  //     },
+  //     720: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20,
+  //     },
+  //     1024: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 30,
+  //     },
+  //     1110: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 30,
+  //     },
+  //     1280: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 30,
+  //     },
+  //   }
+  // });
+
+  // function updateOpacity() {
+  //   // Barcha slaydlarni olish
+  //   var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
+
+  //   // Barcha slaydlarning opacity ni boshlang'ich holatga qaytarish
+  //   slides.forEach(function (slide, index) {
+  //     if (index >= 4) {
+  //       slide.style.opacity = '0.5'; // 4-chidan keyingi slaydlarni .5 qilish
+  //     } else {
+  //       slide.style.opacity = '1';   // 4-tagacha bo'lgan slaydlarni to'liq ko'rinishga qaytarish
+  //     }
+  //   });
+  // }
+
+  // function resetOpacity() {
+  //   // Barcha slaydlarni olish
+  //   var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
+
+  //   // Oxirgi slaydga yetganda barcha slaydlar uchun opacity 1 qilish
+  //   slides.forEach(function (slide) {
+  //     slide.style.opacity = '1';
+  //   });
+  // }
+
 
   // articles-swiper
   var articlesSwiper = new Swiper('.articles-swiper', {

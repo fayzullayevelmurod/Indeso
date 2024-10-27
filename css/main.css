@@ -2072,6 +2072,12 @@ body.no-scroll {
   display: none;
 }
 
+.market-analysis__slider .btn:hover {
+  background: #f5f5f5;
+  box-shadow: 0px 0px 10px 0px rgba(78, 6, 6, 0.6) inset;
+  color: #c73731 !important;
+}
+
 .united-states__page .intro-content__title {
   font-size: 48px;
   font-weight: 500;
