@@ -19,7 +19,8 @@
 </head>
 
 <body class="white-bg">
-  <div class="wrapper article-two__page">
+  <div class="wrapper article-two__page article-three__page">
+
     <!-- header -->
     <header class="header">
       <div class="container">
@@ -36,10 +37,7 @@
                 <a class="nav-link" href="#!">О компании</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">Что-то еще</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Блог</a>
+                <a class="nav-link" href="#!">Услуги</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#!">Кейсы</a>
@@ -104,20 +102,24 @@
           <li>
             <a class="article-nav__link" href="#!">Развитие стартапов</a>
           </li>
-          <li>
+          <li class="article-nav__img">
             <a href="#!">
               <img src="images/icons/swiper-next-arrow.svg" alt="" width="26">
             </a>
           </li>
         </ul>
         <div class="article-nav__dropdown">
-          <select>
-            <option value="">Все статьи</option>
-            <option value="">Исследования рынков</option>
-            <option value="">Бизнес-план и стратегии</option>
-            <option value="">Позиционирование</option>
-            <option value="">Развитие стартапов</option>
-          </select>
+          <div class="selected-box">
+            <span class="selected-text">Все статьи</span>
+            <img src="images/icons/down-icon.svg" alt="">
+          </div>
+          <div class="options">
+            <span class="selected-text">Все статьи</span>
+            <span class="option">Исследования рынков</span>
+            <span class="option">Бизнес-план и стратегии</span>
+            <span class="option">Позиционирование</span>
+            <span class="option">Развитие стартапов</span>
+          </div>
         </div>
       </div>
       <div class="articles-sec">
@@ -421,72 +423,6 @@
                   </div>
                 </div>
               </div>
-              <div class="articles-card">
-                <img class="articles-card__img" src="images/articles-img-1.png" alt="article img">
-                <div class="articles-card__content">
-                  <h3 class="articles-card__title">Как исследование рынка США поможет моему бизнесу?</h3>
-                  <div>
-                    <p class="articles-card__desc">
-                      Успешный бизнес начинается с глубокого понимания экономической ситуации в стране и своей
-                      аудитории.
-                    </p>
-                    <div class="articles-card__footer">
-                      <div>
-                        <button class="heart-btn">
-                          <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M10 16.5L9.75564 16.9362L9.99899 17.0725L10.2428 16.9371L10 16.5ZM10 16.5C10.2428 16.9371 10.2429 16.937 10.2431 16.9369L10.2436 16.9366L10.2452 16.9358L10.2508 16.9326L10.2716 16.9209C10.2897 16.9107 10.316 16.8958 10.35 16.8763C10.4181 16.8372 10.517 16.7797 10.6425 16.705C10.8933 16.5557 11.2503 16.3375 11.6782 16.0602C12.533 15.5062 13.6753 14.7131 14.8201 13.7591C15.9625 12.8071 17.122 11.6828 17.9995 10.464C18.8735 9.2501 19.5 7.89771 19.5 6.5C19.5 3.48255 17.0757 1 14.0909 1C12.4546 1 10.9823 1.72178 10 2.8995C9.01768 1.72178 7.54543 1 5.90909 1C2.92434 1 0.5 3.48255 0.5 6.5C0.5 7.8881 1.12717 9.23554 2.00071 10.4468C2.87805 11.6633 4.03723 12.7886 5.17938 13.743C6.32393 14.6995 7.46602 15.4964 8.32067 16.0536C8.74847 16.3325 9.10542 16.5522 9.35618 16.7025C9.48158 16.7777 9.58051 16.8356 9.64854 16.875C9.68255 16.8946 9.70885 16.9097 9.72689 16.9199L9.74767 16.9317L9.75328 16.9349L9.75487 16.9358L9.75535 16.9361C9.75551 16.9361 9.75564 16.9362 10 16.5Z"
-                              stroke="#C73731" fill="#C73731"></path>
-                          </svg>
-                        </button>
-                        <span class="count">15</span>
-                      </div>
-                      <div>
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M1 18.086L4.586 14.5H16C16.5304 14.5 17.0391 14.2893 17.4142 13.9142C17.7893 13.5391 18 13.0304 18 12.5V3.5C18 2.96957 17.7893 2.46086 17.4142 2.08579C17.0391 1.71071 16.5304 1.5 16 1.5H3C2.46957 1.5 1.96086 1.71071 1.58579 2.08579C1.21071 2.46086 1 2.96957 1 3.5V18.086ZM1 19.5H0V3.5C0 2.70435 0.316071 1.94129 0.87868 1.37868C1.44129 0.816071 2.20435 0.5 3 0.5H16C16.7956 0.5 17.5587 0.816071 18.1213 1.37868C18.6839 1.94129 19 2.70435 19 3.5V12.5C19 13.2956 18.6839 14.0587 18.1213 14.6213C17.5587 15.1839 16.7956 15.5 16 15.5H5L1 19.5Z"
-                            fill="#9C9C9C"></path>
-                        </svg>
-                        <span class="count">15</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="articles-card">
-                <img class="articles-card__img" src="images/articles-img-1.png" alt="article img">
-                <div class="articles-card__content">
-                  <h3 class="articles-card__title">Кому полезны результаты исследования рынка</h3>
-                  <div>
-                    <p class="articles-card__desc">
-                      Успешный бизнес начинается с глубокого понимания экономической ситуации в стране и своей
-                      аудитории.
-                    </p>
-                    <div class="articles-card__footer">
-                      <div>
-                        <button class="heart-btn">
-                          <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M10 16.5L9.75564 16.9362L9.99899 17.0725L10.2428 16.9371L10 16.5ZM10 16.5C10.2428 16.9371 10.2429 16.937 10.2431 16.9369L10.2436 16.9366L10.2452 16.9358L10.2508 16.9326L10.2716 16.9209C10.2897 16.9107 10.316 16.8958 10.35 16.8763C10.4181 16.8372 10.517 16.7797 10.6425 16.705C10.8933 16.5557 11.2503 16.3375 11.6782 16.0602C12.533 15.5062 13.6753 14.7131 14.8201 13.7591C15.9625 12.8071 17.122 11.6828 17.9995 10.464C18.8735 9.2501 19.5 7.89771 19.5 6.5C19.5 3.48255 17.0757 1 14.0909 1C12.4546 1 10.9823 1.72178 10 2.8995C9.01768 1.72178 7.54543 1 5.90909 1C2.92434 1 0.5 3.48255 0.5 6.5C0.5 7.8881 1.12717 9.23554 2.00071 10.4468C2.87805 11.6633 4.03723 12.7886 5.17938 13.743C6.32393 14.6995 7.46602 15.4964 8.32067 16.0536C8.74847 16.3325 9.10542 16.5522 9.35618 16.7025C9.48158 16.7777 9.58051 16.8356 9.64854 16.875C9.68255 16.8946 9.70885 16.9097 9.72689 16.9199L9.74767 16.9317L9.75328 16.9349L9.75487 16.9358L9.75535 16.9361C9.75551 16.9361 9.75564 16.9362 10 16.5Z"
-                              stroke="#C73731" fill="#C73731"></path>
-                          </svg>
-                        </button>
-                        <span class="count">15</span>
-                      </div>
-                      <div>
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M1 18.086L4.586 14.5H16C16.5304 14.5 17.0391 14.2893 17.4142 13.9142C17.7893 13.5391 18 13.0304 18 12.5V3.5C18 2.96957 17.7893 2.46086 17.4142 2.08579C17.0391 1.71071 16.5304 1.5 16 1.5H3C2.46957 1.5 1.96086 1.71071 1.58579 2.08579C1.21071 2.46086 1 2.96957 1 3.5V18.086ZM1 19.5H0V3.5C0 2.70435 0.316071 1.94129 0.87868 1.37868C1.44129 0.816071 2.20435 0.5 3 0.5H16C16.7956 0.5 17.5587 0.816071 18.1213 1.37868C18.6839 1.94129 19 2.70435 19 3.5V12.5C19 13.2956 18.6839 14.0587 18.1213 14.6213C17.5587 15.1839 16.7956 15.5 16 15.5H5L1 19.5Z"
-                            fill="#9C9C9C"></path>
-                        </svg>
-                        <span class="count">15</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <a class="show-more__btn btn" href="#!">Показать еще</a>
           </div>
@@ -715,36 +651,38 @@
       <div class="container">
         <div class="footer-top">
           <div class="footer-left__box">
-            <img src="images/logo/company-logo.svg" class="footer-logo" alt="company logo" />
-            <div class="footer-box">
-              <h3 class="footer-box__title">Адреса</h3>
-              <ul class="footer-list">
-                <li class="footer-list__item">
-                  <a class="footer-link" href="#!">Unit 501, 5/f Valley center</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-link" href="#!">80-82 Morrison Hill Rd</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-link" href="#!">Wan Chai, Hong Kong</a>
-                </li>
-                <div class="line"></div>
-                <li class="footer-list__item">
-                  <a class="footer-link" href="#!">Brook Lane, Glenview, Il</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-box">
-              <h3 class="footer-box__title">Телефон</h3>
-              <ul class="footer-list phone-list">
-                <li class="footer-list__item">
-                  <a class="footer-link" href="+6596544604">+65 9654 46 04</a>
-                </li>
-                <div class="line"></div>
-                <li class="footer-list__item">
-                  <a class="footer-link" href="+77772550047">+7 777 255 00 47</a>
-                </li>
-              </ul>
+            <img src="images/logo/footer-logo.svg" class="footer-logo" alt="company logo" />
+            <div class="flex-box">
+              <div class="footer-box">
+                <h3 class="footer-box__title">Адреса</h3>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a class="footer-link" href="#!">Unit 501, 5/f Valley center</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a class="footer-link" href="#!">80-82 Morrison Hill Rd</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a class="footer-link" href="#!">Wan Chai, Hong Kong</a>
+                  </li>
+                  <div class="line"></div>
+                  <li class="footer-list__item">
+                    <a class="footer-link" href="#!">Brook Lane, Glenview, Il</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-box">
+                <h3 class="footer-box__title">Телефон</h3>
+                <ul class="footer-list phone-list">
+                  <li class="footer-list__item">
+                    <a class="footer-link" href="+6596544604">+65 9654 46 04</a>
+                  </li>
+                  <div class="line"></div>
+                  <li class="footer-list__item">
+                    <a class="footer-link" href="+77772550047">+7 777 255 00 47</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="footer-right__box">
