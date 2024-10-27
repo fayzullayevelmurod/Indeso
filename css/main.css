@@ -7011,6 +7011,9 @@ body.white-bg {
   .comments-sec .more-comment__btn {
     margin-top: 20px;
   }
+  .comments-sec .comments-boxes {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 480px) {
   .intro-map {
