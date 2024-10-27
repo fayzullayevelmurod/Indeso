@@ -498,10 +498,9 @@
   }
   .consultation-invite__list {
     gap: 15px;
-    padding-top: 77px;
   }
   .consultation-invite__boxes {
-    align-items: start;
+    align-items: center;
   }
   .client-results {
     padding: 120px 0 104px 0;
@@ -543,7 +542,7 @@
     padding-bottom: 15px;
   }
   .our-services__card-back .card-body {
-    padding: 55px 22px 23px 31px;
+    padding: 25px 22px 23px 31px;
   }
 }
 .united-states__page .business-analytics__pagination .swiper-pagination-total {
@@ -929,4 +928,15 @@
     margin-left: 0;
     margin-top: 0;
   }
+}
+
+.united-states__page .market-research {
+  padding-top: 0;
+}
+.faq-section .accordion-header {
+  height: fit-content;
+  padding-bottom: 20px;
+}
+.faq-section .accordion-content {
+  padding-top: 10px;
 }

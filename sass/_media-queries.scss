@@ -125,9 +125,6 @@
   .footer-right__box .footer-list:last-child {
     max-width: 244px;
   }
-  .articles-card__content {
-    padding: 16px 14px;
-  }
   .market-research-beneficiaries__cards {
     gap: 25px;
   }
@@ -287,7 +284,8 @@
     }
     .nav-list {
       flex-direction: column;
-      gap: 30px;
+      gap: 30px !important;
+      padding: 0 !important;
     }
     .nav-link {
       font-family: 'Manrope', 'Roboto', sans-serif;
@@ -583,6 +581,12 @@
   }
   .our-values .container {
     padding-left: 79px;
+    margin-left: 0;
+  }
+  .our-values__cards {
+    gap: 28px;
+    margin-left: -81px;
+    padding-left: 80px;
   }
   .our-values__cards {
     gap: 28px;
@@ -621,7 +625,8 @@
     margin-bottom: 10px;
   }
   .market-analysis .swiper-btns {
-    margin-left: 128px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 59px;
     margin-top: -19px;
   }
@@ -1484,12 +1489,16 @@
     .articles-swiper__two {
       margin-right: -75px;
     }
-    .articles-card__content {
-      padding-bottom: 20px;
-    }
   }
   .article-four__page .articles-four .articles-swiper__two .swiper-scrollbar {
     width: calc(100% - 75px) !important;
+  }
+  .united-states__page .global-market__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .united-states__page .global-market__list:last-child {
+    padding-left: 0;
   }
 }
 
@@ -1693,7 +1702,7 @@
     min-width: 268px;
     max-width: 268px;
     height: 363px;
-    margin: 0 auto 160px 0;
+    margin: 0 auto 228px 0;
   }
   .market-research .expert-profile__description .title-sm {
     font-size: 22px;
@@ -1939,10 +1948,6 @@
   .articles-card__title {
     font-size: 14px;
     line-height: 21px;
-  }
-  .articles-card__content {
-    gap: 10px;
-    min-height: 54%;
   }
   .articles {
     padding-bottom: 80px;
@@ -2714,9 +2719,6 @@
   .articles-card__img {
     height: 140px;
   }
-  .articles-card__content {
-    padding: 15px 0px 0px 13px;
-  }
   .articles-card__desc {
     font-size: 12px;
     line-height: 19.2px;
@@ -2806,8 +2808,78 @@
   .header-right__box {
     height: 100vh;
   }
-  .articles-card__content {
-    padding: 15px 0px 15px 13px;
+  .faq-section .accordions .accordion .accordion-header {
+    padding-bottom: 15px;
+  }
+  .articles-card__content,
+  .articles-card > div:first-child h3 {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .article-nav__dropdown {
+    background: transparent;
+  }
+  .article-one .header .container {
+    padding-left: 55px !important;
+    padding-right: 55 !important;
+  }
+  .articles-sec .quote-box img {
+    width: 25px;
+    height: 23px;
+  }
+  .article-one .list-item::before,
+  .article-two__page .list-item::before,
+  .article-four__page .list-item::before {
+    width: 9px;
+    height: 9px;
+    left: -20px;
+  }
+  .article-one .list,
+  .article-two__page .list,
+  .article-four__page .list {
+    padding-left: 20px;
+    font-weight: 400;
+  }
+  .article-one .list .list-item {
+    font-weight: 400;
+  }
+  .articles-sec .article-box__title-xl,
+  .comments-sec .article-box__title-xl {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30.8px;
+  }
+  .articles-sec__title,
+  .comments-sec__title {
+    font-weight: 400;
+  }
+  .articles-sec .font-Montserrat {
+    font-family: 'Roboto', sans-serif;
+  }
+  .articles-card__footer {
+    justify-content: space-between;
+  }
+  .comments-sec .comment-box {
+    padding-right: 15px;
+  }
+  .footer-right__box .footer-list:last-child .footer-list__item:last-child {
+    display: block;
+  }
+  .footer {
+    padding-bottom: 0;
+  }
+  .footer .container {
+    padding-bottom: 34px;
+  }
+  .article-one .footer-right__box .footer-list:last-child {
+    padding-top: 0;
+    gap: 15px;
+  }
+  .footer-right__box .footer-link {
+    color: #5a5a5a;
+    &.active {
+      color: #c73731;
+    }
   }
 }
 
@@ -2816,4 +2888,19 @@
     width: 747.57px;
     right: -333px;
   }
+}
+
+.contact-us .social-media__img {
+  path {
+    opacity: 0.7;
+    transition: all 0.2s linear;
+  }
+  &:hover {
+    path {
+      opacity: 1;
+    }
+  }
+}
+.faq-section .accordions .accordion:first-child .accordion-header {
+  padding-bottom: 15px;
 }

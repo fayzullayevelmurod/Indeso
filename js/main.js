@@ -379,6 +379,33 @@ document.addEventListener('DOMContentLoaded', function () {
   } catch (error) {
 
   }
+  try {
+    // content-cards__swiper
+    var swiper = new Swiper('.content-cards__swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.content-cards__swiper-next',
+        prevEl: '.content-cards__swiper-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        720: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1180: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      }
+    });
+  } catch (error) {
+
+  }
 
   // heart btn
   const articlesCardFooter = document.querySelectorAll('.articles-card__footer');
