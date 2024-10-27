@@ -168,9 +168,6 @@ document.addEventListener('DOMContentLoaded', function () {
       init: function () {
         updateOpacity();
       },
-      reachEnd: function () {
-        resetOpacity();
-      }
     },
     breakpoints: {
       0: {
@@ -204,14 +201,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Barcha slaydlarning opacity ni boshlang'ich holatga qaytarish
     slides.forEach(function (slide, index) {
-      if (index >= activeIndex - 1 && index < activeIndex + slidesPerView + 1) {
-        // Hozirgi ko'rinayotgan va unga yaqin slaydlar
-        slide.style.opacity = '1';
-      } else {
-        // Ko'rinmayotgan slaydlar
-        slide.style.opacity = '0.5';
-      }
+      slide.classList.remove('opacity-slider'); // Barcha slaydlarni opacity-slider klassidan tozalaymiz
     });
+
+    // Oxirgi ko'rinayotgan slaydni aniqlash
+    var lastVisibleSlideIndex = activeIndex + slidesPerView;
+    var firstInvisibleSlideIndex = activeIndex - 1;
+
+    // Ko'rinmayotgan slaydlar uchun opacity-slider klassini qo'shamiz
+    if (slides[firstInvisibleSlideIndex]) {
+      slides[firstInvisibleSlideIndex].classList.add('opacity-slider');
+    }
+    if (slides[lastVisibleSlideIndex]) {
+      slides[lastVisibleSlideIndex].classList.add('opacity-slider');
+    }
   }
 
   function resetOpacity() {
@@ -220,24 +223,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Oxirgi slaydga yetganda barcha slaydlar uchun opacity 1 qilish
     slides.forEach(function (slide) {
-      slide.style.opacity = '1';
+      slide.classList.remove('opacity-slider');
     });
   }
-  // // market-challenges
-  // var swiper = new Swiper('.market-challenges__swiper', {
-  //   slidesPerView: 3,
-  //   spaceBetween: 105,
-  //   speed: 700,
-  //   // grid: {
-  //   //   rows: 1,
-  //   // },
-  //   scrollbar: {
-  //     el: '.swiper-scrollbar',
-  //     hide: false,
-  //     draggable: true,
-  //   },
-  // });
-
   // var swiper = new Swiper('.client-results__swiper', {
   //   slidesPerView: 4,
   //   spaceBetween: 30,
@@ -285,13 +273,19 @@ document.addEventListener('DOMContentLoaded', function () {
   // function updateOpacity() {
   //   // Barcha slaydlarni olish
   //   var slides = document.querySelectorAll('.client-results__swiper .swiper-slide');
+  //   var activeIndex = swiper.activeIndex;
+  //   var slidesPerView = swiper.params.slidesPerView;
 
   //   // Barcha slaydlarning opacity ni boshlang'ich holatga qaytarish
   //   slides.forEach(function (slide, index) {
-  //     if (index >= 4) {
-  //       slide.style.opacity = '0.5'; // 4-chidan keyingi slaydlarni .5 qilish
+  //     if (index >= activeIndex - 1 && index < activeIndex + slidesPerView + 1) {
+  //       // Hozirgi ko'rinayotgan va unga yaqin slaydlar
+  //       // slide.style.opacity = '1';
+  //       slide.classList.remove('opacity-slider');
   //     } else {
-  //       slide.style.opacity = '1';   // 4-tagacha bo'lgan slaydlarni to'liq ko'rinishga qaytarish
+  //       // Ko'rinmayotgan slaydlar
+  //       // slide.style.opacity = '0.5';
+  //       slide.classList.add('opacity-slider');
   //     }
   //   });
   // }
@@ -305,7 +299,6 @@ document.addEventListener('DOMContentLoaded', function () {
   //     slide.style.opacity = '1';
   //   });
   // }
-
 
   // articles-swiper
   var articlesSwiper = new Swiper('.articles-swiper', {

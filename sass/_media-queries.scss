@@ -1499,9 +1499,20 @@
   .united-states__page .global-market__list:last-child {
     padding-left: 0;
   }
+  .market-analysis.active .market-analysis__container::before {
+    left: -75px;
+  }
+  .market-analysis.active .market-analysis__swiper h4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 720px) {
+  .market-analysis.active .market-analysis__container::before {
+    left: -55px;
+    width: 150%;
+  }
   .articles-sec,
   .comments-sec {
     padding-bottom: 80px;
@@ -2903,8 +2914,39 @@
   .comments-sec .more-comment__btn {
     margin-top: 20px;
   }
-  .comments-sec .comments-boxes{
+  .comments-sec .comments-boxes {
     margin-bottom: 40px;
+  }
+  .market-analysis .swiper-btns {
+    margin-top: -25px;
+    margin-left: auto;
+    .swiper-button-disabled {
+      path {
+        stroke-width: 1px;
+      }
+    }
+    path {
+      stroke-width: 2px;
+    }
+  }
+  .market-analysis.active .market-analysis__swiper a {
+    font-size: 14px;
+    height: 56px;
+    width: 229px;
+    margin: 0 auto;
+  }
+  .market-analysis.active .market-analysis__container::before {
+    left: 0;
+    width: 100%;
+  }
+  .market-challenges .chalange-card li:nth-child(1),
+  .market-challenges .chalange-card li:nth-child(3),
+  .market-challenges .chalange-card li:nth-child(5),
+  .market-challenges .chalange-card li:nth-child(7) {
+    top: 164px;
+  }
+  .market-challenges .chalange-card .swiper-line {
+    top: 80px;
   }
 }
 
@@ -2928,4 +2970,11 @@
 }
 .faq-section .accordions .accordion:first-child .accordion-header {
   padding-bottom: 15px;
+}
+
+.client-results {
+  .opacity-slider,
+  .swiper-slide-prev {
+    opacity: 0.5;
+  }
 }
