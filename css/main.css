@@ -2507,6 +2507,205 @@ body.no-scroll {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.united-states__page .business-analytics {
+  overflow: hidden;
+}
+
+.info-bottom__content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.info-bottom__content p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: #3d3d3d;
+  padding-top: 21px;
+}
+.info-bottom__content span {
+  margin: 34px 0 57px 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
+  color: #191919;
+  display: block;
+}
+.info-bottom__content a {
+  width: 369px;
+  border-color: #c73731;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.united-states__page .consultation-invite__boxes .register-form {
+  padding: 68px 44px 65px 106px;
+  max-width: 880px;
+}
+.united-states__page .consultation-invite__list {
+  gap: 15px;
+  padding-top: 77px;
+}
+.united-states__page .consultation-invite__boxes {
+  align-items: start;
+}
+.united-states__page .client-results {
+  padding: 120px 0 104px 0;
+}
+.united-states__page .client-results__swiper-scrollbar {
+  display: block;
+}
+.united-states__page .client-results__swiper {
+  padding-top: 30px;
+}
+.united-states__page .market-research-beneficiaries .title {
+  width: 100%;
+}
+.united-states__page .market-research-beneficiaries__card-top {
+  min-height: 272px;
+}
+.united-states__page .market-research-beneficiaries__card .desc {
+  width: 91%;
+  margin-left: auto;
+  padding-left: 19px;
+  line-height: 23px;
+}
+.united-states__page .reviews .swiper-btns {
+  margin-top: -20px;
+  padding-top: 0;
+}
+.united-states__page .faq-section .accordion-header__title {
+  max-width: 698px;
+}
+.united-states__page .faq-section .accordion {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.united-states__page .our-services__card-back .card-body {
+  padding: 55px 22px 23px 31px;
+}
+
+.united-states__page .business-analytics__pagination .swiper-pagination-total {
+  color: rgba(251, 250, 250, 0.5019607843) !important;
+}
+
+.business-analytics__swiper-prev.swiper-button-disabled path {
+  stroke: #dcdbdb !important;
+  stroke-width: 1px;
+}
+
+.brazil-page .intro-content {
+  padding-top: 90px;
+}
+.brazil-page .intro .bottom-content {
+  margin-top: 132px;
+}
+.brazil-page .intro {
+  margin-bottom: 205px;
+}
+.brazil-page .market-research {
+  padding-top: 60px;
+}
+.brazil-page .expert-profile__photo {
+  min-width: 412px;
+  height: 488px;
+}
+.brazil-page .market-research .expert-profile {
+  gap: 10px;
+}
+.brazil-page .expert-profile__photo .quote-box {
+  max-width: 344px;
+  bottom: -205px;
+  right: -34px;
+  padding: 28px 26px 20px 25px;
+}
+.brazil-page .market-challenges {
+  padding: 132px 0 0 0;
+}
+.brazil-page .business-analytics__swiper .last-slide .last {
+  gap: 13px;
+}
+.brazil-page .most-comfortable .title {
+  margin-bottom: 42px;
+}
+.brazil-page .most-comfortable .accordion {
+  padding: 25px 0px 35px 0;
+}
+.brazil-page .most-comfortable {
+  padding-bottom: 132px;
+}
+.brazil-page .business-registration-info .left-box span {
+  width: 245px;
+}
+.brazil-page .business-registration-info .box {
+  padding: 23px 0 20px 0;
+}
+.brazil-page .business-registration-info {
+  padding-bottom: 135px;
+}
+.brazil-page .global-market__box {
+  margin-top: 60px;
+  align-items: start;
+}
+.brazil-page .client-results {
+  padding: 104px 0 102px 0;
+}
+.brazil-page .market-research-beneficiaries__card-top {
+  min-height: 300px;
+}
+.brazil-page .reviews {
+  padding-top: 142px;
+}
+.brazil-page .faq-section .accordion {
+  padding-top: 30px;
+}
+.brazil-page .faq-section .accordion-header.active {
+  border: none;
+}
+.brazil-page .faq-section .accordions .accordion:first-child .accordion-header {
+  padding-bottom: 40px;
+}
+
+.oae-page .intro-content {
+  padding-top: 70px;
+}
+.oae-page .intro {
+  margin-bottom: 157px;
+}
+.oae-page .market-research {
+  padding-top: 57px;
+}
+.oae-page .expert-profile__photo {
+  min-width: 412px;
+  height: 492px;
+}
+.oae-page .expert-profile__photo .quote-box {
+  bottom: -199px;
+  right: -36px;
+}
+.oae-page .market-research .expert-profile {
+  gap: 10px;
+}
+.oae-page .market-research .expert-profile .list {
+  margin-left: 39px;
+  margin-top: 149px;
+}
+.oae-page .market-challenges {
+  padding: 192px 0 0 0;
+}
+.oae-page .most-comfortable .title {
+  margin-bottom: 38px;
+}
+.oae-page .business-registration-info {
+  padding-bottom: 150px;
+}
+.oae-page .oae-page .market-challenges {
+  padding: 192px 0 7px 0;
+}
+
 @media screen and (max-width: 1024px) {
   .united-states__page .intro {
     padding: 122px 0 362px 0;
@@ -2675,168 +2874,6 @@ body.no-scroll {
     width: fit-content;
   }
 }
-.united-states__page .business-analytics {
-  overflow: hidden;
-}
-
-.info-bottom__content {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.info-bottom__content p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 33.6px;
-  color: #3d3d3d;
-  padding-top: 21px;
-}
-.info-bottom__content span {
-  margin: 34px 0 57px 0;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 33.6px;
-  color: #191919;
-  display: block;
-}
-.info-bottom__content a {
-  width: 369px;
-  border-color: #c73731;
-  height: 61px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.united-states__page .consultation-invite__boxes .register-form {
-  padding: 68px 44px 65px 106px;
-  max-width: 880px;
-}
-.united-states__page .consultation-invite__list {
-  gap: 15px;
-  padding-top: 77px;
-}
-.united-states__page .consultation-invite__boxes {
-  align-items: start;
-}
-.united-states__page .client-results {
-  padding: 120px 0 104px 0;
-}
-.united-states__page .client-results__swiper-scrollbar {
-  display: block;
-}
-.united-states__page .client-results__swiper {
-  padding-top: 30px;
-}
-.united-states__page .market-research-beneficiaries .title {
-  width: 100%;
-}
-.united-states__page .market-research-beneficiaries__card-top {
-  min-height: 272px;
-}
-.united-states__page .market-research-beneficiaries__card .desc {
-  width: 91%;
-  margin-left: auto;
-  padding-left: 19px;
-  line-height: 23px;
-}
-.united-states__page .reviews .swiper-btns {
-  margin-top: -20px;
-  padding-top: 0;
-}
-.united-states__page .faq-section .accordion-header__title {
-  max-width: 698px;
-}
-.united-states__page .faq-section .accordion {
-  padding-top: 20px;
-  padding-bottom: 15px;
-}
-.united-states__page .our-services__card-back .card-body {
-  padding: 55px 22px 23px 31px;
-}
-
-.united-states__page .business-analytics__pagination .swiper-pagination-total {
-  color: rgba(251, 250, 250, 0.5019607843) !important;
-}
-
-.business-analytics__swiper-prev.swiper-button-disabled path {
-  stroke: #dcdbdb !important;
-  stroke-width: 1px;
-}
-
-.brazil-page .intro-content {
-  padding-top: 90px;
-}
-.brazil-page .intro .bottom-content {
-  margin-top: 132px;
-}
-.brazil-page .intro {
-  margin-bottom: 205px;
-}
-.brazil-page .market-research {
-  padding-top: 60px;
-}
-.brazil-page .expert-profile__photo {
-  min-width: 412px;
-  height: 488px;
-}
-.brazil-page .market-research .expert-profile {
-  gap: 10px;
-}
-.brazil-page .expert-profile__photo .quote-box {
-  max-width: 344px;
-  bottom: -205px;
-  right: -34px;
-  padding: 28px 26px 20px 25px;
-}
-.brazil-page .market-challenges {
-  padding: 132px 0 0 0;
-}
-.brazil-page .business-analytics__swiper .last-slide .last {
-  gap: 13px;
-}
-.brazil-page .most-comfortable .title {
-  margin-bottom: 42px;
-}
-.brazil-page .most-comfortable .accordion {
-  padding: 25px 0px 35px 0;
-}
-.brazil-page .most-comfortable {
-  padding-bottom: 132px;
-}
-.brazil-page .business-registration-info .left-box span {
-  width: 245px;
-}
-.brazil-page .business-registration-info .box {
-  padding: 23px 0 20px 0;
-}
-.brazil-page .business-registration-info {
-  padding-bottom: 135px;
-}
-.brazil-page .global-market__box {
-  margin-top: 60px;
-  align-items: start;
-}
-.brazil-page .client-results {
-  padding: 104px 0 102px 0;
-}
-.brazil-page .market-research-beneficiaries__card-top {
-  min-height: 300px;
-}
-.brazil-page .reviews {
-  padding-top: 142px;
-}
-.brazil-page .faq-section .accordion {
-  padding-top: 30px;
-}
-.brazil-page .faq-section .accordion-header.active {
-  border: none;
-}
-.brazil-page .faq-section .accordions .accordion:first-child .accordion-header {
-  padding-bottom: 40px;
-}
-
 @media screen and (max-width: 1024px) {
   .united-states__page .our-services .title-box .sub-title {
     padding: 0;
@@ -2882,6 +2919,24 @@ body.no-scroll {
   }
   .united-states__page .consultation-invite__list {
     padding-top: 0;
+  }
+  .oae-page .market-challenges .chalange-card .swiper-line {
+    top: 63px;
+    height: 87px;
+  }
+  .united-states__page .intro .bottom-content .btn {
+    min-width: 275px;
+    max-width: 275px;
+  }
+  .oae-page .our-services .swiper-wrapper {
+    margin-top: 0;
+  }
+  .oae-page .our-services .swiper-slide {
+    padding-bottom: 163px;
+  }
+  .oae-page .market-research .expert-profile .list {
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 .politica {
