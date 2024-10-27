@@ -2098,7 +2098,7 @@ body.no-scroll {
 }
 .united-states__page .intro .company-info__list-item {
   gap: 22px;
-  align-items: center;
+  align-items: start;
 }
 .united-states__page .intro .company-info__list-item img {
   padding-top: 0;
@@ -2107,8 +2107,18 @@ body.no-scroll {
   gap: 30px;
   margin: 0;
 }
+.united-states__page .our-services .title-box .sub-title {
+  color: #3d3d3d;
+  padding: 0 0 0 128px;
+}
+.united-states__page .our-services .title-box .btn {
+  width: 251px;
+  height: 47px;
+  margin-top: 0;
+}
 .united-states__page .intro {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+  margin-top: 37px;
 }
 .united-states__page .intro-content {
   max-width: 795px;
@@ -2134,13 +2144,27 @@ body.no-scroll {
   margin-top: 60px;
 }
 .united-states__page .intro .btn {
-  width: 399px;
+  min-width: 399px;
+  max-width: 399px;
+  height: 60px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   background: #c73731;
   color: #dcdbdb;
   border-color: transparent;
 }
 .united-states__page .market-research {
-  padding: 0;
+  padding: 43px 0 0 0;
+}
+.united-states__page .market-research .market-research__title {
+  padding-left: 10px;
+  width: 92%;
+}
+.united-states__page .market-research .market-research__cards {
+  padding-left: 10px;
 }
 .united-states__page .market-research .expert-profile {
   gap: 128px;
@@ -2155,6 +2179,7 @@ body.no-scroll {
 .united-states__page .expert-profile__photo {
   min-width: 343px;
   height: 410px;
+  margin-top: 7px;
   position: relative;
   overflow: visible;
 }
@@ -2162,7 +2187,7 @@ body.no-scroll {
   max-width: 344px;
   border-radius: 15px;
   position: absolute;
-  bottom: -133px;
+  bottom: -140px;
   right: -104px;
   backdrop-filter: blur(8.1000003815px);
   box-shadow: 0px 0px 9.8px 0px rgba(0, 0, 0, 0.2509803922);
@@ -2256,9 +2281,6 @@ body.no-scroll {
 .united-states__page .business-analytics__pagination .swiper-pagination-total {
   color: rgba(251, 250, 250, 0.5019607843);
 }
-.united-states__page .business-analytics {
-  min-height: 391px;
-}
 .united-states__page .business-analytics__swiper {
   z-index: 1;
 }
@@ -2266,7 +2288,18 @@ body.no-scroll {
   flex-direction: column;
   gap: 60px;
   text-align: center;
-  padding: 72px 40px 40px 40px;
+  padding: 10px 0;
+}
+.united-states__page .business-analytics__swiper .business-analytics__text .business-analytics__desc {
+  font-size: 20px;
+  line-height: 24.2px;
+  text-align: left;
+  max-width: 352px;
+  margin-bottom: 60px;
+  padding-top: 85px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
 }
 .united-states__page .business-analytics__swiper .business-analytics__text.last {
   text-align: left;
@@ -2283,7 +2316,7 @@ body.no-scroll {
   font-size: 20px;
   line-height: 24.2px;
   text-align: left;
-  max-width: 100%;
+  max-width: 370px;
 }
 .united-states__page .business-analytics__swiper .business-analytics__text.last .btn {
   margin-top: 10px;
@@ -2307,6 +2340,71 @@ body.no-scroll {
 }
 .united-states__page .exploration-countries {
   padding-bottom: 120px;
+}
+.united-states__page .our-services .title-box {
+  margin-bottom: 7px;
+  border: none;
+  padding-bottom: 33px;
+}
+.united-states__page .our-services .swiper-btns {
+  display: none;
+}
+.united-states__page .our-services .swiper-scrollbar {
+  display: block;
+  height: 3px;
+}
+.united-states__page .our-services .swiper-wrapper {
+  margin-top: 60px;
+}
+.united-states__page .our-services__card .card-content {
+  padding: 0 26px;
+}
+.united-states__page .market-challenges {
+  padding-bottom: 0;
+}
+.united-states__page .business-registration-info .box {
+  padding: 24px 0 20px 0;
+}
+.united-states__page .business-analytics__swiper .last-slide .business-analytics__desc {
+  padding-top: 0;
+}
+.united-states__page .business-analytics__swiper .last-slide .last {
+  gap: 70px;
+}
+.united-states__page .business-analytics__swiper .last-slide .desc-box {
+  padding: 0 40px;
+}
+.united-states__page .business-analytics__swiper .last-slide .desc-box .business-analytics__desc {
+  max-width: 100%;
+}
+.united-states__page .global-market__box {
+  margin-top: 102px;
+}
+.united-states__page .global-market__box {
+  margin-top: 102px;
+}
+.united-states__page .global-market__img {
+  width: 314px;
+  height: 314px;
+  margin: 0;
+}
+.united-states__page .global-market__list {
+  gap: 28px;
+}
+.united-states__page .global-market__list:last-child {
+  padding-left: 12px;
+}
+.united-states__page .global-market__list {
+  width: 380px;
+}
+.united-states__page .market-challenges .market-challenges__swiper-two {
+  padding-top: 0;
+}
+.united-states__page .market-challenges .chalange-card .swiper-line {
+  top: 106px;
+}
+.united-states__page .market-challenges__swiper-scroll-bar {
+  display: none;
 }
 
 .business-registration-info {
@@ -2583,16 +2681,18 @@ body.no-scroll {
 
 .info-bottom__content {
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .info-bottom__content p {
   font-size: 24px;
   font-weight: 400;
   line-height: 33.6px;
   color: #3d3d3d;
-  padding-top: 57px;
+  padding-top: 21px;
 }
 .info-bottom__content span {
-  margin: 60px 0 30px 0;
+  margin: 34px 0 57px 0;
   font-size: 24px;
   font-weight: 500;
   line-height: 33.6px;
@@ -2602,8 +2702,188 @@ body.no-scroll {
 .info-bottom__content a {
   width: 369px;
   border-color: #c73731;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
+.united-states__page .consultation-invite__boxes .register-form {
+  padding: 68px 44px 65px 106px;
+  max-width: 880px;
+}
+.united-states__page .consultation-invite__list {
+  gap: 15px;
+  padding-top: 77px;
+}
+.united-states__page .consultation-invite__boxes {
+  align-items: start;
+}
+.united-states__page .client-results {
+  padding: 120px 0 104px 0;
+}
+.united-states__page .client-results__swiper-scrollbar {
+  display: block;
+}
+.united-states__page .client-results__swiper {
+  padding-top: 30px;
+}
+.united-states__page .market-research-beneficiaries .title {
+  width: 100%;
+}
+.united-states__page .market-research-beneficiaries__card-top {
+  min-height: 272px;
+}
+.united-states__page .market-research-beneficiaries__card .desc {
+  width: 91%;
+  margin-left: auto;
+  padding-left: 19px;
+  line-height: 23px;
+}
+.united-states__page .reviews .swiper-btns {
+  margin-top: -20px;
+  padding-top: 0;
+}
+.united-states__page .faq-section .accordion-header__title {
+  max-width: 698px;
+}
+.united-states__page .faq-section .accordion {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.united-states__page .our-services__card-back .card-body {
+  padding: 55px 22px 23px 31px;
+}
+
+.united-states__page .business-analytics__pagination .swiper-pagination-total {
+  color: rgba(251, 250, 250, 0.5019607843) !important;
+}
+
+.business-analytics__swiper-prev.swiper-button-disabled path {
+  stroke: #dcdbdb !important;
+  stroke-width: 1px;
+}
+
+.brazil-page .intro-content {
+  padding-top: 90px;
+}
+.brazil-page .intro .bottom-content {
+  margin-top: 132px;
+}
+.brazil-page .intro {
+  margin-bottom: 205px;
+}
+.brazil-page .market-research {
+  padding-top: 60px;
+}
+.brazil-page .expert-profile__photo {
+  min-width: 412px;
+  height: 488px;
+}
+.brazil-page .market-research .expert-profile {
+  gap: 10px;
+}
+.brazil-page .expert-profile__photo .quote-box {
+  max-width: 344px;
+  bottom: -205px;
+  right: -34px;
+  padding: 28px 26px 20px 25px;
+}
+.brazil-page .market-challenges {
+  padding: 132px 0 0 0;
+}
+.brazil-page .business-analytics__swiper .last-slide .last {
+  gap: 13px;
+}
+.brazil-page .most-comfortable .title {
+  margin-bottom: 42px;
+}
+.brazil-page .most-comfortable .accordion {
+  padding: 25px 0px 35px 0;
+}
+.brazil-page .most-comfortable {
+  padding-bottom: 132px;
+}
+.brazil-page .business-registration-info .left-box span {
+  width: 245px;
+}
+.brazil-page .business-registration-info .box {
+  padding: 23px 0 20px 0;
+}
+.brazil-page .business-registration-info {
+  padding-bottom: 135px;
+}
+.brazil-page .global-market__box {
+  margin-top: 60px;
+  align-items: start;
+}
+.brazil-page .client-results {
+  padding: 104px 0 102px 0;
+}
+.brazil-page .market-research-beneficiaries__card-top {
+  min-height: 300px;
+}
+.brazil-page .reviews {
+  padding-top: 142px;
+}
+.brazil-page .faq-section .accordion {
+  padding-top: 30px;
+}
+.brazil-page .faq-section .accordion-header.active {
+  border: none;
+}
+.brazil-page .faq-section .accordions .accordion:first-child .accordion-header {
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .united-states__page .our-services .title-box .sub-title {
+    padding: 0;
+  }
+  .united-states__page .our-services .swiper-scrollbar {
+    display: block;
+    top: 204px;
+    bottom: unset;
+  }
+  .united-states__page .expert-profile__photo {
+    min-width: 343px;
+    max-width: 343px;
+    margin: 0 auto;
+  }
+  .united-states__page .market-research .expert-profile {
+    gap: 165px;
+  }
+  .united-states__page .business-analytics__swiper .business-analytics__text {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 33px;
+  }
+  .united-states__page .business-analytics__swiper .last-slide .desc-box {
+    padding: 0 0;
+  }
+  .united-states__page .global-market__img {
+    order: -1;
+  }
+}
+@media screen and (max-width: 720px) {
+  .united-states__page .market-research .expert-profile {
+    gap: 0;
+  }
+  .united-states__page .global-market__box {
+    margin-top: 40px;
+  }
+  .united-states__page .market-challenges .chalange-card .swiper-line {
+    top: 63px;
+  }
+  .united-states__page .consultation-invite__boxes .register-form {
+    padding: 68px 0 0 0;
+    max-width: 880px;
+  }
+  .united-states__page .consultation-invite__list {
+    padding-top: 0;
+  }
+}
 .politica {
   padding-bottom: 165px;
 }

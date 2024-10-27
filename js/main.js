@@ -348,10 +348,10 @@ document.addEventListener('DOMContentLoaded', function () {
       slidesPerView: 1,
       spaceBetween: 30,
       effect: "fade",
+      // initialSlide: 6,
       fadeEffect: {
         crossFade: true,
       },
-      // speed: 700,
       navigation: {
         nextEl: '.business-analytics__swiper-next',
         prevEl: '.business-analytics__swiper-prev',
