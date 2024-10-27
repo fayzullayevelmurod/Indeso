@@ -45,12 +45,13 @@
       }
     }
   }
+  .accordion-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
   &-content {
     padding-top: 40px;
-    display: none;
-    &.show {
-      display: block;
-    }
 
     &__list {
       display: flex;

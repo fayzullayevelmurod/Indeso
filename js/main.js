@@ -88,78 +88,34 @@ document.addEventListener('DOMContentLoaded', function () {
     accordionsContainer.forEach((container) => {
       const accordions = container.querySelectorAll('.accordion');
 
-      const firstAccordionContent = accordions[0].querySelector('.accordion-content');
+      const firstAccordionContent = accordions[0].querySelector('.accordion-wrapper');
       const firstAccordionHeader = accordions[0].querySelector('.accordion-header');
-      firstAccordionContent.classList.add('show');
-      firstAccordionHeader.classList.add('active');
-
+      if (firstAccordionContent) {
+        firstAccordionContent.style.maxHeight = firstAccordionContent.style.maxHeight ? null : firstAccordionContent.scrollHeight + 'px';
+        firstAccordionHeader.classList.add('active');
+      }
       accordions.forEach((accordion) => {
         const accordionHeader = accordion.querySelector('.accordion-header');
-        const accordionContent = accordion.querySelector('.accordion-content');
+        const accordionContent = accordion.querySelector('.accordion-wrapper');
+
 
         accordionHeader.addEventListener('click', () => {
+
           accordions.forEach((otherAccordion) => {
             const otherHeader = otherAccordion.querySelector('.accordion-header');
-            const otherContent = otherAccordion.querySelector('.accordion-content');
+            const otherContent = otherAccordion.querySelector('.accordion-wrapper');
 
             if (otherAccordion !== accordion) {
-              otherContent.classList.remove('show');
-              otherHeader.classList.remove('active');
+              otherContent.style.maxHeight = null;
+              otherHeader.classList.remove('active')
             }
           });
-
-          accordionContent.classList.add('show');
-          accordionHeader.classList.add('active');
+          accordionContent.style.maxHeight = accordionContent.style.maxHeight ? null : accordionContent.scrollHeight + 'px';
+          accordionHeader.classList.toggle('active');
         });
       });
     });
   }
-
-  // let marketSwiper = new Swiper('.market-analysis__swiper', {
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   navigation: {
-  //     nextEl: '.market-analysis__swiper-next',
-  //     prevEl: '.market-analysis__swiper-prev',
-  //   },
-  //   pagination: {
-  //     el: '.swiper-pagination', // Pagination elementi
-  //     type: 'fraction', // Pagination turini raqamli fraction qilish
-  //     renderFraction: function (currentClass, totalClass, swiper) {
-  //       // Agar `swiper` va `swiper.activeIndex` mavjud bo'lsa ishlashini tekshiradi
-  //       const current = swiper && swiper.activeIndex !== undefined ? ('0' + (swiper.activeIndex + 1)).slice(-2) : '01';
-  //       const total = swiper && swiper.slides.length !== undefined ? ('0' + swiper.slides.length).slice(-2) : '01';
-  //       return `<span class="${currentClass}">${current}</span>
-  //               <span> / </span>
-  //               <span class="${totalClass}">${total}</span>`;
-  //     }
-  //   }
-  // });
-  // let marketSwiper = new Swiper('.market-analysis__swiper', {
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   navigation: {
-  //     nextEl: '.market-analysis__swiper-next',
-  //     prevEl: '.market-analysis__swiper-prev',
-  //   },
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     type: 'fraction',
-  //     renderFraction: function (currentClass, totalClass) {
-  //       return `<span class="${currentClass}">0${this.realIndex + 1}</span>
-  //               <span> / </span>
-  //               <span class="${totalClass}">0${this.slides.length}</span>`;
-  //     }
-  //   },
-  //   on: {
-  //     slideChange: function () {
-  //       const paginationEl = document.querySelector('.swiper-pagination');
-  //       const current = `0${this.realIndex + 1}`.slice(-2);
-  //       const total = `0${this.slides.length}`.slice(-2);
-  //       paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> / <span class="swiper-pagination-total">${total}</span>`;
-  //     }
-  //   }
-  // });
   let marketSwiper = new Swiper('.market-analysis__swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -188,6 +144,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const current = `0${this.realIndex + 1}`.slice(-2);
         const total = `0${this.slides.length}`.slice(-2);
         paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
+        if (this.slides.length == this.realIndex + 1) {
+          document.querySelector('.market-analysis').classList.add('active');
+        } else {
+          document.querySelector('.market-analysis').classList.remove('active');
+        }
       }
     }
   });

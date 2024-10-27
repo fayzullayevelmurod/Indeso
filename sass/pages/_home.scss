@@ -1,7 +1,7 @@
 .intro {
   margin: 108px auto 294px auto;
   z-index: 1;
-  .table-map{
+  .table-map {
     display: none;
   }
   .container {
@@ -12,7 +12,7 @@
     width: 100%;
 
     &:hover {
-      background: #A8241E;
+      background: #a8241e;
     }
   }
   &-map {
@@ -325,10 +325,9 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    &__photo {
+    .big-home__photo.expert-profile__photo {
       border-radius: 10px;
       margin-top: 6px;
-      overflow: hidden;
       min-width: 400px;
       max-width: 400px;
       height: 511px;
@@ -402,8 +401,139 @@
 // our-values
 
 // market-analysis
+// .market-analysis {
+//   padding: 120px 0;
+//   .title-sm {
+//     margin-bottom: 58px;
+//   }
+//   .swiper-numbers {
+//     padding-left: 38px;
+//   }
+//   &__container {
+//     box-shadow: 0px 0px 11.2px 0px #dddddd40;
+//     background-color: #fff;
+//     display: flex;
+//     align-items: stretch;
+//     max-width: 1547px;
+//   }
+//   &__content {
+//     background: #c73731;
+//     padding: 90px 65px 89px 10px;
+//     max-width: 942px;
+//     width: 100%;
+//     &-info {
+//       font-size: 24px;
+//       font-weight: 500;
+//       line-height: 33.6px;
+//       color: #fff;
+//       max-width: 426px;
+//       margin-left: auto;
+//     }
+//   }
+//   &__slider {
+//     width: calc(100% - 942px);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   &__swiper {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 28px;
+//     width: 412px;
+//     padding: 34px 0 18px 26px;
+//     height: 100%;
+
+//     &-title {
+//       font-size: 24px;
+//       font-weight: 400;
+//       line-height: 33.6px;
+//     }
+//     .desc {
+//       margin-top: 21px;
+//     }
+//   }
+//   .swiper-btns {
+//     margin: 0 auto;
+//   }
+//   .btn {
+//     width: 100%;
+//   }
+// }
 .market-analysis {
   padding: 120px 0;
+
+  &.active {
+    position: relative;
+
+    .market-analysis {
+      &__container {
+        max-width: 100vw;
+        position: relative;
+        z-index: 1;
+        justify-content: center;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100%;
+          background: #c73731;
+          z-index: -1;
+        }
+      }
+
+      &__content {
+        display: none;
+      }
+
+      &__slider {
+        .swiper-numbers {
+          display: none;
+        }
+      }
+
+      &__swiper {
+        padding: 40px 0;
+        width: 432px;
+        gap: 60px;
+
+        h4 {
+          color: #fbfafa;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        a {
+          border-color: #f3f1f1;
+          border-width: 2px;
+          color: #ebebeb;
+          font-size: 18px;
+          height: 61px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .swiper-btns {
+          button {
+            svg path {
+              stroke: #fbfafa;
+            }
+
+            &.swiper-button-disabled {
+              svg path {
+                stroke: #d1d1d1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .title-sm {
     margin-bottom: 58px;
   }
@@ -903,7 +1033,7 @@
     overflow: hidden;
   }
   .title-box {
-    align-items: start;
+    margin-bottom: 31px;
   }
   .swiper-btns {
     gap: 33px;
@@ -911,9 +1041,9 @@
     align-items: start;
   }
   &-swiper__top {
-    width: 271px;
+    width: 244px;
     overflow: visible;
-    margin-top: 36px;
+    // margin-top: 36px;
 
     .swiper-wrapper {
       height: 133px;

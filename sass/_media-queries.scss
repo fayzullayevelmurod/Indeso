@@ -558,7 +558,7 @@
     flex-direction: column;
   }
 
-  .market-research .expert-profile__photo {
+  .market-research .expert-profile .big-home__photo.expert-profile__photo {
     max-width: 343px;
     min-width: 343px;
     height: 410px;
@@ -1252,7 +1252,7 @@
   }
   .our-services .swiper-wrapper .swiper-slide:first-child {
     .our-services__card-back {
-      top: 0;
+      // top: 0;
     }
   }
   .market-research-beneficiaries .container {
@@ -1681,9 +1681,6 @@
     gap: 30px;
     grid-template-columns: repeat(1, 1fr);
     margin: 40px 0 80px 0;
-
-    .market-research__stat-item {
-    }
   }
   .market-research__stat-title {
     font-size: 32px;
@@ -1692,10 +1689,11 @@
   .market-research__stat-item {
     padding-top: 48px;
   }
-  .market-research .expert-profile__photo {
+  .market-research .expert-profile .big-home__photo.expert-profile__photo {
     min-width: 268px;
     max-width: 268px;
     height: 363px;
+    margin: 0 auto 160px 0;
   }
   .market-research .expert-profile__description .title-sm {
     font-size: 22px;
