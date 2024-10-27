@@ -7054,6 +7054,10 @@ body.white-bg {
   .market-challenges .chalange-card .swiper-line {
     top: 80px;
   }
+  .united-states__page .our-services .swiper-wrapper {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .intro-map {
