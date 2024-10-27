@@ -6362,7 +6362,7 @@ body.white-bg {
     height: 3px;
   }
   .our-services .swiper-slide {
-    padding-bottom: 47px;
+    padding-bottom: 100px;
   }
   .exploration-countries__swiper {
     margin: 39px 0 20px 0;
@@ -6838,6 +6838,17 @@ body.white-bg {
   }
   .united-states__page .market-research .expert-profile__photo {
     min-width: fit-content;
+  }
+  .accordion-content .accordion-ul li,
+  .accordion-content p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .header-right__box {
+    padding: 264px 0 157px 0;
+  }
+  .header-right__box {
+    height: 100vh;
   }
 }
 @media screen and (max-width: 480px) {
