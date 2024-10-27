@@ -184,6 +184,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const current = `0${this.realIndex + 1}`.slice(-2);
         const total = `0${this.slides.length}`.slice(-2);
         paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
+        if (this.slides.length == this.realIndex + 1) {
+          document.querySelector('.market-analysis').classList.add('active');
+        } else {
+          document.querySelector('.market-analysis').classList.remove('active');
+        }
       }
     }
   });
@@ -521,6 +526,7 @@ var swiper = new Swiper('.market-challenges__swiper-two', {
 var reviewsSwiper = new Swiper('.reviews-swiper__top', {
   slidesPerView: 1,
   spaceBetween: 0,
+  // centeredSlides: true,
   navigation: {
     nextEl: '.reviews-swiper__next',
     prevEl: '.reviews-swiper__prev',
