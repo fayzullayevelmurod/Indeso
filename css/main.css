@@ -198,7 +198,6 @@ body.no-scroll {
 .white-btn:hover {
   color: #c73731;
   background: #f5f5f5;
-  box-shadow: 0px 0px 10px 0px rgba(78, 6, 6, 0.6) inset;
 }
 
 .red-btn {
@@ -802,7 +801,7 @@ body.no-scroll {
   width: 100%;
   height: 225px;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 13px 13px 0 0;
 }
 .our-services__card .card-content {
   display: flex;
@@ -2082,8 +2081,12 @@ body.no-scroll {
 
 .market-analysis__slider .btn:hover {
   background: #f5f5f5;
-  box-shadow: 0px 0px 10px 0px rgba(78, 6, 6, 0.6) inset;
   color: #c73731 !important;
+}
+
+.our-clients__logo-box:hover path {
+  fill: red;
+  stroke: blue;
 }
 
 .united-states__page .intro-content__title {
@@ -2985,6 +2988,14 @@ body.no-scroll {
 .business-analytics__swiper-next path,
 .business-analytics__swiper-prev path {
   stroke: #f5f5f5;
+}
+
+.united-states__page .intro .btn:hover {
+  background: #a8241e;
+}
+
+.brazil-page .most-comfortable {
+  margin-top: 20px;
 }
 
 .politica {
@@ -6800,7 +6811,7 @@ body.white-bg {
   }
   .our-clients__logo-box:nth-child(10) img {
     width: 89.53px;
-    height: 30.59px;
+    height: 30.59px !important;
   }
   .our-clients__logo-box:nth-child(6) {
     margin: 0;
