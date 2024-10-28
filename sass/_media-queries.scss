@@ -2536,11 +2536,6 @@
     margin-bottom: 19px;
     min-width: fit-content;
   }
-  .client-results {
-    .title {
-      width: 328px;
-    }
-  }
   .client-results__card-img {
     height: 126px;
   }
@@ -3123,12 +3118,132 @@
   .united-states__page .exploration-countries {
     padding-bottom: 80px;
   }
+  .intro {
+    margin-top: 60px;
+  }
+  .intro .company-info__list {
+    margin: 60px 0 60px 0;
+  }
+  .intro {
+    // margin-bottom: 100px;
+  }
+  .header .media-block__box {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .united-states__page .expert-profile__photo .quote-box {
+    padding-bottom: 15px;
+  }
+  .home-page {
+    .our-services .swiper-slide {
+      padding-bottom: 60px;
+    }
+  }
+  .header-right__box {
+    padding-top: 180px;
+  }
+  .our-services {
+    margin-bottom: 80px;
+  }
+  .united-states__page .intro .bottom-content .btn {
+    margin: 0 auto;
+  }
+  .oae-page .market-challenges {
+    padding-top: 80px;
+  }
+  .reviews {
+    .title {
+      padding-left: 29px;
+    }
+  }
+  .united-states__page .business-registration-info,
+  .united-states__page .most-comfortable {
+    margin-top: -100px;
+    // margin-bottom: 100px;
+    &.margin-bottom {
+      margin-top: 80px;
+    }
+  }
+  .oae-page .most-comfortable {
+    margin-bottom: 100px;
+    &.margin-bottom {
+      margin-bottom: 0;
+    }
+  }
+  .united-states__page .our-services__card .card-content {
+    padding: 0 4px;
+  }
+  .cooperation-process__box:nth-child(3) {
+    min-height: 300px;
+  }
+  .cooperation-process__box:nth-child(4) {
+    height: 330px;
+  }
+  .cooperation-process__box:nth-child(5) {
+    min-height: 250px;
+  }
+  .cooperation-process__box:nth-child(2) {
+    height: 200px;
+  }
+  .consultation-invite__boxes .red-outlin-btn.media-block {
+    width: 100%;
+  }
+  .united-states__page .consultation-invite__boxes {
+    margin-top: 40px;
+  }
+  .united-states__page .consultation-invite__list {
+    margin-top: 7px;
+  }
+  .united-states__page .intro-content__title {
+    width: 282px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .intro-map {
     width: 747.57px;
     right: -333px;
+  }
+  .united-states__page .business-registration-info {
+    margin-top: -120px;
+  }
+  .oae-page .business-analytics__swiper .last-slide .last {
+    gap: 30px;
+  }
+  .business-analytics__swiper-prev,
+  .business-analytics__swiper-next {
+    width: 30px;
+    height: 15px;
+    svg {
+      width: 30px;
+      height: 15px;
+    }
+  }
+  .comments-sec .comments-form input,
+  .comments-sec .comments-form textarea {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .article-four__page
+    .articles-four
+    .articles-swiper__two
+    .articles-swiper__scrollbar {
+    width: calc(100% - 55px) !important;
+    margin-left: 55px;
+  }
+
+  .article-four__page .articles-four .articles-swiper__two {
+    padding-right: 55px;
+    margin-left: -55px;
+    padding-left: 55px;
+  }
+  .article-four__page .articles-swiper__two {
+    margin-top: 40px;
+    padding-top: 25px;
+  }
+  .article-four__page .articles-four {
+    margin-top: 0;
   }
 }
 
@@ -3156,4 +3271,7 @@
 .market-research-beneficiaries__card-list-item,
 .market-research-beneficiaries__card-title {
   color: #3d3d3d;
+}
+.our-services .swiper-slide {
+  padding-bottom: 0 !important;
 }

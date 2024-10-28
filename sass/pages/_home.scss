@@ -94,10 +94,10 @@
     margin-top: 26px;
   }
   .swiper-slide {
-    min-height: 346px !important;
+    // min-height: 346px !important;
     position: relative;
-    padding-bottom: 217px;
-    overflow: hidden;
+    // padding-bottom: 217px;
+    // overflow: hidden;
     border-radius: 10px;
   }
   &__card {
@@ -111,6 +111,7 @@
     &:hover {
       .our-services__card-back {
         top: 0;
+        opacity: 1;
       }
     }
     &-img {
@@ -136,7 +137,7 @@
     }
     &-back {
       position: absolute;
-      top: -155%;
+      top: 0;
       left: 0;
       z-index: 2;
       background: #fff;
@@ -147,6 +148,7 @@
       transform-origin: top;
       transition: all 0.3s ease;
       // height: 460px;
+      opacity: 0;
       height: fit-content;
 
       &-title {
@@ -1604,5 +1606,14 @@
       fill: red;
       stroke: blue;
     }
+  }
+}
+.our-services {
+  margin-bottom: 120px;
+}
+
+.business-analytics__swiper {
+  &.margin-bottom {
+    margin-bottom: 120px;
   }
 }

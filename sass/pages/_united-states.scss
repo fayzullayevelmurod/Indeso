@@ -289,6 +289,7 @@
     .swiper-button-disabled {
       path {
         stroke: #dcdbdb !important;
+        stroke-width: 1px;
       }
     }
   }
@@ -954,6 +955,11 @@
     .business-analytics__desc {
     font-size: 18px;
     line-height: 21.78px;
+  }
+  .united-states__page {
+    .client-results {
+      padding: 80px 0;
+    }
   }
 }
 

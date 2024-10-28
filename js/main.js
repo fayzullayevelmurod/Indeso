@@ -334,7 +334,51 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //
   try {
-    var swiper = new Swiper('.business-analytics__swiper', {
+    // var swiper = new Swiper('.business-analytics__swiper', {
+    //   slidesPerView: 1,
+    //   spaceBetween: 30,
+    //   effect: "fade",
+    //   fadeEffect: {
+    //     crossFade: true,
+    //   },
+    //   navigation: {
+    //     nextEl: '.business-analytics__swiper-next',
+    //     prevEl: '.business-analytics__swiper-prev',
+    //   },
+    //   pagination: {
+    //     el: '.business-analytics__pagination',
+    //     type: 'fraction',
+    //     renderFraction: function (currentClass, totalClass) {
+    //       return `<span class="${currentClass}">01</span>
+    //               <span> / </span>
+    //               <span class="${totalClass}">0${this.slides.length}</span>`;
+    //     }
+    //   },
+    //   on: {
+    //     init: function () {
+    //       const paginationEl = document.querySelector('.business-analytics__pagination');
+    //       const current = `0${this.realIndex + 1}`.slice(-2);
+    //       const total = `0${this.slides.length}`.slice(-2);
+    //       paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
+    //     },
+    //     slideChange: function () {
+    //       const paginationEl = document.querySelector('.business-analytics__pagination');
+    //       const current = `0${this.realIndex + 1}`.slice(-2);
+    //       const total = `0${this.slides.length}`.slice(-2);
+    //       paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
+
+    //       // Agar oxirgi slaydga yetib kelsa, 'active' klassini qo'shamiz
+    //       if (this.slides.length === this.realIndex + 1) {
+    //         document.querySelector('.business-analytics').classList.add('active');
+    //         paginationEl.style.display = 'none'; // Oxirgi slaydga yetganda paginationni yashirish
+    //       } else {
+    //         document.querySelector('.business-analytics').classList.remove('active');
+    //         paginationEl.style.display = 'block'; // Oxirgi slayddan qaytganda paginationni ko'rsatish
+    //       }
+    //     },
+    //   }
+    // });
+    var businessSwiper = new Swiper('.business-analytics__swiper', {
       slidesPerView: 1,
       spaceBetween: 30,
       effect: "fade",
@@ -367,13 +411,17 @@ document.addEventListener('DOMContentLoaded', function () {
           const total = `0${this.slides.length}`.slice(-2);
           paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
 
-          // Agar oxirgi slaydga yetib kelsa, 'active' klassini qo'shamiz
+          // Oxirgi slaydga yetib kelsa, 'margin-bottom' klassini qo'shamiz
+          const businessSwiper = document.querySelector('.business-registration-info');
+          const mb2 = document.querySelector('.most-comfortable');
           if (this.slides.length === this.realIndex + 1) {
-            document.querySelector('.business-analytics').classList.add('active');
-            paginationEl.style.display = 'none'; // Oxirgi slaydga yetganda paginationni yashirish
+            businessSwiper.classList.add('margin-bottom'); // Klass qo'shish
+            mb2.classList.add('margin-bottom'); // Klass qo'shish
+            paginationEl.style.display = 'none'; // Paginationni yashirish
           } else {
-            document.querySelector('.business-analytics').classList.remove('active');
-            paginationEl.style.display = 'block'; // Oxirgi slayddan qaytganda paginationni ko'rsatish
+            businessSwiper.classList.remove('margin-bottom'); // Klassni olib tashlash
+            mb2.classList.remove('margin-bottom'); // Klassni olib tashlash
+            paginationEl.style.display = 'block'; // Paginationni qayta ko'rsatish
           }
         },
       }
@@ -583,3 +631,18 @@ try {
 } catch (error) {
 
 }
+
+// Matndagi kichik predloglarni avtomatik tarzda ajralmas probel bilan bog‘lash
+function fixOrphanWords(selector) {
+  const elements = document.querySelectorAll(selector);
+
+  elements.forEach(element => {
+    // Matn ichida bog‘lovchilarni topib, ularni ajralmas probel bilan birlashtirish
+    element.innerHTML = element.innerHTML.replace(/\b(и|в|на|с|к|о|от|до|за|по|у|над|под|из|об|без)\b\s/g, '$1&nbsp;');
+    console.log(element);
+
+  });
+}
+
+// Klass yoki boshqa selector bilan elementni tanlang
+fixOrphanWords('.title'); // '.text' o'rniga o'zingizdagi tegishli klass yoki tag nomini yozing
