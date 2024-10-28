@@ -338,7 +338,6 @@ document.addEventListener('DOMContentLoaded', function () {
       slidesPerView: 1,
       spaceBetween: 30,
       effect: "fade",
-      // initialSlide: 6,
       fadeEffect: {
         crossFade: true,
       },
@@ -350,20 +349,33 @@ document.addEventListener('DOMContentLoaded', function () {
         el: '.business-analytics__pagination',
         type: 'fraction',
         renderFraction: function (currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' +
-            '<span> / </span>' +
-            '<span class="' + totalClass + '"></span>';
+          return `<span class="${currentClass}">01</span>
+                  <span> / </span>
+                  <span class="${totalClass}">0${this.slides.length}</span>`;
         }
       },
       on: {
-        reachEnd: function () {
-          document.querySelector('.business-analytics__pagination').style.display = 'none';
+        init: function () {
+          const paginationEl = document.querySelector('.business-analytics__pagination');
+          const current = `0${this.realIndex + 1}`.slice(-2);
+          const total = `0${this.slides.length}`.slice(-2);
+          paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
         },
         slideChange: function () {
-          if (!this.isEnd) {
-            document.querySelector('.business-analytics__pagination').style.display = 'block';
+          const paginationEl = document.querySelector('.business-analytics__pagination');
+          const current = `0${this.realIndex + 1}`.slice(-2);
+          const total = `0${this.slides.length}`.slice(-2);
+          paginationEl.innerHTML = `<span class="swiper-pagination-current">${current}</span> <span> / </span> <span class="swiper-pagination-total">${total}</span>`;
+
+          // Agar oxirgi slaydga yetib kelsa, 'active' klassini qo'shamiz
+          if (this.slides.length === this.realIndex + 1) {
+            document.querySelector('.business-analytics').classList.add('active');
+            paginationEl.style.display = 'none'; // Oxirgi slaydga yetganda paginationni yashirish
+          } else {
+            document.querySelector('.business-analytics').classList.remove('active');
+            paginationEl.style.display = 'block'; // Oxirgi slayddan qaytganda paginationni ko'rsatish
           }
-        }
+        },
       }
     });
   } catch (error) {

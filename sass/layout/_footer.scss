@@ -48,6 +48,9 @@
         gap: 20px;
       }
     }
+    .footer-link {
+      color: #3d3d3d;
+    }
   }
   &-box {
     &__title {
@@ -78,9 +81,12 @@
     line-height: 18.41px;
     color: #191919;
     transition: color 0.2s linear;
-    &:hover,
+    &:hover {
+      color: #c73731;
+    }
     &.active {
       color: #c73731;
+      font-weight: 500;
     }
   }
   &-bottom {

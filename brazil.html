@@ -10,6 +10,9 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <!-- swiper css -->
   <link rel="stylesheet" href="libs/swiper/swiper.min.css">
   <!-- normalize css -->
@@ -310,7 +313,8 @@
               </div>
             </div>
             <div class="market-research__card right">
-              <img class="market-research__card-img" src="images/market-research-img-1.png" alt="">
+              <img class="market-research__card-img media-hide__team-img" src="images/market-research-img-1.png" alt="">
+              <img class="market-research__card-img media-block" src="images/media-team.png" alt="">
             </div>
           </div>
           <div class="market-research__stats">
@@ -339,7 +343,12 @@
             <div class="expert-profile__photo">
               <img src="images/tatyana-photo.png" alt="Tatyana Kovpak's Photo">
               <div class="quote-box">
-                <img class="quote-box__icon" src="images/icons/quote.svg" alt="">
+                <svg class="quote-box__icon" width="26" height="24" viewBox="0 0 26 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 15V24H8.92449V15H5.05721L10.2334 0H7.61556C7.49657 0.120001 6.46529 2.08 4.52174 5.88C2.57818 9.68 1.07094 12.72 0 15ZM15.7666 15V24H24.6911V15H20.8238L26 0H23.3822C23.2632 0.120001 22.2319 2.08 20.2883 5.88C18.3448 9.68 16.8375 12.72 15.7666 15Z"
+                    fill="#C73731" />
+                </svg>
                 <div>
                   <p class="quote-box__desc">
                     Мы понимаем, как непросто выйти на рынок в другой стране, и стараемся сделать путь бизнеса более
@@ -988,6 +997,7 @@
               <span>Ответы на ваши вопросы</span>
             </li>
           </ul>
+          <a class="btn red-outlin-btn media-block" href="#!">Получить консультацию</a>
         </div>
       </section>
       <!-- consultation-invite -->
@@ -997,6 +1007,8 @@
         <div class="container">
           <h2 class="title">Каких результатов достигает бизнес после сотрудничества с нами</h2>
           <div class="swiper-container client-results__swiper">
+            <div class="client-results__swiper-scrollbar swiper-scrollbar">
+            </div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="client-results__card open-modal">
@@ -1067,7 +1079,8 @@
       <!-- market-research-beneficiaries -->
       <section class="market-research-beneficiaries">
         <div class="container">
-          <h2 class="title">Кому необходимо получить исследование <br> рынка Бразилии</h2>
+          <h2 class="title media-none">Кому необходимо получить исследование <br> рынка Бразилии</h2>
+          <h2 class="title media-block">Кому поможет исследование <br> рынка</h2>
           <div class="market-research-beneficiaries__cards">
             <div class="market-research-beneficiaries__card">
               <div class="market-research-beneficiaries__card-top">

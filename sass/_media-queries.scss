@@ -49,7 +49,6 @@
     padding: 0;
     width: 16px;
     height: 27px;
-    margin-top: 4px;
   }
   .market-challenges .business-analytics .business-analytics__image {
     width: 51%;
@@ -1080,7 +1079,7 @@
     gap: 30px;
   }
   .most-comfortable {
-    padding-bottom: 80px;
+    padding-bottom: 80px !important;
   }
   .reviews {
     .swiper-btns {
@@ -1139,7 +1138,6 @@
   }
   .our-clients__boxes {
     grid-template-columns: repeat(4, 1fr);
-    overflow-x: auto;
     margin-right: -75px;
     &::-webkit-scrollbar {
       display: none;
@@ -1209,7 +1207,6 @@
     line-height: 24px;
   }
   .faq-section .accordion-header {
-    height: 45px;
     padding-right: 8px;
   }
   .articles .articles-swiper {
@@ -1506,6 +1503,23 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .brazil-page {
+    .intro-img__box {
+      width: 759.01px;
+      height: 1064.87px;
+      bottom: unset;
+      top: 0;
+      right: -133px;
+    }
+    .business-registration-info {
+      display: none;
+      padding-bottom: 100px !important;
+    }
+  }
+  .united-states__page .consultation-invite__boxes .register-form {
+    padding: 0;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -1626,11 +1640,11 @@
     padding: 2px 7px 38px 10px;
   }
   .exploration-countries .world-locations__map {
-    min-width: 606px;
+    min-width: 620px;
     margin-top: 7px;
-    margin-left: 54px;
+    margin-left: -40px;
     width: 100%;
-    height: 346px;
+    height: 358px;
   }
   .exploration-countries .world-locations .accordions {
     margin-top: 27px;
@@ -1889,7 +1903,13 @@
   .market-research-beneficiaries__card-title {
     font-size: 18px;
     line-height: 25.2px;
-    padding-bottom: 37px;
+    padding-bottom: 30px;
+  }
+  .market-research-beneficiaries__card-top::after {
+    bottom: 0;
+  }
+  .brazil-page .market-research-beneficiaries__card-top {
+    margin-bottom: 15px;
   }
   .our-clients__boxes {
     display: grid;
@@ -2396,9 +2416,6 @@
   }
   .global-market__list {
     gap: 0;
-    img {
-      margin-top: 24px;
-    }
   }
   .global-market__list:last-child .global-market__list-item:nth-child(1) {
     width: 101%;
@@ -2578,40 +2595,76 @@
     height: 58.86px;
   }
   .our-clients__logo-box:nth-child(3) {
-    order: -1;
+    order: -12;
   }
-
+  .our-clients__logo-box:nth-child(1) {
+    padding: 26px 26px 12px 45px;
+    order: -11;
+  }
   .our-clients__logo-box:nth-child(3) img {
     width: 82.89px;
     height: 24px !important;
   }
   .our-clients__boxes {
     grid-template-columns: 95px 95px 95px;
-    height: 346px;
+    margin-right: -20px;
+    overflow: hidden;
   }
   .our-clients__logo-box {
     width: 95px !important;
-    height: 75px !important;
+    height: 71px !important;
     margin: 0;
   }
   .our-clients__logo-box:first-child img {
     width: 43.38px;
-    height: 43.15px;
+    height: 43.15px !important;
+  }
+  .our-clients__logo-box:nth-child(2) {
+    padding: 23px 0 12px 11px;
+    order: -10;
   }
   .our-clients__logo-box:nth-child(5) {
     order: 1;
+  }
+  .our-clients__logo-box:nth-child(7) {
+    order: -8;
+  }
+  .our-clients__logo-box:nth-child(4) {
+    order: -9;
+  }
+  .our-clients__logo-box:nth-child(8) {
+    padding: 25px 0 14px 6px;
+    margin: 0;
+    order: -7;
+    img {
+      width: 98.28px !important;
+      height: 31.68px !important;
+    }
+  }
+  .our-clients__logo-box:nth-child(9) {
+    order: -6;
+    margin: 0;
+    // padding: 6px 6px 0 19px;
   }
   .our-clients__logo-box:nth-child(9) img {
     width: 69.34px;
     height: 69.36px;
   }
-  .our-clients__logo-box:nth-child(10) img {
-    width: 89.53px;
-    height: 30.59px;
+  .our-clients__logo-box:nth-child(10) {
+    order: -5;
+    margin: 0;
+    overflow: hidden;
+    img {
+      width: 89.53px;
+      height: 30.59px;
+    }
   }
-  .our-clients__logo-box:nth-child(6) img {
-    width: 95.55px;
-    height: 46.97px;
+  .our-clients__logo-box:nth-child(6) {
+    margin: 0;
+    img {
+      width: 95.55px;
+      height: 46.97px;
+    }
   }
   .our-clients__logo-box:nth-child(5) img {
     width: 73.54px;
@@ -2679,16 +2732,10 @@
   .faq-section .accordion-header__title {
     width: 75%;
   }
-  .faq-section .accordion-header {
-    height: 56px;
-  }
   .faq-section .accordions {
     .accordion {
       &:nth-child(2) {
         padding-top: 23px;
-        .accordion-header {
-          height: 60px;
-        }
       }
       &:nth-child(3) {
         padding-top: 20px;
@@ -2905,9 +2952,6 @@
   .articles-swiper {
     overflow: visible !important;
   }
-  .articles-card {
-    height: fit-content;
-  }
   .comments-sec .comments-boxes {
     gap: 20px;
   }
@@ -2952,6 +2996,133 @@
     margin-top: 0;
     padding-top: 0;
   }
+  // .header-right__box .nav-list {
+  //   margin-top: 107px;
+  // }
+  // .header-right__box {
+  //   padding: 10px 0 157px 0;
+  //   overflow-y: auto;
+  // }
+  .market-research-beneficiaries .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .market-research-beneficiaries__cards {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .market-research-beneficiaries .title {
+    padding-left: 54px;
+    min-width: 350px;
+    max-width: 350px;
+    br {
+      display: none;
+    }
+  }
+  .united-states__page {
+    .faq-section .accordion-content {
+      padding-left: 0;
+      padding-top: 10px;
+    }
+  }
+  .brazil-page {
+    .our-services .swiper-slide {
+      padding-bottom: 116px;
+    }
+    .intro {
+      padding-bottom: 210px;
+    }
+    .intro-img__box {
+      width: 613.42px;
+      height: 621.24px;
+      bottom: unset;
+      top: 0;
+      right: -50px;
+    }
+  }
+  .market-research__card.right .market-research__card-img {
+    &.media-block {
+      display: block;
+    }
+    &.media-hide__team-img {
+      display: none;
+    }
+  }
+  .united-states__page .expert-profile__photo .quote-box__icon {
+    path {
+      stroke: #dcdbdb;
+    }
+  }
+  .united-states__page .expert-profile__photo .quote-box {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 25px 29px 5px 28px;
+    left: unset;
+    right: 0;
+  }
+  .united-states__page .market-research .expert-profile__photo {
+    margin-bottom: 277px;
+  }
+  .market-research .expert-profile .list .list-item:nth-child(4) {
+    width: 100%;
+  }
+  .brazil-page {
+    .business-registration-info {
+      padding-bottom: 80px !important;
+    }
+  }
+  .brazil-page .market-challenges {
+    padding-top: 80px;
+  }
+  .brazil-page .client-results {
+    padding-top: 80px;
+  }
+  .consultation-invite__boxes .red-outlin-btn.media-block {
+    display: flex;
+    font-size: 14px;
+    height: 52px;
+    font-weight: 600;
+    border-width: 1px;
+  }
+  .united-states__page .market-research-beneficiaries__card .desc {
+    margin-left: 0;
+  }
+  .market-research-beneficiaries__card-top::after {
+    width: 100%;
+  }
+  .market-research-beneficiaries__card-title {
+    width: 94%;
+  }
+  .brazil-page .reviews {
+    padding-top: 80px;
+  }
+  .market-research-beneficiaries {
+    .title {
+      &.media-block {
+        display: block;
+        br {
+          display: block;
+        }
+      }
+      &.media-none {
+        display: none;
+      }
+    }
+  }
+  .brazil-page {
+    .contact-us__form-title {
+      width: 94%;
+    }
+  }
+  .world-locations .accordion-header__btn {
+    width: 16px;
+    height: 16px;
+  }
+  .united-states__page .exploration-countries {
+    padding-bottom: 80px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2973,7 +3144,7 @@
   }
 }
 .faq-section .accordions .accordion:first-child .accordion-header {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .client-results {
@@ -2981,4 +3152,8 @@
   .swiper-slide-prev {
     opacity: 0.5;
   }
+}
+.market-research-beneficiaries__card-list-item,
+.market-research-beneficiaries__card-title {
+  color: #3d3d3d;
 }
