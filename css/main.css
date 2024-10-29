@@ -3386,9 +3386,19 @@ body.no-scroll {
   margin-top: -6px;
 }
 
-.article-nav__swiper-next {
+.article-nav__swiper-next,
+.article-nav__swiper-prev {
   background: #fff;
   z-index: 10;
+}
+
+.article-nav__swiper-prev img {
+  transform: rotate(180deg);
+}
+
+.article-nav__swiper-btns {
+  display: flex;
+  gap: 20px;
 }
 
 .articles-sec,

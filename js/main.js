@@ -591,6 +591,7 @@ var reviewsSwiperBottom = new Swiper('.article-nav__swiper', {
   spaceBetween: 60,
   navigation: {
     nextEl: '.article-nav__swiper-next',
+    prevEl: '.article-nav__swiper-prev',
   },
   breakpoints: {
     1024: {
