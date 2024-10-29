@@ -53,17 +53,24 @@
 }
 
 .article-nav {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: space-between;
   background: #ffffff;
+  position: relative;
   margin: 33px 11px 60px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: fit-content !important;
+  }
   &__link {
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
     color: #8e8c8c;
+    white-space: nowrap;
     &.active {
       color: #c73731;
     }
@@ -71,6 +78,10 @@
   &__img {
     margin-top: -6px;
   }
+}
+.article-nav__swiper-next {
+  background: #fff;
+  z-index: 10;
 }
 
 .articles-sec,
@@ -461,5 +472,3 @@
     }
   }
 }
-
-

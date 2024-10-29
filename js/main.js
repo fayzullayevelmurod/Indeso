@@ -585,6 +585,24 @@ var reviewsSwiperBottom = new Swiper('.reviews-swiper__bottom .swiper', {
     swiper: reviewsSwiper,
   },
 });
+// article-nav__swiper
+var reviewsSwiperBottom = new Swiper('.article-nav__swiper', {
+  slidesPerView: 5,
+  spaceBetween: 60,
+  navigation: {
+    nextEl: '.article-nav__swiper-next',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 55,
+    },
+    1230: {
+      slidesPerView: 4,
+      spaceBetween: 60,
+    }
+  }
+});
 
 reviewsSwiper.on('slideChange', function (e) {
   reviewsSwiperBottom.slideTo(reviewsSwiper.realIndex)
