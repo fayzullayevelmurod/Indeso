@@ -567,6 +567,7 @@ var swiper = new Swiper('.market-challenges__swiper-two', {
 });
 
 
+
 /// reviews-swiper
 var reviewsSwiper = new Swiper('.reviews-swiper__top', {
   slidesPerView: 1,
@@ -585,8 +586,12 @@ var reviewsSwiperBottom = new Swiper('.reviews-swiper__bottom .swiper', {
     swiper: reviewsSwiper,
   },
 });
+
+reviewsSwiper.on('slideChange', function (e) {
+  reviewsSwiperBottom.slideTo(reviewsSwiper.realIndex)
+});
 // article-nav__swiper
-var reviewsSwiperBottom = new Swiper('.article-nav__swiper', {
+var reviewsSwiperBottom2 = new Swiper('.article-nav__swiper', {
   slidesPerView: 5,
   spaceBetween: 60,
   navigation: {
@@ -604,11 +609,6 @@ var reviewsSwiperBottom = new Swiper('.article-nav__swiper', {
     }
   }
 });
-
-reviewsSwiper.on('slideChange', function (e) {
-  reviewsSwiperBottom.slideTo(reviewsSwiper.realIndex)
-});
-
 try {
   // Elementlarni olish
   const dropdown = document.querySelector('.article-nav__dropdown');
