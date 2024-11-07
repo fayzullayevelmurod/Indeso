@@ -415,13 +415,17 @@ document.addEventListener('DOMContentLoaded', function () {
           const businessSwiper = document.querySelector('.business-registration-info');
           const mb2 = document.querySelector('.most-comfortable');
           if (this.slides.length === this.realIndex + 1) {
-            businessSwiper.classList.add('margin-bottom'); // Klass qo'shish
-            mb2.classList.add('margin-bottom'); // Klass qo'shish
-            paginationEl.style.display = 'none'; // Paginationni yashirish
+            businessSwiper.classList.add('margin-bottom');
+            if (mb2) {
+              mb2.classList.add('margin-bottom');
+            }
+            paginationEl.style.display = 'none';
           } else {
-            businessSwiper.classList.remove('margin-bottom'); // Klassni olib tashlash
-            mb2.classList.remove('margin-bottom'); // Klassni olib tashlash
-            paginationEl.style.display = 'block'; // Paginationni qayta ko'rsatish
+            businessSwiper.classList.remove('margin-bottom');
+            if (mb2) {
+              mb2.classList.remove('margin-bottom');
+            }
+            paginationEl.style.display = 'block';
           }
         },
       }

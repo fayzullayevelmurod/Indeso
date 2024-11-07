@@ -210,3 +210,16 @@
     left: 60%;
   }
 }
+
+.modal-swiper__next-btn,
+.modal-swiper__prev-btn {
+  path {
+    stroke-width: 2px;
+    stroke: #c73731;
+  }
+  &.swiper-button-disabled {
+    path {
+      stroke: #d1d1d1;
+    }
+  }
+}

@@ -208,6 +208,10 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s linear;
+}
+.red-btn:hover {
+  background: #A8241E;
 }
 
 .red-outlin-btn {
@@ -512,6 +516,16 @@ body.no-scroll {
     left: 60%;
   }
 }
+.modal-swiper__next-btn path,
+.modal-swiper__prev-btn path {
+  stroke-width: 2px;
+  stroke: #c73731;
+}
+.modal-swiper__next-btn.swiper-button-disabled path,
+.modal-swiper__prev-btn.swiper-button-disabled path {
+  stroke: #d1d1d1;
+}
+
 .header {
   padding-top: 20px;
 }
@@ -685,6 +699,10 @@ body.no-scroll {
 }
 .footer .social-media__img:hover path {
   fill: #c73731;
+}
+
+.addres-link {
+  line-height: 23px;
 }
 
 .intro {
@@ -3165,6 +3183,7 @@ body.no-scroll {
   background-size: cover;
   padding: 244px 0 247px 0;
   margin-bottom: 120px;
+  margin-top: -5px;
 }
 .country-intro__title {
   font-size: 48px;
@@ -7355,6 +7374,10 @@ body.white-bg {
   .united-states__page .intro-content__title {
     width: 282px;
     margin: 0 auto;
+  }
+  .united-states__page .intro-content__title {
+    font-weight: 400;
+    width: 270px;
   }
 }
 @media screen and (max-width: 480px) {
