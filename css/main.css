@@ -1145,7 +1145,7 @@ body.no-scroll {
 .market-analysis__content {
   background: #c73731;
   padding: 90px 65px 89px 10px;
-  max-width: 942px;
+  max-width: 875px;
   width: 100%;
 }
 .market-analysis__content-info {
@@ -1785,14 +1785,14 @@ body.no-scroll {
   height: 40px;
 }
 .contact-us__card {
-  max-width: 876px;
+  max-width: 875px;
   width: 100%;
   background-color: #c73731;
   min-height: 430px;
-  padding: 60px 109px 60px 60px;
+  padding: 60px 100px 60px 60px;
 }
 .contact-us__card .content {
-  max-width: 290px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -2595,8 +2595,7 @@ body.no-scroll {
 }
 
 .united-states__page .consultation-invite__boxes .register-form {
-  padding: 68px 52px 65px 106px;
-  max-width: 880px;
+  padding: 68px 100px 65px 106px;
 }
 .united-states__page .market-research-beneficiaries__card:nth-child(2) .market-research-beneficiaries__card-title {
   max-width: 321px;
