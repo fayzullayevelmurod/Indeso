@@ -669,3 +669,5 @@ function fixOrphanWords(selector) {
 
 // Klass yoki boshqa selector bilan elementni tanlang
 fixOrphanWords('.title'); // '.text' o'rniga o'zingizdagi tegishli klass yoki tag nomini yozing
+
+

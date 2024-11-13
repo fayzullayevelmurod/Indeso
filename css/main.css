@@ -2058,33 +2058,52 @@ body.no-scroll {
   line-height: 22px;
   max-width: 355px;
 }
-.market-challenges .chalange-card li:nth-child(1) {
+.market-challenges .chalange-card li:nth-child(even) {
+  top: 0;
+  left: 552px;
+  background: red;
+}
+.market-challenges .chalange-card li:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  top: 132px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/1.svg) no-repeat;
+}
+.market-challenges .chalange-card li:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: -104px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/2.svg) no-repeat;
+}
+.market-challenges .chalange-card li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: -109px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/first.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.market-challenges .chalange-card li:last-child {
   left: 0;
   top: 226px;
 }
-.market-challenges .chalange-card li:nth-child(2) {
-  left: 342px;
-  top: 0;
-}
-.market-challenges .chalange-card li:nth-child(3) {
-  left: 571px;
-  top: 238px;
-}
-.market-challenges .chalange-card li:nth-child(4) {
-  left: 802px;
-  top: 0;
-}
-.market-challenges .chalange-card li:nth-child(5) {
-  left: 1031px;
-  top: 237px;
-}
-.market-challenges .chalange-card li:nth-child(6) {
-  left: 1262px;
-  top: 0;
-}
-.market-challenges .chalange-card li:nth-child(7) {
-  left: 1560px;
-  top: 226px;
+.market-challenges .chalange-card li:last-child::before {
+  content: "";
+  position: absolute;
+  top: -124px;
+  left: -60px;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/2.svg) no-repeat;
+  background-size: 100% auto;
 }
 
 .most-comfortable .red-btn {
@@ -2112,6 +2131,88 @@ body.no-scroll {
 
 .business-analytics__swiper.margin-bottom {
   margin-bottom: 120px;
+}
+
+.all-boxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 150px;
+}
+.all-boxes .flex-box {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.all-boxes .top-boxes .info-box p {
+  margin-left: auto;
+}
+.all-boxes .top-boxes .info-box:last-child::before {
+  left: 54px;
+  top: 147px;
+  background: url(../../images/1.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.all-boxes .info-box {
+  min-width: 370px;
+  max-width: 306px;
+  position: relative;
+}
+.all-boxes .info-box p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  color: #191919;
+}
+.all-boxes .info-box.no-line {
+  min-width: 250px;
+}
+.all-boxes .info-box.no-line::before {
+  display: none;
+}
+.all-boxes .info-box:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/1.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.all-boxes .info-box:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: -121px;
+  left: -10px;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/2.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.all-boxes .info-box:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: -109px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/first.svg) no-repeat;
+}
+.all-boxes .info-box:last-child::before {
+  content: "";
+  position: absolute;
+  top: -129px;
+  left: -7px;
+  width: 100%;
+  height: 100px;
+  background: url(../../images/2.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.market-challenges .swiper-slide {
+  overflow: visible;
+  padding-right: 50px;
 }
 
 .united-states__page .intro-content__title {
