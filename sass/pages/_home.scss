@@ -1738,6 +1738,7 @@
 .market-analysis__container,
 .consultation-invite__boxes {
   max-width: 1540px;
+  gap: 20px;
 }
 .contact-us__form {
   max-width: 566px;
@@ -1746,7 +1747,8 @@
 .consultation-invite__boxes .register-form,
 .contact-us__card,
 .united-states__page .consultation-invite__boxes .register-form {
-  padding-right: 40px;
+  padding-right: 100px;
+
 }
 
 .contact-us__card .content,

@@ -1,4 +1,25 @@
 @media screen and (max-width: 1440px) {
+  // .contact-us__card .content,
+  // .consultation-invite__boxes .register-form__content,
+  // .market-analysis__content-info {
+  //   max-width: 445px;
+  // }
+  .market-analysis__content-info {
+    max-width: 434px;
+  }
+  .consultation-invite__boxes .register-form__content {
+    max-width: 399px;
+  }
+  .contact-us__card .content {
+    max-width: 430px;
+  }
+  .united-states__page {
+    .contact-us__card .content,
+    .consultation-invite__boxes .register-form__content,
+    .market-analysis__content-info {
+      max-width: 460px;
+    }
+  }
   .market-analysis__content {
     max-width: 705px;
   }
@@ -759,7 +780,7 @@
     max-width: 257px;
   }
   .consultation-invite__boxes .register-form__content {
-    margin-left: 71px;
+    margin-left: 75px;
     max-width: 100%;
   }
   .consultation-invite__boxes .register-form .btn {

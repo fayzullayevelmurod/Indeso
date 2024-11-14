@@ -2238,6 +2238,7 @@ body.no-scroll {
 .market-analysis__container,
 .consultation-invite__boxes {
   max-width: 1540px;
+  gap: 20px;
 }
 
 .contact-us__form {
@@ -2248,7 +2249,7 @@ body.no-scroll {
 .consultation-invite__boxes .register-form,
 .contact-us__card,
 .united-states__page .consultation-invite__boxes .register-form {
-  padding-right: 40px;
+  padding-right: 100px;
 }
 
 .contact-us__card .content,
@@ -2766,7 +2767,7 @@ body.no-scroll {
 }
 
 .united-states__page .consultation-invite__boxes .register-form {
-  padding: 68px 40px 65px 0;
+  padding: 68px 100px 65px 0;
 }
 .united-states__page .market-research-beneficiaries__card:nth-child(2) .market-research-beneficiaries__card-title {
   max-width: 321px;
@@ -4483,6 +4484,20 @@ body.white-bg {
 }
 
 @media screen and (max-width: 1440px) {
+  .market-analysis__content-info {
+    max-width: 434px;
+  }
+  .consultation-invite__boxes .register-form__content {
+    max-width: 399px;
+  }
+  .contact-us__card .content {
+    max-width: 430px;
+  }
+  .united-states__page .contact-us__card .content,
+  .united-states__page .consultation-invite__boxes .register-form__content,
+  .united-states__page .market-analysis__content-info {
+    max-width: 460px;
+  }
   .market-analysis__content {
     max-width: 705px;
   }
@@ -5212,7 +5227,7 @@ body.white-bg {
     max-width: 257px;
   }
   .consultation-invite__boxes .register-form__content {
-    margin-left: 71px;
+    margin-left: 75px;
     max-width: 100%;
   }
   .consultation-invite__boxes .register-form .btn {
