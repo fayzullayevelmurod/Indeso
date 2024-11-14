@@ -1785,7 +1785,13 @@
   }
 }
 
-.swiper-horizontal > .swiper-scrollbar,
-.swiper-scrollbar.swiper-scrollbar-horizontal {
+.market-challenges .swiper-horizontal > .swiper-scrollbar,
+.market-challenges .swiper-scrollbar.swiper-scrollbar-horizontal {
   width: calc(100% + 450px);
+}
+
+@media screen and (max-width: 1024px) {
+  .market-challenges .swiper-slide {
+    padding-right: 0 !important;
+  }
 }
