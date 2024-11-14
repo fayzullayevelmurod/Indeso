@@ -1611,7 +1611,7 @@
 .all-boxes {
   display: flex;
   flex-direction: column;
-  row-gap: 150px;
+  row-gap: 155px;
   .flex-box {
     display: flex;
     align-items: start;
@@ -1625,11 +1625,27 @@
       }
       &:last-child {
         &::before {
-          left: 45px;
-          top: 136px;
-          background: url(../../images/1.svg) no-repeat;
+          // left: 45px;
+          // top: 136px;
+          left: 95px;
+          // top: 107px;
+          top: 145px;
+          background: url(../../images/last.svg) no-repeat;
           background-size: 100% 100%;
         }
+      }
+    }
+  }
+  .bottom-boxes {
+    .info-box:last-child {
+      &::before {
+        display: none;
+      }
+    }
+    .last-bottom {
+      &::before {
+        display: block !important;
+        background: url(../../images/last.svg) no-repeat;
       }
     }
   }
@@ -1643,6 +1659,11 @@
       line-height: 22.4px;
       text-align: left;
       color: #191919;
+      height: 112px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
     }
     &.no-line {
       min-width: 250px;
@@ -1650,12 +1671,13 @@
         display: none;
       }
     }
+
     &:nth-child(even) {
       &::before {
         content: '';
         position: absolute;
-        top: 150px;
-        // left: 50px;
+        // top: 150px;
+        top: 154px;
         left: 58px;
         width: 100%;
         height: 100px;
@@ -1689,9 +1711,10 @@
     &:last-child {
       &::before {
         content: '';
+        // display: none;
         position: absolute;
         top: -129px;
-        left: -7px;
+        left: -1px;
         width: 100%;
         height: 100px;
         background: url(../../images/2.svg) no-repeat;
@@ -1703,4 +1726,61 @@
 .market-challenges .swiper-slide {
   overflow: visible;
   padding-right: 50px;
+}
+
+.market-analysis,
+.consultation-invite,
+.contact-us {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.contact-us__cards,
+.market-analysis__container,
+.consultation-invite__boxes {
+  max-width: 1540px;
+}
+.contact-us__form {
+  max-width: 566px;
+}
+.market-analysis__content,
+.consultation-invite__boxes .register-form,
+.contact-us__card,
+.united-states__page .consultation-invite__boxes .register-form {
+  padding-right: 40px;
+}
+
+.contact-us__card .content,
+.consultation-invite__boxes .register-form__content,
+.market-analysis__content-info {
+  max-width: 400px;
+}
+.market-analysis__swiper {
+  padding-left: 0;
+}
+.market-challenges .market-challenges__swiper-two {
+  margin-right: 400px;
+}
+.all-boxes {
+  .top-boxes {
+    .info-box {
+      &.last-top {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  .bottom-boxes {
+    .info-box:last-child {
+      &::before {
+        display: none;
+      }
+    }
+    .last-bottom {
+      &::before {
+        display: block !important;
+        // background: url(../../images/last.svg) no-repeat;
+      }
+    }
+  }
 }
