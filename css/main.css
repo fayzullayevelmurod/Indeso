@@ -2262,7 +2262,7 @@ body.no-scroll {
 }
 
 .market-challenges .market-challenges__swiper-two {
-  margin-right: 400px;
+  margin-right: 450px;
 }
 
 .all-boxes .top-boxes .info-box.last-top::before {
@@ -2273,6 +2273,11 @@ body.no-scroll {
 }
 .all-boxes .bottom-boxes .last-bottom::before {
   display: block !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: calc(100% + 450px);
 }
 
 .united-states__page .intro-content__title {

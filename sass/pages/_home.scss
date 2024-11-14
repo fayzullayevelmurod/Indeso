@@ -1758,7 +1758,7 @@
   padding-left: 0;
 }
 .market-challenges .market-challenges__swiper-two {
-  margin-right: 400px;
+  margin-right: 450px;
 }
 .all-boxes {
   .top-boxes {
@@ -1783,4 +1783,9 @@
       }
     }
   }
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: calc(100% + 450px);
 }
